@@ -1,4 +1,6 @@
-
+<script>
+  import TbdLogo from '../../WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp'
+</script>
 
 <header id="INDEX_ID">
     <a class="header_top" href="./ISSUE_4_VOL3.HTML">
@@ -31,7 +33,7 @@
         </div>
 
         <a style="height: 100%; flex-shrink: 0" href="#">
-            <img style="height: 100%;" src="WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp">
+            <img style="height: 100%;" src={TbdLogo}>
         </a>
 
         <div class="header_burger_container">

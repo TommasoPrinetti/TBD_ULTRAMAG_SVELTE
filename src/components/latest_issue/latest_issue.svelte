@@ -1,16 +1,21 @@
+<script>
+  
+</script>
+
 <last_issue id="LATEST">
       
     <h2 id="HEROTEXT_FILLING">
       Issue No.4 “BUIO” Out now.
     </h2>
 
+    <!-- svelte-ignore a11y-missing-attribute -->
     <img class="last_issue_floating"  src="WEBRESOURCES/IDENTITY_IMAGES/ANIMATED_BUIO_LOGO.gif">
     <img class="last_issue_img" src="" id="HEROIMG_FILLING">
 
     <div class="last_issue_text">
       <div style="display: flex; flex-direction: row; gap: var(--spacing_s);">
-        <a class="button" href="" id="HEROCTA_FILLING" style="z-index: 2;">
-          <P2>READ MORE</P2>
+        <a class="button" id="HEROCTA_FILLING" style="z-index: 2;">
+          <p2>READ MORE</p2>
         </a>
         <a class="button" id="BUY_ACTIVE" style="z-index: 2;">
           <p2>BUY NOW</p2>

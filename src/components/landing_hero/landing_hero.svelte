@@ -1,3 +1,8 @@
+<script>
+  import TbdLogo from '../../WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp'
+</script>
+
 <div class="landing_hero">
-    <img src="WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp">
-  </div>
+    <!-- svelte-ignore a11y-missing-attribute -->
+    <img src={TbdLogo} alt="TBD Logo">
+</div>
