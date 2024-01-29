@@ -726,6 +726,9 @@ article_2 section {
 
 .index svg {
   display: none;
+  width: "330";
+  height: "2";
+  fill: "none";
 }
 
 read {

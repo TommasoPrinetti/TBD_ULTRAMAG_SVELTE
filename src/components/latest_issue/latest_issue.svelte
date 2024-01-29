@@ -1,5 +1,6 @@
 <script>
-  
+  import LastIssue from '../../WEBRESOURCES/ISSUE_COVERS/ISSUE-4.webp'
+  import FloatingLogo from '../../WEBRESOURCES/IDENTITY_IMAGES/ANIMATED_BUIO_LOGO.gif'
 </script>
 
 <last_issue id="LATEST">
@@ -9,8 +10,8 @@
     </h2>
 
     <!-- svelte-ignore a11y-missing-attribute -->
-    <img class="last_issue_floating"  src="WEBRESOURCES/IDENTITY_IMAGES/ANIMATED_BUIO_LOGO.gif">
-    <img class="last_issue_img" src="" id="HEROIMG_FILLING">
+    <img class="last_issue_floating"  src={FloatingLogo}>
+    <img class="last_issue_img" src={LastIssue} id="HEROIMG_FILLING" alt="LastIssue">
 
     <div class="last_issue_text">
       <div style="display: flex; flex-direction: row; gap: var(--spacing_s);">
