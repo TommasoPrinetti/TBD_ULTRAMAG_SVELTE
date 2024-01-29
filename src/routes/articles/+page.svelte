@@ -1,13 +1,6 @@
 <!-- routes/articles/+page.svelte -->
 
 <script>
-    import { onMount } from 'svelte';
-  
-  onMount(() => {
-    // Log the structure of your website once it's loaded
-    console.log(document.body.innerHTML);
-  });
-  
     import Article from "../../components/article/article.svelte";
     import Header from "../../components/header/header.svelte";
 
