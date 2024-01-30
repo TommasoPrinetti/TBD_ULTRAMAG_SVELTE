@@ -1,26 +1,27 @@
-// THIS IS +PAGE.JS
-// Import the articles data from the JSON file
-import articlesData from "../../../lib/articles.json";
+// Import the issues data from the JSON file
+import issuesData from "../../../lib/issues.json";
 
 import { error } from '@sveltejs/kit';
 
 // Define the load function
 export async function load({ params }) {
     // Get the issue value from the params object
-    const issue = params.issue;
+    const issueSlug = params.issue;
 
-    // Find the article that matches the issue
-    const article = articlesData.find(article => article.issue === issue);
+    console.log("Params:", params);
 
-    // If article is found, return it
-    if (article) {
+    // Find the issue that matches the issueSlug
+    const issue = issuesData.find(issue => issue.IssueNumber === issueSlug);
+    console.log("Issue:", issue);
+    // If issue is found, return it as props
+    if (issue) {
         return {
             props: {
-                article
+                issue
             }
         };
     } else {
-        // If article is not found, throw a 404 error
-        return error(404, 'Not found');
+        // If issue is not found, throw a 404 error
+        return error(404, 'Issue not found');
     }
 }

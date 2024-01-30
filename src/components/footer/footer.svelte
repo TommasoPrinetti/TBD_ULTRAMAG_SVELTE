@@ -1,7 +1,12 @@
 <!-- FOOTER DEFINITIVO 05/01 🟢-->
+<script>
+
+    import FooterImg from "../../WEBRESOURCES/IDENTITY_IMAGES/FOOTERTEXT.SVG"
+</script>
+
 <footer>
     <div class="footer_high">
-      <img src="WEBRESOURCES/IDENTITY_IMAGES/FOOTERTEXT.svg">
+      <img src={FooterImg} alt="">
     </div>
     <section>
 

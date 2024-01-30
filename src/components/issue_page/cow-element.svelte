@@ -1,21 +1,21 @@
 <script>
-    let CowElementText
-    let CowElementImg
-    let CowImgDidascalia
+    export let CowElementText
+    export let CowElementImg
+    export let CowImgDidascalia
 
-    let UltraCowElementText
-    let UltraCowElementTitle
+    export let UltraCowElementText
+    export let UltraCowElementTitle
 
-    let UltraGallery1
-    let UltraGallery2
-    let UltraGallery3
-    let UltraGallery4
-    let UltraGallery5
-    let UltraGallery6
-    let UltraGallery7
-    let UltraGallery8
-    let UltraGallery9
-    let UltraGallery10
+    export let UltraGallery1
+    export let UltraGallery2
+    export let UltraGallery3
+    export let UltraGallery4
+    export let UltraGallery5
+    export let UltraGallery6
+    export let UltraGallery7
+    export let UltraGallery8
+    export let UltraGallery9
+    export let UltraGallery10
 
 </script>
 

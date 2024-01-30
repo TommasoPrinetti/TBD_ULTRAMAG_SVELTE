@@ -1,7 +1,42 @@
 [
     {
-        "IssueNumber": "Issue 1",
-        "IssueTitle": "Lorem Ipsum",
+        "IssueNumber": "ISSUE1",
+        "IssueTitle": "ISSUE1",
+        "IssueHeroText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "IssueThumbnail": "https://www.bluecross.org.uk/sites/default/files/assets/images/124044lpr.jpg",
+
+        "UltraIssueNumber": "Ultra Issue 1",
+        "UltraIssueTitle": "Ultra Lorem Ipsum",
+        "UltraIssueHeroText": "Ultra Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "UltraIssueThumbnail": "https://static.boredpanda.com/blog/wp-content/uploads/2018/04/5acb63d83493f__700-png.jpg",
+
+        "MagGalleryImg1": "https://www.argospetinsurance.co.uk/assets/uploads/2017/12/cat-pet-animal-domestic-104827.jpeg",
+        "MagGalleryImg2": "https://www.pets4homes.co.uk/images/articles/771/large/cat-lifespan-the-life-expectancy-of-cats-568e40723c336.jpg",
+        "MagGalleryImg3": "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg",
+        "MagGalleryImg4": "https://www.cats.org.uk/uploads/images/featurebox_sidebar_kids/grief-and-loss.jpg",
+
+        "CowElementText": "Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "CowElementImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg",
+        "CowImgDidascalia": "Cow Element Didascalia",
+
+        "UltraCowElementText": "Ultra Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "UltraCowElementTitle": "Ultra Cow Element Title",
+
+        "UltraGallery1": "https://www.petmd.com/sites/default/files/petmd-cat-happy-13.jpg",
+        "UltraGallery2": "https://r.hswstatic.com/w_907/gif/tesla-cat.jpg",
+        "UltraGallery3": "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "UltraGallery4": "http://www.catster.com/wp-content/uploads/2017/08/Pixiebob-cat.jpg",
+        "UltraGallery5": "http://www.petmd.com/sites/default/files/what-does-it-mean-when-cat-wags-tail.jpg",
+        "UltraGallery6": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Cat-eating-prey.jpg/220px-Cat-eating-prey.jpg",
+        "UltraGallery7": "https://i.ytimg.com/vi/YCaGYUIfdy4/maxresdefault.jpg",
+        "UltraGallery8": "https://www.prestigeanimalhospital.com/sites/default/files/08-cat-cancer-4.jpeg",
+        "UltraGallery9": "https://metrouk2.files.wordpress.com/2017/11/capture16.png?w=748&h=706&crop=1",
+        "UltraGallery10": "https://i.pinimg.com/originals/81/6d/a5/816da533638aee63cfbd315ea24cccbd.jpg"
+    },
+
+    {
+        "IssueNumber": "ISSUE2",
+        "IssueTitle": "ISSUE2",
         "IssueHeroText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "IssueThumbnail": "https://www.bluecross.org.uk/sites/default/files/assets/images/124044lpr.jpg",
 

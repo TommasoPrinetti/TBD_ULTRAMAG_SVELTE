@@ -1,15 +1,25 @@
 <script>
-    let IssueNumber
-    let IssueTitle
-    let IssueHeroText
-    let IssueThumbnail
+    // This is issue-hero.svelte
+    export let IssueNumber
+    export let IssueTitle
+    export let IssueHeroText
+    export let IssueThumbnail
 
-    let UltraIssueNumber
-    let UltraIssueTitle
-    let UltraIssueHeroText
-    let UltraIssueThumbnail
+    export let UltraIssueNumber
+    export let UltraIssueTitle
+    export let UltraIssueHeroText
+    export let UltraIssueThumbnail
 
     import BuyButtons from "../buy_buttons.svelte";
+
+    // console.log("Issue Hero - IssueNumber:", IssueNumber); // Log IssueNumber
+    //console.log("Issue Hero - IssueTitle:", IssueTitle); // Log IssueTitle
+    //console.log("Issue Hero - IssueHeroText:", IssueHeroText); // Log IssueHeroText
+    //console.log("Issue Hero - IssueThumbnail:", IssueThumbnail); // Log IssueThumbnail
+    //console.log("Issue Hero - UltraIssueNumber:", UltraIssueNumber); // Log UltraIssueNumber
+    //console.log("Issue Hero - UltraIssueTitle:", UltraIssueTitle); // Log UltraIssueTitle
+    //console.log("Issue Hero - UltraIssueHeroText:", UltraIssueHeroText); // Log UltraIssueHeroText
+    //console.log("Issue Hero - UltraIssueThumbnail:", UltraIssueThumbnail); // Log UltraIssueThumbnail
 
 </script>
 
@@ -37,7 +47,7 @@
         </div>
         
         <div class="heroimgcontainer">
-            <img class="heroimgcontainer" src={IssueThumbnail}>
+            <img class="heroimgcontainer" src={IssueThumbnail} alt="">
         </div>
 
     </section>
