@@ -4,8 +4,6 @@
     export let IssueTitle
     export let IssueHeroText
     export let IssueThumbnail
-
-    export let UltraIssueNumber
     export let UltraIssueTitle
     export let UltraIssueHeroText
     export let UltraIssueThumbnail

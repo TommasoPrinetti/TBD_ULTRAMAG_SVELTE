@@ -1,36 +1,11 @@
 [
     {
-        "ParentIssue": "ISSUE1",
-        "section": "HUMAN NOT HUMAN",
-        "ArticleImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg",
-        "ArticleTitle": "SANTARELLI PUZZONE",
+        "parentIssue": "ISSUE1",
+        "SectionName": "issue_1_fist",
+        "ArticleImg": "http://placekitten.com/200/300",
+        "ArticleTitle": "first",
         "ArticleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        "ParentIssue": "Issue 1",
-        "TextImage": "path/to/text/image.jpg",
-        "showDidascalie": true,
-        "RowsDidascalie": [
-            "Didascalia 1",
-            "Didascalia 2",
-            "Didascalia 3"
-        ],
-        "showBibliografia": true,
-        "RowsBibliografia": [
-            "Bibliografia 1",
-            "Bibliografia 2",
-            "Bibliografia 3"
-        ],
-        "Autore": "John Doe",
-        "Editor": "Jane Smith"
-        
-    },
-    {
-        "issue": "ISSUE1",
-        "section": " IMMERSIVITY",
-        "ArticleImg": "https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962_4x3.jpg",
-        "ArticleTitle": "titolo di test numero 2",
-        "ArticleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        "ParentIssue": "Issue 1",
-        "TextImage": "path/to/text/image.jpg",
+        "TextImage": "http://placekitten.com/200/300",
         "showDidascalie": true,
         "RowsDidascalie": [
             "Didascalia 1",
@@ -46,15 +21,57 @@
         "Autore": "John Doe",
         "Editor": "Jane Smith"
     },
-    
     {
-        "issue": "ISSUE2",
-        "section": " IMMERSIVITY",
-        "ArticleImg": "https://media.4-paws.org/a/5/3/7/a537f08d227326121b80790ba54036498668c9c8/VIER%20PFOTEN_2016-07-08_011-4993x3455-1920x1329.jpg",
-        "ArticleTitle": "titolo di test numero 2",
+        "parentIssue": "ISSUE1",
+        "SectionName": "issue_1_second",
+        "ArticleImg": "http://placekitten.com/200/300",
+        "ArticleTitle": "second",
         "ArticleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        "ParentIssue": "Issue 1",
-        "TextImage": "path/to/text/image.jpg",
+        "TextImage": "http://placekitten.com/200/300",
+        "showDidascalie": true,
+        "RowsDidascalie": [
+            "Didascalia 1",
+            "Didascalia 2",
+            "Didascalia 3"
+        ],
+        "showBibliografia": true,
+        "RowsBibliografia": [
+            "Bibliografia 1",
+            "Bibliografia 2",
+            "Bibliografia 3"
+        ],
+        "Autore": "John Doe",
+        "Editor": "Jane Smith"
+    },
+    {
+        "parentIssue": "ISSUE1",
+        "SectionName": "issue_1_random",
+        "ArticleImg": "http://placekitten.com/200/300",
+        "ArticleTitle": "random",
+        "ArticleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+        "TextImage": "http://placekitten.com/200/300",
+        "showDidascalie": true,
+        "RowsDidascalie": [
+            "Didascalia 1",
+            "Didascalia 2",
+            "Didascalia 3"
+        ],
+        "showBibliografia": true,
+        "RowsBibliografia": [
+            "Bibliografia 1",
+            "Bibliografia 2",
+            "Bibliografia 3"
+        ],
+        "Autore": "John Doe",
+        "Editor": "Jane Smith"
+    },
+    {
+        "parentIssue": "ISSUE2",
+        "SectionName": "HUMAN NOT HUMAN",
+        "ArticleImg": "http://placekitten.com/200/300",
+        "ArticleTitle": "TESTTItle",
+        "ArticleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+        "TextImage": "http://placekitten.com/200/300",
         "showDidascalie": true,
         "RowsDidascalie": [
             "Didascalia 1",

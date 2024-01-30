@@ -20,6 +20,7 @@
             {ArticleText}
         </p3>
 
+        <!-- svelte-ignore a11y-missing-attribute -->
         <a class="button">
             <p2> 
                 READ THE WHOLE ARTICLE

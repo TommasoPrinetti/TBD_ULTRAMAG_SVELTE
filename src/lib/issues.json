@@ -1,71 +1,72 @@
 [
     {
-        "IssueNumber": "ISSUE1",
+        "issueNumber": "ISSUE1",
         "IssueTitle": "ISSUE1",
-        "IssueHeroText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "IssueThumbnail": "https://www.bluecross.org.uk/sites/default/files/assets/images/124044lpr.jpg",
+        "IssueHeroText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet interdum turpis mattis mollis. Sed cursus dolor vel ante rutrum, vel posuere risus fringilla. Sed sollicitudin ullamcorper luctus. Aenean dui leo, venenatis nec sapien et, consequat tincidunt dui. Nulla venenatis gravida nibh, at varius ligula feugiat tempus. Donec ut urna a enim varius aliquet vitae eget ipsum. Fusce lectus mauris, suscipit vitae lacinia vitae, congue sit amet risus. Aenean nulla risus, euismod in posuere ac, bibendum id leo. Maecenas id eros a nisl cursus porta. Curabitur finibus metus sit amet justo rhoncus venenatis. Vivamus dolor dolor, mollis sed dui vitae, faucibus sollicitudin nunc. Aliquam dictum viverra odio, a tempor est dignissim sit amet. Nunc faucibus condimentum velit, sit amet interdum diam euismod vel. Sed a urna non diam tincidunt posuere. Donec at velit pellentesque, ultrices velit ac, ornare odio. Donec gravida tellus enim, eu tincidunt urna dignissim at. Morbi et blandit purus. Mauris sit amet tortor mauris. Vestibulum maximus condimentum dui finibus cursus. Etiam fringilla tristique tellus non volutpat. Phasellus id urna mauris. Fusce varius ipsum odio, in pulvinar urna volutpat id. Vestibulum vitae neque nisl.",
+        "IssueThumbnail": "https://picsum.photos/1000",
 
         "UltraIssueNumber": "Ultra Issue 1",
         "UltraIssueTitle": "Ultra Lorem Ipsum",
         "UltraIssueHeroText": "Ultra Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "UltraIssueThumbnail": "https://static.boredpanda.com/blog/wp-content/uploads/2018/04/5acb63d83493f__700-png.jpg",
+        "UltraIssueThumbnail": "https://picsum.photos/1000",
 
-        "MagGalleryImg1": "https://www.argospetinsurance.co.uk/assets/uploads/2017/12/cat-pet-animal-domestic-104827.jpeg",
-        "MagGalleryImg2": "https://www.pets4homes.co.uk/images/articles/771/large/cat-lifespan-the-life-expectancy-of-cats-568e40723c336.jpg",
-        "MagGalleryImg3": "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg",
-        "MagGalleryImg4": "https://www.cats.org.uk/uploads/images/featurebox_sidebar_kids/grief-and-loss.jpg",
+        "MagGalleryImg1": "https://picsum.photos/1000",
+        "MagGalleryImg2": "https://picsum.photos/1000",
+        "MagGalleryImg3": "https://picsum.photos/1000",
+        "MagGalleryImg4": "https://picsum.photos/1000",
 
-        "CowElementText": "Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "CowElementImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg",
+        "CowElementText": "lorem  ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet interdum turpis mattis mollis. Sed cursus dolor vel ante rutrum, vel posuere risus fringilla. Sed sollicitudin ullamcorper luctus. Aenean dui leo, venenatis nec sapien et, consequat tincidunt dui. Nulla venenatis gravida nibh, at varius ligula feugiat tempus. Donec ut urna a enim varius aliquet vitae eget ipsum. Fusce lectus mauris, suscipit vitae lacinia vitae, congue sit amet risus. Aenean nulla risus, euismod in posuere ac, bibendum id leo. Maecenas id eros a nisl cursus porta. Curabitur finibus metus sit amet justo rhoncus venenatis. Vivamus dolor dolor, mollis sed dui vitae, faucibus sollicitudin nunc.Aliquam dictum viverra odio, a tempor est dignissim sit amet. Nunc faucibus condimentum velit, sit amet interdum diam euismod vel. Sed a urna non diam tincidunt posuere. Donec at velit pellentesque, ultrices velit ac, ornare odio. Donec gravida tellus enim, eu tincidunt urna dignissim at. Morbi et blandit purus. Mauris sit amet tortor mauris. Vestibulum maximus condimentum dui finibus cursus. Etiam fringilla tristique tellus non volutpat. Phasellus id urna mauris. Fusce varius ipsum odio, in pulvinar urna volutpat id. Vestibulum vitae neque nisl.",
+        "CowElementImg": "https://picsum.photos/1000",
         "CowImgDidascalia": "Cow Element Didascalia",
 
         "UltraCowElementText": "Ultra Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "UltraCowElementTitle": "Ultra Cow Element Title",
 
-        "UltraGallery1": "https://www.petmd.com/sites/default/files/petmd-cat-happy-13.jpg",
-        "UltraGallery2": "https://r.hswstatic.com/w_907/gif/tesla-cat.jpg",
-        "UltraGallery3": "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&h=350",
-        "UltraGallery4": "http://www.catster.com/wp-content/uploads/2017/08/Pixiebob-cat.jpg",
-        "UltraGallery5": "http://www.petmd.com/sites/default/files/what-does-it-mean-when-cat-wags-tail.jpg",
-        "UltraGallery6": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Cat-eating-prey.jpg/220px-Cat-eating-prey.jpg",
-        "UltraGallery7": "https://i.ytimg.com/vi/YCaGYUIfdy4/maxresdefault.jpg",
-        "UltraGallery8": "https://www.prestigeanimalhospital.com/sites/default/files/08-cat-cancer-4.jpeg",
-        "UltraGallery9": "https://metrouk2.files.wordpress.com/2017/11/capture16.png?w=748&h=706&crop=1",
-        "UltraGallery10": "https://i.pinimg.com/originals/81/6d/a5/816da533638aee63cfbd315ea24cccbd.jpg"
+        "UltraGallery1": "https://picsum.photos/1000",
+        "UltraGallery2": "https://picsum.photos/1000",
+        "UltraGallery3": "https://picsum.photos/1000",
+        "UltraGallery4": "https://picsum.photos/1000",
+        "UltraGallery5": "https://picsum.photos/1000",
+        "UltraGallery6": "https://picsum.photos/1000",
+        "UltraGallery7": "https://picsum.photos/1000",
+        "UltraGallery8": "https://picsum.photos/1000",
+        "UltraGallery9": "https://picsum.photos/1000",
+        "UltraGallery10": "https://picsum.photos/1000"
     },
 
     {
-        "IssueNumber": "ISSUE2",
+        "issueNumber": "ISSUE2",
         "IssueTitle": "ISSUE2",
         "IssueHeroText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "IssueThumbnail": "https://www.bluecross.org.uk/sites/default/files/assets/images/124044lpr.jpg",
+        "IssueThumbnail": "https://picsum.photos/1000",
 
+        
         "UltraIssueNumber": "Ultra Issue 1",
         "UltraIssueTitle": "Ultra Lorem Ipsum",
         "UltraIssueHeroText": "Ultra Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "UltraIssueThumbnail": "https://static.boredpanda.com/blog/wp-content/uploads/2018/04/5acb63d83493f__700-png.jpg",
+        "UltraIssueThumbnail": "https://picsum.photos/1000",
 
-        "MagGalleryImg1": "https://www.argospetinsurance.co.uk/assets/uploads/2017/12/cat-pet-animal-domestic-104827.jpeg",
-        "MagGalleryImg2": "https://www.pets4homes.co.uk/images/articles/771/large/cat-lifespan-the-life-expectancy-of-cats-568e40723c336.jpg",
-        "MagGalleryImg3": "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg",
-        "MagGalleryImg4": "https://www.cats.org.uk/uploads/images/featurebox_sidebar_kids/grief-and-loss.jpg",
+        "MagGalleryImg1": "https://picsum.photos/1000",
+        "MagGalleryImg2": "https://picsum.photos/1000",
+        "MagGalleryImg3": "https://picsum.photos/1000",
+        "MagGalleryImg4": "https://picsum.photos/1000",
 
         "CowElementText": "Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "CowElementImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg",
+        "CowElementImg": "https://picsum.photos/1000",
         "CowImgDidascalia": "Cow Element Didascalia",
 
         "UltraCowElementText": "Ultra Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "UltraCowElementTitle": "Ultra Cow Element Title",
 
-        "UltraGallery1": "https://www.petmd.com/sites/default/files/petmd-cat-happy-13.jpg",
-        "UltraGallery2": "https://r.hswstatic.com/w_907/gif/tesla-cat.jpg",
-        "UltraGallery3": "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&h=350",
-        "UltraGallery4": "http://www.catster.com/wp-content/uploads/2017/08/Pixiebob-cat.jpg",
-        "UltraGallery5": "http://www.petmd.com/sites/default/files/what-does-it-mean-when-cat-wags-tail.jpg",
-        "UltraGallery6": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Cat-eating-prey.jpg/220px-Cat-eating-prey.jpg",
-        "UltraGallery7": "https://i.ytimg.com/vi/YCaGYUIfdy4/maxresdefault.jpg",
-        "UltraGallery8": "https://www.prestigeanimalhospital.com/sites/default/files/08-cat-cancer-4.jpeg",
-        "UltraGallery9": "https://metrouk2.files.wordpress.com/2017/11/capture16.png?w=748&h=706&crop=1",
-        "UltraGallery10": "https://i.pinimg.com/originals/81/6d/a5/816da533638aee63cfbd315ea24cccbd.jpg"
+        "UltraGallery1": "https://picsum.photos/1000",
+        "UltraGallery2": "https://picsum.photos/1000",
+        "UltraGallery3": "https://picsum.photos/1000",
+        "UltraGallery4": "https://picsum.photos/1000",
+        "UltraGallery5": "https://picsum.photos/1000",
+        "UltraGallery6": "https://picsum.photos/1000",
+        "UltraGallery7": "https://picsum.photos/1000",
+        "UltraGallery8": "https://picsum.photos/1000",
+        "UltraGallery9": "https://picsum.photos/1000",
+        "UltraGallery10": "https://picsum.photos/1000"
     }
 ]

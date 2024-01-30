@@ -1,5 +1,7 @@
 // Import the issues data from the JSON file
 import issuesData from "../../../lib/issues.json";
+import articlesData from "../../../lib/articles.json";
+
 
 import { error } from '@sveltejs/kit';
 
@@ -7,21 +9,23 @@ import { error } from '@sveltejs/kit';
 export async function load({ params }) {
     // Get the issue value from the params object
     const issueSlug = params.issue;
-
-    console.log("Params:", params);
-
     // Find the issue that matches the issueSlug
-    const issue = issuesData.find(issue => issue.IssueNumber === issueSlug);
+    const issue = issuesData.find(issue => issue.issueNumber === issueSlug);
     console.log("Issue:", issue);
-    // If issue is found, return it as props
+
     if (issue) {
+        // Filter articles for the current issue
+        const relatedArticles = articlesData.filter(article => article.parentIssue === issue.issueNumber);
+        console.log("Filtered Articles:", relatedArticles)
         return {
             props: {
-                issue
+                issue,
+                articles: relatedArticles
             }
         };
+        
     } else {
-        // If issue is not found, throw a 404 error
         return error(404, 'Issue not found');
     }
+    
 }
