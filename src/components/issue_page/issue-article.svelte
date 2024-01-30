@@ -2,7 +2,6 @@
     export let ArticleImg;
     export let ArticleTitle;
     export let ArticleText;
-    export let ArticleHref;
 </script>
 
 <article>
@@ -21,7 +20,7 @@
             {ArticleText}
         </p3>
 
-        <a class="button" href={ArticleHref}>
+        <a class="button">
             <p2> 
                 READ THE WHOLE ARTICLE
             </p2>
