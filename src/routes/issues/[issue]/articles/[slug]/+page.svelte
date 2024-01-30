@@ -1,11 +1,18 @@
 <!-- routes/articles/+page.svelte -->
 
 <script>
-    import Article from "../../components/article/article.svelte";
-    import Header from "../../components/header/header.svelte";
+    import Article from "../../../../../components/article/article.svelte";
+    import Header from "../../../../../components/header/header.svelte";
 
     // Import the articles data from the JSON file
-    import articlesData from "./articles.json";
+    import articlesData from "../../../../../lib/articles.json";
+  
+    // Export the article prop from the load function
+    export let article;
+
+    // Log the article prop
+    console.log("article prop:", article);
+
 </script>
 
 <Header />

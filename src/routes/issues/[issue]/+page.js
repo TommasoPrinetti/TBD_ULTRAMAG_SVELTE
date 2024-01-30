@@ -1,16 +1,16 @@
 // THIS IS +PAGE.JS
 // Import the articles data from the JSON file
-import articlesData from "../../articles/articles.json";
+import articlesData from "../../../lib/articles.json";
 
 import { error } from '@sveltejs/kit';
 
 // Define the load function
 export async function load({ params }) {
-    // Get the slug value from the params object
-    const slug = params.slug;
+    // Get the issue value from the params object
+    const issue = params.issue;
 
-    // Find the article that matches the slug
-    const article = articlesData.find(article => article.slug === slug);
+    // Find the article that matches the issue
+    const article = articlesData.find(article => article.issue === issue);
 
     // If article is found, return it
     if (article) {

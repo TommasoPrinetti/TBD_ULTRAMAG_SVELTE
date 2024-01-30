@@ -1,7 +1,7 @@
 <script>
     import '../style.css'
 
-    import articlesData from './articles/articles.json';
+    import articlesData from '../lib/articles.json';
 
     export const load = () => {
         return {

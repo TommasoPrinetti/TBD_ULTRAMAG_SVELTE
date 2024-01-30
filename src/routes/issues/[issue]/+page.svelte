@@ -7,7 +7,7 @@
     import ArticleListContainer from '../../../components/issue_page/article_list_container.svelte';
   
     // Import the articles data from the JSON file
-    import articlesData from "../../articles/articles.json";
+    import articlesData from "../../../lib/articles.json";
   
     // Export the article prop from the load function
     export let article;

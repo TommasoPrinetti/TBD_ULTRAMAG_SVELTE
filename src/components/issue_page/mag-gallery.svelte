@@ -1,20 +1,28 @@
-<!-- MAG GALLERY -->
+
+<script>
+    let CallToAction = "CLICK ME TO READ"
+    let MagGalleryImg1
+    let MagGalleryImg2
+    let MagGalleryImg3
+    let MagGalleryImg4
+</script>
+
 <gallery class="default_appear">
     <h2>    
-        CLICK ME TO READ
+        {CallToAction}
     </h2>
     <section>
         <a id="image1">
-            <img src="WEBRESOURCES/MAGAZINE_MOCKUPS/PAPER/ISSUE_1/01.webp" >
+            <img src={MagGalleryImg1} alt="">
         </a>
         <a id="image2">
-            <img src="WEBRESOURCES/MAGAZINE_MOCKUPS/PAPER/ISSUE_1/02.webp" >
+            <img src={MagGalleryImg2} alt="">
         </a>
         <a id="image3">
-            <img src="WEBRESOURCES/MAGAZINE_MOCKUPS/PAPER/ISSUE_1/03.webp" >
+            <img src={MagGalleryImg3} alt="">
         </a>
         <a id="image4">
-            <img src="WEBRESOURCES/MAGAZINE_MOCKUPS/PAPER/ISSUE_1/04.webp" >
+            <img src={MagGalleryImg4} alt="">
         </a>
     </section>
     
