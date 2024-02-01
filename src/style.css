@@ -348,12 +348,12 @@ body.ultra > div > .ultra_appear {
   
 }
 
-body.default > .ultra_appear {
+body.default > div > .ultra_appear {
   display: none;
 }
 
 
-body.default > .default_appear {
+body.default > div > .default_appear {
 
 }
 

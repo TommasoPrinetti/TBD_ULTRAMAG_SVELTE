@@ -2,7 +2,7 @@
     {
         "articleName": "BiancaFratin",
         "parentIssue": "ISSUE1",
-        "sectionName": "issue_1_fist",
+        "sectionLabel": "issue_1_fist",
         "articleImg": "http://placekitten.com/200/300",
         "articleTitle": "first",
         "articleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
@@ -24,10 +24,33 @@
     },
     {
         "articleName": "LucaTaseto",
-        "parentIssue": "ISSUE1",
-        "sectionName": "issue_1_fist",
+        "parentIssue": "ISSUE2",
+        "sectionLabel": "issue_1_fist",
         "articleImg": "http://placekitten.com/200/300",
         "articleTitle": "SECOND",
+        "articleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+        "textImage": "http://placekitten.com/200/300",
+        "showDidascalie": true,
+        "rowsDidascalie": [
+            "Didascalia 1",
+            "Didascalia 2",
+            "Didascalia 3"
+        ],
+        "showBibliografia": true,
+        "rowsBibliografia": [
+            "Bibliografia 1",
+            "Bibliografia 2",
+            "Bibliografia 3"
+        ],
+        "autore": "John Doe",
+        "editor": "Jane Smith"
+    },
+    {
+        "articleName": "GioCle",
+        "parentIssue": "ISSUE1",
+        "sectionLabel": "issue_2_second",
+        "articleImg": "http://placekitten.com/200/300",
+        "articleTitle": "THIRD",
         "articleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
         "textImage": "http://placekitten.com/200/300",
         "showDidascalie": true,

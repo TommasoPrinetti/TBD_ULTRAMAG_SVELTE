@@ -1,11 +1,8 @@
 <script>
-
-    import LogoImg from '../../../../../WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp';
     import ArticleHero from '../../../../../components/article/article_hero.svelte';
-    import BuyButton from '../../../../../components/buy_buttons.svelte';
-
     import Header from "../../../../../components/header/header.svelte";
     import ArticleCorpus from '../../../../../components/article/article_corpus.svelte';
+    import Footer from '../../../../../components/footer/footer.svelte'
 
     export let data;
 
@@ -20,3 +17,4 @@
 
 <ArticleHero {...data.props.article}/>
 <ArticleCorpus {...data.props.article}/>
+<Footer />

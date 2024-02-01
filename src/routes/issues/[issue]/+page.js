@@ -7,11 +7,11 @@ import { error } from '@sveltejs/kit';
 
 // Define the load function
 export async function load({ params }) {
+    
     // Get the issue value from the params object
     const issueSlug = params.issue;
     // Find the issue that matches the issueSlug
     const issue = issuesData.find(issue => issue.issueNumber === issueSlug);
-    console.log("Issue:", issue);
 
     if (issue) {
         // Filter articles for the current issue

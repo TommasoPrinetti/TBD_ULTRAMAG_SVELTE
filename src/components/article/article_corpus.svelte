@@ -12,44 +12,34 @@
 
     import BuyButton from "../buy_buttons.svelte";
     import LogoImg from '../../WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp'
+
+    //Loading sidemenu siblings
+
+    import { onMount } from 'svelte';
+    import articlesData from '../../lib/articles.json';
+
+    export let article; // Received from load function
+
+    let relatedArticles = [];
+
+    onMount(() => {
+        relatedArticles = articlesData.filter(a => a.parentIssue === article.parentIssue);
+    });
+
 </script>
 <article_2>
     <section>
         <div class="side_menu">
             <div class="index_container">
                 <div class="index">
-                    <a href=""><h3>ARTICLES</h3></a>
+                    {#each relatedArticles as relatedArticle}
+                        <a href={`/issues/${relatedArticle.parentIssue}/articles/${relatedArticle.articleName}`}>
+                            <p3>{relatedArticle.articleTitle}</p3>
+                        </a>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 2">
                             <path d="M0 0.555664H330"/>
                         </svg>
-                    <a href="ISSUE_1_ANIMAL_TURN_ISSUE.HTML"><p3> #01: THE ANIMAL TURN ISSUE </p3></a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 2">
-                            <path d="M0 0.555664H330"/>
-                        </svg>
-                    <a href="ISSUE_1_UPON_THE_ORCHID_PAINTER.HTML"><p3> #02: DELL'ORCHIDEA PITTRICE </p3></a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 2">
-                            <path d="M0 0.555664H330"/>
-                        </svg>
-                    <a href="ISSUE_1_OVERCOMING_CAGES.HTML"><p3> #03: SUPERARE LE GABBIE </p3></a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 2">
-                            <path d="M0 0.555664H330"/>
-                        </svg>
-                    <a href="ISSUE_1_IMMERSIVE_EXPERIENCE.HTML"><p3> #04: ESPERIENZE IMMERSIVA </p3></a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 2">
-                            <path d="M0 0.555664H330"/>
-                        </svg>
-                    <a href="ISSUE_1_ENEA_LEFONS.HTML"><p3> #05: INTERVISTA ENEA LEFONS </p3></a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 2">
-                            <path d="M0 0.555664H330"/>
-                        </svg>
-                    <a href="ISSUE_1_ORNAMENTAL_IMMERSIVITY.HTML"><p3> #06: CONTRO L'IMMERSIVO ORNAMENTALE </p3></a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 2">
-                            <path d="M0 0.555664H330"/>
-                        </svg>
-                    <a href="ISSUE_1_ON_MUTATION.HTML"><p3> #07: DEL MUTARE DELLE FORME </p3></a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 2">
-                            <path d="M0 0.555664H330"/>
-                        </svg>
+                    {/each}
                 </div>
 
                 <div class="buybuttons">

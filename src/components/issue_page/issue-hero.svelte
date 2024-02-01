@@ -16,11 +16,11 @@
     <section id="READ THE WHOLE ARTICLE">           
         <div class="herotextcontainer"> 
             <h1>
-                {IssueNumber}
+                {IssueTitle}
             </h1>
 
             <h3>
-                ../ {IssueTitle}
+                ../ {IssueNumber}
             </h3>
 
             <p2>
