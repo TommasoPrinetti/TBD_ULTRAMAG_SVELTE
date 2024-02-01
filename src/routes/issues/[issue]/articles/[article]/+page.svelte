@@ -13,7 +13,7 @@
 
 </script>
 
-<Header/>
+<Header headerVar='ARTICLES'/>
 
 <ArticleHero {...data.props.article}/>
 <ArticleCorpus {...data.props.article}/>

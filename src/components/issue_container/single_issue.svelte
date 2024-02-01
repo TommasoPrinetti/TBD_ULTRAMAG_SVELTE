@@ -1,9 +1,9 @@
 <script>
 
-
 export let issue;
 export let IssueCover;
-export let IssuePrice
+export let IssuePrice;
+export let issueHref;
 
 import(`../../WEBRESOURCES/ISSUE_COVERS/ISSUE-${issue}.webp`).then(module => {
     IssueCover = module.default;
@@ -11,7 +11,7 @@ import(`../../WEBRESOURCES/ISSUE_COVERS/ISSUE-${issue}.webp`).then(module => {
 
 </script>
 
-<a class="single_issue" href="ISSUE_1.HTML">
+<a class="single_issue" href={issueHref}>
 
     <img src={IssueCover} alt={issue} />
 

@@ -5,6 +5,8 @@
     import IssueContainer from '../components/issue_container/issue_container.svelte';
     import LatestIssue from '../components/latest_issue/latest_issue.svelte';
     import Ultrabutton from '../components/ULTRABUTTON/ultrabutton.svelte';
+    import About from '../components/about/landingAbout.svelte'
+    import SingleCard from '../components/issue_container/single_card.svelte';
 </script>
 
 <svelte:head>
@@ -15,6 +17,7 @@
 <LandHero />
 <LatestIssue/>
 <IssueContainer />
+<About />
 <Footer />
 
 <Ultrabutton />

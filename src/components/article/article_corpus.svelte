@@ -14,17 +14,20 @@
     import LogoImg from '../../WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp'
 
     //Loading sidemenu siblings
+    
+    export let article;
 
     import { onMount } from 'svelte';
     import articlesData from '../../lib/articles.json';
-
-    export let article; // Received from load function
+    console.log("ArticlesData:", articlesData)
 
     let relatedArticles = [];
 
     onMount(() => {
         relatedArticles = articlesData.filter(a => a.parentIssue === article.parentIssue);
     });
+
+    console.log("RelatedArticles:",relatedArticles)
 
 </script>
 <article_2>
@@ -45,8 +48,7 @@
                 <div class="buybuttons">
                     <BuyButton />
                     <BuyButton />
-                    <BuyButton />
-                    
+                    <BuyButton />  
                 </div>
             </div>
             
