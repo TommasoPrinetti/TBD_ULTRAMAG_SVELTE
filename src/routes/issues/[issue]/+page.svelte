@@ -35,7 +35,6 @@
     {#each sectionNames as sectionName}
       <Divider SectionName={sectionName} />
       {#each data.props.articles.filter(article => article.sectionLabel === sectionName) as articleContent}
-        
         <IssueArticle {...articleContent} />
       {/each}
     {/each} 
