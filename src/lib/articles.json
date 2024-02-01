@@ -1,90 +1,48 @@
 [
     {
+        "articleName": "BiancaFratin",
         "parentIssue": "ISSUE1",
-        "SectionName": "issue_1_fist",
-        "ArticleImg": "http://placekitten.com/200/300",
-        "ArticleTitle": "first",
-        "ArticleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        "TextImage": "http://placekitten.com/200/300",
+        "sectionName": "issue_1_fist",
+        "articleImg": "http://placekitten.com/200/300",
+        "articleTitle": "first",
+        "articleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+        "textImage": "http://placekitten.com/200/300",
         "showDidascalie": true,
-        "RowsDidascalie": [
+        "rowsDidascalie": [
             "Didascalia 1",
             "Didascalia 2",
             "Didascalia 3"
         ],
         "showBibliografia": true,
-        "RowsBibliografia": [
+        "rowsBibliografia": [
             "Bibliografia 1",
             "Bibliografia 2",
             "Bibliografia 3"
         ],
-        "Autore": "John Doe",
-        "Editor": "Jane Smith"
+        "autore": "John Doe",
+        "editor": "Jane Smith"
     },
     {
+        "articleName": "LucaTaseto",
         "parentIssue": "ISSUE1",
-        "SectionName": "issue_1_second",
-        "ArticleImg": "http://placekitten.com/200/300",
-        "ArticleTitle": "second",
-        "ArticleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        "TextImage": "http://placekitten.com/200/300",
+        "sectionName": "issue_1_fist",
+        "articleImg": "http://placekitten.com/200/300",
+        "articleTitle": "SECOND",
+        "articleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+        "textImage": "http://placekitten.com/200/300",
         "showDidascalie": true,
-        "RowsDidascalie": [
+        "rowsDidascalie": [
             "Didascalia 1",
             "Didascalia 2",
             "Didascalia 3"
         ],
         "showBibliografia": true,
-        "RowsBibliografia": [
+        "rowsBibliografia": [
             "Bibliografia 1",
             "Bibliografia 2",
             "Bibliografia 3"
         ],
-        "Autore": "John Doe",
-        "Editor": "Jane Smith"
-    },
-    {
-        "parentIssue": "ISSUE1",
-        "SectionName": "issue_1_random",
-        "ArticleImg": "http://placekitten.com/200/300",
-        "ArticleTitle": "random",
-        "ArticleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        "TextImage": "http://placekitten.com/200/300",
-        "showDidascalie": true,
-        "RowsDidascalie": [
-            "Didascalia 1",
-            "Didascalia 2",
-            "Didascalia 3"
-        ],
-        "showBibliografia": true,
-        "RowsBibliografia": [
-            "Bibliografia 1",
-            "Bibliografia 2",
-            "Bibliografia 3"
-        ],
-        "Autore": "John Doe",
-        "Editor": "Jane Smith"
-    },
-    {
-        "parentIssue": "ISSUE2",
-        "SectionName": "HUMAN NOT HUMAN",
-        "ArticleImg": "http://placekitten.com/200/300",
-        "ArticleTitle": "TESTTItle",
-        "ArticleText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        "TextImage": "http://placekitten.com/200/300",
-        "showDidascalie": true,
-        "RowsDidascalie": [
-            "Didascalia 1",
-            "Didascalia 2",
-            "Didascalia 3"
-        ],
-        "showBibliografia": true,
-        "RowsBibliografia": [
-            "Bibliografia 1",
-            "Bibliografia 2",
-            "Bibliografia 3"
-        ],
-        "Autore": "John Doe",
-        "Editor": "Jane Smith"
+        "autore": "John Doe",
+        "editor": "Jane Smith"
     }
 ]

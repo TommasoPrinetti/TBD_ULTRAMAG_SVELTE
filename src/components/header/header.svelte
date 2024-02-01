@@ -54,5 +54,4 @@
             </a>
         </div>
     </div>
-    
 </header>

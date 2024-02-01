@@ -9,16 +9,6 @@
     export let UltraIssueThumbnail
 
     import BuyButtons from "../buy_buttons.svelte";
-
-    // console.log("Issue Hero - IssueNumber:", IssueNumber); // Log IssueNumber
-    //console.log("Issue Hero - IssueTitle:", IssueTitle); // Log IssueTitle
-    //console.log("Issue Hero - IssueHeroText:", IssueHeroText); // Log IssueHeroText
-    //console.log("Issue Hero - IssueThumbnail:", IssueThumbnail); // Log IssueThumbnail
-    //console.log("Issue Hero - UltraIssueNumber:", UltraIssueNumber); // Log UltraIssueNumber
-    //console.log("Issue Hero - UltraIssueTitle:", UltraIssueTitle); // Log UltraIssueTitle
-    //console.log("Issue Hero - UltraIssueHeroText:", UltraIssueHeroText); // Log UltraIssueHeroText
-    //console.log("Issue Hero - UltraIssueThumbnail:", UltraIssueThumbnail); // Log UltraIssueThumbnail
-
 </script>
 
 

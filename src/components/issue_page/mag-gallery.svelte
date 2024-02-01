@@ -1,15 +1,15 @@
 
 <script>
-    let CallToAction = "CLICK ME TO READ"
-    let MagGalleryImg1
-    let MagGalleryImg2
-    let MagGalleryImg3
-    let MagGalleryImg4
+   export let callToAction = "CLICK ME TO READ"
+    export let MagGalleryImg1
+    export let MagGalleryImg2
+    export let MagGalleryImg3
+    export let MagGalleryImg4
 </script>
 
 <gallery class="default_appear">
     <h2>    
-        {CallToAction}
+        {callToAction}
     </h2>
     <section>
         <a id="image1">

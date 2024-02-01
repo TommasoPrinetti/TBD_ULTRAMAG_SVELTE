@@ -1,12 +1,11 @@
 <script>
 
-import issue from '../../components/issue_container/single_issue.svelte';
 
-import SingleIssue from '../../components/issue_container/single_issue.svelte';
+  import SingleIssue from '../../components/issue_container/single_issue.svelte';
 
-import Divider from '../../components/issue_container/divider.svelte';
+  import Divider from '../../components/issue_container/divider.svelte';
 
-import SingleSpecial from './single_special.svelte';
+  import SingleSpecial from './single_special.svelte';
 
 </script>
 
