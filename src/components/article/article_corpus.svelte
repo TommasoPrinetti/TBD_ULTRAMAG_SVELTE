@@ -20,7 +20,7 @@
     export let article;
 
     import { onMount } from 'svelte';
-    import articlesData from '$lib/articles.json';
+    import articlesData from '$lib/articles.js';
     console.log("ArticlesData:", articlesData)
 
     let relatedArticles = [];

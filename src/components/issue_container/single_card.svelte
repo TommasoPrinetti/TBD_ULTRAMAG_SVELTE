@@ -1,19 +1,22 @@
 <script>
-export let singleCard
+export let issueCover;
+export let issueHref;
+export let issueTitle;
+export let issueHeroText
 </script>
 
 <card>
     <!-- svelte-ignore a11y-missing-content -->
-    <a href={singleCard.href}></a>
+    <a href={issueHref}></a>
     <div class="card_image_container">
-      <img src={singleCard.img} alt="">
+      <img src={issueCover} alt="">
     </div>
     <div class="card_text_container">
       <h3>
-        {singleCard.title}
+        {issueTitle}
       </h3>
       <p3>
-        {singleCard.text}
+        {issueHeroText}
       </p3>
     </div>
 </card>

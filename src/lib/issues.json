@@ -1,19 +1,20 @@
 [
     {
         "issueNumber": "ISSUE1",
-        "IssueTitle": "COME OUT",
-        "IssueHeroText": "A partire dalla fine del 2019 a Krasnogorsk, cittadina a nord-ovest di Mosca, un allevamento di bovini sta sperimentando un particolare visore per la realtà virtuale sulla sua comunità di mucche. Il visore, adattato alla conformazione fisica dei bovini, è volto all'aumento della produzione di latte, attraverso la trasmissione di immagini pensate per il benessere psicofisico degli utenti animali. Il video trasmesso, un prato verde in una giornata d'estate, è infatti studiato per immergere gli animali in un ambiente rilassante, alienandoli dalla mesta atmosfera dell'allevamento russo. Dall'ancora incerto valore scientifico, questa pratica ha attivato una serie di importanti riflessioni sul nostro rapporto con il soggetto animale e sulle pratiche d'immersività digitale. TBD, come altre realtà editoriali, ha ritenuto di particolare rilievo questo fatto come catalizzatore di indagini proiettate all'ambito della visione, dell'estetica e delle arti contemporanee.",
-        "IssueThumbnail": "https://picsum.photos/1000",
+        "issueTitle": "COME OUT",
+        "issueHeroText": "A partire dalla fine del 2019 a Krasnogorsk, cittadina a nord-ovest di Mosca, un allevamento di bovini sta sperimentando un particolare visore per la realtà virtuale sulla sua comunità di mucche. Il visore, adattato alla conformazione fisica dei bovini, è volto all'aumento della produzione di latte, attraverso la trasmissione di immagini pensate per il benessere psicofisico degli utenti animali. Il video trasmesso, un prato verde in una giornata d'estate, è infatti studiato per immergere gli animali in un ambiente rilassante, alienandoli dalla mesta atmosfera dell'allevamento russo. Dall'ancora incerto valore scientifico, questa pratica ha attivato una serie di importanti riflessioni sul nostro rapporto con il soggetto animale e sulle pratiche d'immersività digitale. TBD, come altre realtà editoriali, ha ritenuto di particolare rilievo questo fatto come catalizzatore di indagini proiettate all'ambito della visione, dell'estetica e delle arti contemporanee.",
+        "issueThumbnail": "$webresources/ISSUE_THUMBNAILS/ISSUE-1.webp",
+        "issueCover": "$webresources/ISSUE_COVERS/ISSUE-1.webp",
+        "issueHref": "/issues/ISSUE1",
+        "issuePrice": 13,
+        "issueCategory": "issues",
 
-        "UltraIssueNumber": "Ultra Issue 1",
-        "UltraIssueTitle": "Ultra Lorem Ipsum",
-        "UltraIssueHeroText": "Ultra Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "UltraIssueThumbnail": "https://picsum.photos/1000",
+        "UltraissueNumber": "Ultra Issue 1",
+        "UltraissueTitle": "Ultra Lorem Ipsum",
+        "UltraissueHeroText": "Ultra Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "UltraissueThumbnail": "https://picsum.photos/1000",
 
-        "MagGalleryImg1": "https://picsum.photos/1000",
-        "MagGalleryImg2": "https://picsum.photos/1000",
-        "MagGalleryImg3": "https://picsum.photos/1000",
-        "MagGalleryImg4": "https://picsum.photos/1000",
+        "magGalleryFolder":"./webresources/ISSUE1/MAG_GALLERY",
 
         "CowElementText": "lorem  ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet interdum turpis mattis mollis. Sed cursus dolor vel ante rutrum, vel posuere risus fringilla. Sed sollicitudin ullamcorper luctus. Aenean dui leo, venenatis nec sapien et, consequat tincidunt dui. Nulla venenatis gravida nibh, at varius ligula feugiat tempus. Donec ut urna a enim varius aliquet vitae eget ipsum. Fusce lectus mauris, suscipit vitae lacinia vitae, congue sit amet risus. Aenean nulla risus, euismod in posuere ac, bibendum id leo. Maecenas id eros a nisl cursus porta. Curabitur finibus metus sit amet justo rhoncus venenatis. Vivamus dolor dolor, mollis sed dui vitae, faucibus sollicitudin nunc.Aliquam dictum viverra odio, a tempor est dignissim sit amet. Nunc faucibus condimentum velit, sit amet interdum diam euismod vel. Sed a urna non diam tincidunt posuere. Donec at velit pellentesque, ultrices velit ac, ornare odio. Donec gravida tellus enim, eu tincidunt urna dignissim at. Morbi et blandit purus. Mauris sit amet tortor mauris. Vestibulum maximus condimentum dui finibus cursus. Etiam fringilla tristique tellus non volutpat. Phasellus id urna mauris. Fusce varius ipsum odio, in pulvinar urna volutpat id. Vestibulum vitae neque nisl.",
         "CowElementImg": "https://picsum.photos/1000",
@@ -21,35 +22,26 @@
 
         "UltraCowElementText": "Ultra Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "UltraCowElementTitle": "Ultra Cow Element Title",
-
-        "UltraGallery1": "https://picsum.photos/1000",
-        "UltraGallery2": "https://picsum.photos/1000",
-        "UltraGallery3": "https://picsum.photos/1000",
-        "UltraGallery4": "https://picsum.photos/1000",
-        "UltraGallery5": "https://picsum.photos/1000",
-        "UltraGallery6": "https://picsum.photos/1000",
-        "UltraGallery7": "https://picsum.photos/1000",
-        "UltraGallery8": "https://picsum.photos/1000",
-        "UltraGallery9": "https://picsum.photos/1000",
-        "UltraGallery10": "https://picsum.photos/1000"
+        "UltraGalleryFolder": ""
     },
 
     {
         "issueNumber": "ISSUE2",
-        "IssueTitle": "ISSUE2",
-        "IssueHeroText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "IssueThumbnail": "https://picsum.photos/1000",
+        "issueTitle": "ISSUE2",
+        "issueHeroText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "issueThumbnail": "https://picsum.photos/1000",
+        "issueCover": "$webresources/ISSUE_COVERS/ISSUE-2.webp",
+        "issueHref": "/issues/ISSUE2",
+        "issuePrice": 13,
+        "issueCategory": "issues",
 
         
-        "UltraIssueNumber": "Ultra Issue 1",
-        "UltraIssueTitle": "Ultra Lorem Ipsum",
-        "UltraIssueHeroText": "Ultra Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "UltraIssueThumbnail": "https://picsum.photos/1000",
+        "UltraissueNumber": "Ultra Issue 1",
+        "UltraissueTitle": "Ultra Lorem Ipsum",
+        "UltraissueHeroText": "Ultra Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "UltraissueThumbnail": "https://picsum.photos/1000",
 
-        "MagGalleryImg1": "https://picsum.photos/1000",
-        "MagGalleryImg2": "https://picsum.photos/1000",
-        "MagGalleryImg3": "https://picsum.photos/1000",
-        "MagGalleryImg4": "https://picsum.photos/1000",
+        "magGalleryFolder":"./webresources/ISSUE2/MAG_GALLERY",
 
         "CowElementText": "Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "CowElementImg": "https://picsum.photos/1000",
@@ -57,16 +49,87 @@
 
         "UltraCowElementText": "Ultra Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "UltraCowElementTitle": "Ultra Cow Element Title",
+        "UltraGalleryFolder": ""
+    },
 
-        "UltraGallery1": "https://picsum.photos/1000",
-        "UltraGallery2": "https://picsum.photos/1000",
-        "UltraGallery3": "https://picsum.photos/1000",
-        "UltraGallery4": "https://picsum.photos/1000",
-        "UltraGallery5": "https://picsum.photos/1000",
-        "UltraGallery6": "https://picsum.photos/1000",
-        "UltraGallery7": "https://picsum.photos/1000",
-        "UltraGallery8": "https://picsum.photos/1000",
-        "UltraGallery9": "https://picsum.photos/1000",
-        "UltraGallery10": "https://picsum.photos/1000"
+    {
+        "issueNumber": "ISSUE3",
+        "issueTitle": "ISSUE3",
+        "issueHeroText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "issueThumbnail": "https://picsum.photos/1000",
+        "issueCover": "$webresources/ISSUE_COVERS/ISSUE-2.webp",
+        "issueHref": "/issues/ISSUE3",
+        "issuePrice": 13,
+        "issueCategory": "issues",
+        "magGalleryFolder":"./webresources/ISSUE3/MAG_GALLERY",
+
+        
+        "UltraissueNumber": "Ultra Issue 1",
+        "UltraissueTitle": "Ultra Lorem Ipsum",
+        "UltraissueHeroText": "Ultra Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "UltraissueThumbnail": "https://picsum.photos/1000",
+
+        
+
+        "CowElementText": "Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "CowElementImg": "https://picsum.photos/1000",
+        "CowImgDidascalia": "Cow Element Didascalia",
+
+        "UltraCowElementText": "Ultra Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "UltraCowElementTitle": "Ultra Cow Element Title",
+        "UltraGalleryFolder": ""
+    },
+
+    {
+        "issueNumber": "XPOST",
+        "issueTitle": "XPOST",
+        "issueHeroText": "A partire dalla fine del 2019 a Krasnogorsk, cittadina a nord-ovest di Mosca, un allevamento di bovini sta sperimentando un particolare visore per la realtà virtuale sulla sua comunità di mucche. Il visore, adattato alla conformazione fisica dei bovini, è volto all'aumento della produzione di latte, attraverso la trasmissione di immagini pensate per il benessere psicofisico degli utenti animali. Il video trasmesso, un prato verde in una giornata d'estate, è infatti studiato per immergere gli animali in un ambiente rilassante, alienandoli dalla mesta atmosfera dell'allevamento russo. Dall'ancora incerto valore scientifico, questa pratica ha attivato una serie di importanti riflessioni sul nostro rapporto con il soggetto animale e sulle pratiche d'immersività digitale. TBD, come altre realtà editoriali, ha ritenuto di particolare rilievo questo fatto come catalizzatore di indagini proiettate all'ambito della visione, dell'estetica e delle arti contemporanee.",
+        "issueThumbnail": "https://picsum.photos/1000",
+        "issueCover": "$webresources/ISSUE_COVERS/SPECIAL-1.webp",
+        "issueHref": "/issues/XPOST",
+        "issuePrice": 13,
+        "issueCategory": "publications",
+
+        "UltraissueNumber": "Ultra Issue 1",
+        "UltraissueTitle": "Ultra Lorem Ipsum",
+        "UltraissueHeroText": "Ultra Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "UltraissueThumbnail": "https://picsum.photos/1000",
+
+        "magGalleryFolder":"./webresources/XPOST/MAG_GALLERY",
+
+        "CowElementText": "lorem  ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet interdum turpis mattis mollis. Sed cursus dolor vel ante rutrum, vel posuere risus fringilla. Sed sollicitudin ullamcorper luctus. Aenean dui leo, venenatis nec sapien et, consequat tincidunt dui. Nulla venenatis gravida nibh, at varius ligula feugiat tempus. Donec ut urna a enim varius aliquet vitae eget ipsum. Fusce lectus mauris, suscipit vitae lacinia vitae, congue sit amet risus. Aenean nulla risus, euismod in posuere ac, bibendum id leo. Maecenas id eros a nisl cursus porta. Curabitur finibus metus sit amet justo rhoncus venenatis. Vivamus dolor dolor, mollis sed dui vitae, faucibus sollicitudin nunc.Aliquam dictum viverra odio, a tempor est dignissim sit amet. Nunc faucibus condimentum velit, sit amet interdum diam euismod vel. Sed a urna non diam tincidunt posuere. Donec at velit pellentesque, ultrices velit ac, ornare odio. Donec gravida tellus enim, eu tincidunt urna dignissim at. Morbi et blandit purus. Mauris sit amet tortor mauris. Vestibulum maximus condimentum dui finibus cursus. Etiam fringilla tristique tellus non volutpat. Phasellus id urna mauris. Fusce varius ipsum odio, in pulvinar urna volutpat id. Vestibulum vitae neque nisl.",
+        "CowElementImg": "https://picsum.photos/1000",
+        "CowImgDidascalia": "Cow Element Didascalia",
+
+        "UltraCowElementText": "Ultra Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "UltraCowElementTitle": "Ultra Cow Element Title",
+        "UltraGalleryFolder": ""
+    },
+
+    {
+        "issueNumber": "FOREHEADVULVA",
+        "issueTitle": "SOFIA BRAGA - FOREHEADVULVA",
+        "issueHeroText": "A partire dalla fine del 2019 a Krasnogorsk, cittadina a nord-ovest di Mosca, un allevamento di bovini sta sperimentando un particolare visore per la realtà virtuale sulla sua comunità di mucche. Il visore, adattato alla conformazione fisica dei bovini, è volto all'aumento della produzione di latte, attraverso la trasmissione di immagini pensate per il benessere psicofisico degli utenti animali. Il video trasmesso, un prato verde in una giornata d'estate, è infatti studiato per immergere gli animali in un ambiente rilassante, alienandoli dalla mesta atmosfera dell'allevamento russo. Dall'ancora incerto valore scientifico, questa pratica ha attivato una serie di importanti riflessioni sul nostro rapporto con il soggetto animale e sulle pratiche d'immersività digitale. TBD, come altre realtà editoriali, ha ritenuto di particolare rilievo questo fatto come catalizzatore di indagini proiettate all'ambito della visione, dell'estetica e delle arti contemporanee.",
+        "issueThumbnail": "https://picsum.photos/1000",
+        "issueCover": "$webresources/ARTICLES/FOREHEADVULVA/IMAGES/IMG_1.webp",
+        "issueHref": "$routes/issues/XPOST",
+        "issuePrice": 13,
+        "issueCategory": "special projects",
+
+        "UltraissueNumber": "Ultra Issue 1",
+        "UltraissueTitle": "Ultra Lorem Ipsum",
+        "UltraissueHeroText": "Ultra Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "UltraissueThumbnail": "https://picsum.photos/1000",
+
+        "magGalleryFolder":"./webresources/FOREHEADVULVA/MAG_GALLERY",
+
+        "CowElementText": "lorem  ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet interdum turpis mattis mollis. Sed cursus dolor vel ante rutrum, vel posuere risus fringilla. Sed sollicitudin ullamcorper luctus. Aenean dui leo, venenatis nec sapien et, consequat tincidunt dui. Nulla venenatis gravida nibh, at varius ligula feugiat tempus. Donec ut urna a enim varius aliquet vitae eget ipsum. Fusce lectus mauris, suscipit vitae lacinia vitae, congue sit amet risus. Aenean nulla risus, euismod in posuere ac, bibendum id leo. Maecenas id eros a nisl cursus porta. Curabitur finibus metus sit amet justo rhoncus venenatis. Vivamus dolor dolor, mollis sed dui vitae, faucibus sollicitudin nunc.Aliquam dictum viverra odio, a tempor est dignissim sit amet. Nunc faucibus condimentum velit, sit amet interdum diam euismod vel. Sed a urna non diam tincidunt posuere. Donec at velit pellentesque, ultrices velit ac, ornare odio. Donec gravida tellus enim, eu tincidunt urna dignissim at. Morbi et blandit purus. Mauris sit amet tortor mauris. Vestibulum maximus condimentum dui finibus cursus. Etiam fringilla tristique tellus non volutpat. Phasellus id urna mauris. Fusce varius ipsum odio, in pulvinar urna volutpat id. Vestibulum vitae neque nisl.",
+        "CowElementImg": "https://picsum.photos/1000",
+        "CowImgDidascalia": "Cow Element Didascalia",
+
+        "UltraCowElementText": "Ultra Cow Element Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "UltraCowElementTitle": "Ultra Cow Element Title",
+        "UltraGalleryFolder": ""
     }
+
 ]

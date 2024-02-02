@@ -1,25 +1,21 @@
 <script>
-
-export let issue;
-export let IssueCover;
-export let IssuePrice;
-export let issueHref;
-
-import(`../../WEBRESOURCES/ISSUE_COVERS/ISSUE-${issue}.webp`).then(module => {
-    IssueCover = module.default;
-});
-
+  export let issueTitle;
+  export let issuePrice;
+  export let issueHref = '';
+  export let issueCover;
+  export let issueNumber;
+  
 </script>
 
 <a class="single_issue" href={issueHref}>
 
-    <img src={IssueCover} alt={issue} />
+    <img src={issueCover} alt={issueTitle} />
 
     <p3>
-      TBD ISSUE #{issue}
+      TBD #{issueTitle}
     </p3>
 
     <p3>
-      {IssuePrice}€
+      {issuePrice}€
     </p3>
 </a>

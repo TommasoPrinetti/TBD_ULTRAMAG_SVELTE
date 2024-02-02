@@ -1,5 +1,5 @@
 <script>
-    import logoImg from '../../WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp'
+    import logoImg from '$webresources/IDENTITY_IMAGES/tbd_LOGO.webp'
 </script>
 
 <about class="ultra_appear">

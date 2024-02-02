@@ -1,5 +1,5 @@
 // Import the issues data from the JSON file
-import articlesData from "../../../../../lib/articles.json";
+import articlesData from "../../../../../lib/articles.js";
 
 import { error } from '@sveltejs/kit';
 

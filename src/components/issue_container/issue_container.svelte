@@ -1,67 +1,54 @@
 <script>
 
 
-  import SingleIssue from '../../components/issue_container/single_issue.svelte';
+  import SingleIssue from '$components/issue_container/single_issue.svelte';
 
   import Divider from '../../components/issue_container/divider.svelte';
 
-  import SingleSpecial from './single_special.svelte';
   import SingleCard from './single_card.svelte';
 
-  let singleCards = [
-    {
-      id: 1,
-      href: "/",
-      img: "../../WEBRESOURCES/ISSUES_PUBLICATION_SPECIALS/TBD_FOREHEADVULVA_ARTICLES/IMG_1.webp",
-      title: "Sofia Braga - Forhead Vulva",
-      text:"Lorem ipsum dolor sit amet consectetur. Est velit eget sed nibh consequat. Et nisl sit amet eget eu commodo est. Orci arcu tincidunt...."
-    },
+  import issuesData from "$lib/issues.js";
+  console.log("issuesData:", issuesData)
 
-    {
-      id: 2,
-      href: "/",
-      img: "../../WEBRESOURCES/ISSUES_PUBLICATION_SPECIALS/TBD_LOOKATME_I_ARTICLES/GIULIA_THUMB.webp",
-      title: "Look at me - Interviews Vol. I",
-      text:"Lorem ipsum dolor sit amet consectetur. Est velit eget sed nibh consequat. Et nisl sit amet eget eu commodo est. Orci arcu tincidunt...."
+  // WEBRESOURCES TRANSFORMATION
+  function transformPath(pathWithAlias) {
+    return pathWithAlias.replace('$webresources', './src/lib/webresources/');
+  }
+
+  const transformedIssuesData = issuesData.map(issue => ({
+    ...issue,
+    issueCover: transformPath(issue.issueCover)
+  }));
+
+  // Create a Map to hold categories and their issues
+  const issuesByCategory = new Map();
+
+  // Populate the Map with categorized issues
+  transformedIssuesData.forEach(issue => {
+    const category = issue.issueCategory;
+    if (!issuesByCategory.has(category)) {
+      issuesByCategory.set(category, []);
     }
+    issuesByCategory.get(category).push(issue);
+  });
 
-  ]
 </script>
 
-<div class="issues_container">
-    
-    <Divider SectionName="Issues"/>
 
-    <section> 
-      <SingleIssue issue=1 IssuePrice=13/>
-      <SingleIssue issue=2 IssuePrice=13/>
-      <SingleIssue issue=3 IssuePrice=13/>
-      <SingleIssue issue=4 IssuePrice=13/>
-      <SingleIssue issue=5 IssuePrice=13/>
+{#each Array.from(issuesByCategory.entries()) as [category, issues]}
+  <div class="issues_container">
+    <Divider bind:SectionName={category} />
+    <section>
+      {#each issues as issue (issue.issueNumber)}
+        {#if category === 'issues'}
+          <SingleIssue {...issue}/>
+        {:else if category === 'publications'}
+          <SingleIssue {...issue}/>
+        {:else if category === 'special projects'}
+          <SingleCard {...issue} />
+        {/if}
+      {/each}
     </section>
-
-</div>
-
-<div class="issues_container">
-    
-  <Divider SectionName="Special Projects"/>
-
-  <section>  
-    <SingleSpecial special=1 SpecialPrice=13/>
-    <SingleSpecial special=2 SpecialPrice=13/>
-  </section>
-
-</div>
-
-<div class="issues_container">
-    
-  <Divider SectionName="Altrotitolo"/>
-
-  <section>
-    {#each singleCards as singleCard (singleCard.id)}
-        <SingleCard {singleCard}/>
-    {/each}
-  </section>
-
-</div>
+  </div>
+{/each}
 

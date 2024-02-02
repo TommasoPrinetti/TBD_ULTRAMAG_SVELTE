@@ -1,12 +1,12 @@
 <script>
     // This is issue-hero.svelte
-    export let IssueNumber
-    export let IssueTitle
-    export let IssueHeroText
-    export let IssueThumbnail
-    export let UltraIssueTitle
-    export let UltraIssueHeroText
-    export let UltraIssueThumbnail
+    export let issueNumber
+    export let issueTitle
+    export let issueHeroText
+    export let issueThumbnail
+    export let UltraissueTitle
+    export let UltraissueHeroText
+    export let UltraissueThumbnail
 
     import BuyButtons from "../buy_buttons.svelte";
 </script>
@@ -16,15 +16,15 @@
     <section id="READ THE WHOLE ARTICLE">           
         <div class="herotextcontainer"> 
             <h1>
-                {IssueTitle}
+                {issueTitle}
             </h1>
 
             <h3>
-                ../ {IssueNumber}
+                ../ {issueNumber}
             </h3>
 
             <p2>
-                {IssueHeroText}
+                {issueHeroText}
             </p2>
 
             <div class="buybuttons">
@@ -35,7 +35,7 @@
         </div>
         
         <div class="heroimgcontainer">
-            <img class="heroimgcontainer" src={IssueThumbnail} alt="">
+            <img class="heroimgcontainer" src={issueThumbnail} alt="">
         </div>
 
     </section>
@@ -45,20 +45,20 @@
     <section id="READ THE WHOLE ARTICLE">           
         <div class="herotextcontainer"> 
             <h1>
-                {UltraIssueTitle}
+                {UltraissueTitle}
             </h1>
 
             <h3>
-                ../ {IssueNumber}_ULTRA
+                ../ {issueNumber}_ULTRA
             </h3>
 
             <p2>
-                {UltraIssueHeroText}
+                {UltraissueHeroText}
             </p2>
         </div>
         
         <div class="heroimgcontainer">
-            <img class="heroimgcontainer" src={UltraIssueThumbnail}>
+            <img class="heroimgcontainer" src={UltraissueThumbnail}>
         </div>
 
     </section>
