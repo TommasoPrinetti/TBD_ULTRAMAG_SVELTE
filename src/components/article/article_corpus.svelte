@@ -1,7 +1,6 @@
 <script>
+
     export let articleTitle;
-    export let articleText;
-    export let textImage;
     export let showDidascalie;
     export let showBibliografia;
     export let rowsBibliografia;
@@ -11,14 +10,17 @@
     export let parentIssue;
 
     import BuyButton from "../buy_buttons.svelte";
-    import LogoImg from '../../WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp'
+    import LogoImg from '$lib/WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp'
+
+    import ArticleGallery from "./article_gallery.svelte";
+    import ArticleImg from "./article_img.svelte";
+    import ArticleText from "./article_text.svelte";
 
     //Loading sidemenu siblings
-    
     export let article;
 
     import { onMount } from 'svelte';
-    import articlesData from '../../lib/articles.json';
+    import articlesData from '$lib/articles.json';
     console.log("ArticlesData:", articlesData)
 
     let relatedArticles = [];
@@ -29,7 +31,10 @@
 
     console.log("RelatedArticles:",relatedArticles)
 
+    export let articleContent = { };
+
 </script>
+
 <article_2>
     <section>
         <div class="side_menu">
@@ -75,19 +80,25 @@
                 <h2>
                     {articleTitle}
                 </h2>
-                <p2>
-                    {articleText}
-                </p2>
+                
+                {#each Object.keys(articleContent) as key (key)}
+                    {#if key.startsWith('p')}
+                        <ArticleText paragraph={articleContent[key]} />
+                    {:else if key.startsWith('img')}
+                        <ArticleImg imagePath={articleContent[key]} />
+                    {:else if key.startsWith('gallery')}
+                        <ArticleGallery galleryFolderPath={articleContent[key]}/>
+                    {/if}
+                {/each}
+                
             </div>
-
-            <img src={textImage} alt="TextImage">
 
             <d2>
                 {#if showDidascalie}
                   <span style="font-weight: 800;">Didascalie:</span>
                   <br>
-                  {#each rowsDidascalie as didascalia}
-                    <p>{didascalia}</p>
+                  {#each rowsDidascalie as didascalia, index}
+                    <p>[{index + 1}] {didascalia}</p>
                   {/each}
                 {/if}
               </d2>
@@ -97,7 +108,7 @@
                   <span style="font-weight: 800;">Bibliografia:</span>
                   <br>
                   {#each rowsBibliografia as bibliografia}
-                    <p>{bibliografia}</p>
+                    <p>● {bibliografia}</p>
                   {/each}
                 {/if}
               </d2>

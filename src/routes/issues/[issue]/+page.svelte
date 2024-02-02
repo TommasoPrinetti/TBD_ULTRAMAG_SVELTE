@@ -9,6 +9,7 @@
     import Footer from '../../../components/footer/footer.svelte';
     import IssueArticle from '../../../components/issue_page/issue-article.svelte';
     import Divider from '../../../components/issue_container/divider.svelte';
+
   
     // Export the props from the load function
     export let data;
