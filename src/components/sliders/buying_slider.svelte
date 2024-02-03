@@ -1,3 +1,12 @@
+
+<script>
+
+    export let issueCover;
+    export let issueNumber;
+    export let issuePrice;
+
+</script>
+
 <div class="buying_slider">
     <div class="exit_slider">
         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
@@ -6,13 +15,13 @@
         </svg>
     </div>
 
-    <img src="WEBRESOURCES/ISSUE_COVERS/ISSUE_4_VOL_II.webp">
-    <div class="paypal_button" id="ISSUE_4_VOL_II">
+    <img src={issueCover} alt={issueNumber}>
+    <div class="paypal_button" id={issueNumber}>
         <div id="smart-button-container" class="paypal_button_container">
             <div style="text-align: center;">
                 <div class="Title_drop_container">
-                    <p1>PRE ORDER ISSUE #4_Vol-II - OMBRA</p1>
-                <select id="item-options"><option value="ISSUE_4_VOL_II_OMBRA - SPED. GRATUITA" price="15">SPED. GRATUITA - 15 EUR</option><option value="ISSUE_4_VOL_II_OMBRA - SPED. ESPRESSA (TRACCIATA)" price="20">SPED. ESPRESSA (TRACCIATA) - 20 EUR</option></select>
+                    <p1>PRE ORDER ISSUE {issueNumber}</p1>
+                <select id="item-options"><option value="{issueNumber} - SPED. GRATUITA" price={issuePrice}>SPED. GRATUITA - {issuePrice} EUR</option><option value="{issueNumber} - SPED. ESPRESSA (TRACCIATA)" price={{issuePrice}+7}>SPED. ESPRESSA (TRACCIATA) - {{issuePrice}+7} EUR</option></select>
                 <select style="visibility: hidden" id="quantitySelect"></select>
             </div>
 

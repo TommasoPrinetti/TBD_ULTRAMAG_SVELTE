@@ -7,7 +7,7 @@
 
   import SingleCard from './single_card.svelte';
 
-  import issuesData from "$lib/issues.js";
+  import issuesData from "$lib/issues.json";
   console.log("issuesData:", issuesData)
 
   // WEBRESOURCES TRANSFORMATION

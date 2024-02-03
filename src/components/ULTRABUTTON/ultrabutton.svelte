@@ -1,6 +1,3 @@
-<svelte:head>
-	<script src="/Users/tommasoprinetti/Documents/TBD-SVELTE-FINAL/tbd_ultramag_svelte/src/lib/general.js"></script>
-</svelte:head>
 
 
 <!-- svelte-ignore a11y-missing-attribute -->

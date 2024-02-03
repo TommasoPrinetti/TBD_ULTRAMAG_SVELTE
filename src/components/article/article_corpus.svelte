@@ -9,7 +9,7 @@
     export let editor;
     export let parentIssue;
 
-    import BuyButton from "../buy_buttons.svelte";
+    import BuyButton from "$components/buy_buttons.svelte";
     import LogoImg from '$lib/WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp'
 
     import ArticleGallery from "./article_gallery.svelte";
@@ -20,7 +20,7 @@
     export let article;
 
     import { onMount } from 'svelte';
-    import articlesData from '$lib/articles.js';
+    import articlesData from '$lib/articles.json';
     console.log("ArticlesData:", articlesData)
 
     let relatedArticles = [];

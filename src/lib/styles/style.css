@@ -2461,21 +2461,14 @@ gallery > section > a {
   height: fit-content;
   position: absolute;
   top: 10%;
-
-  display: flex;
+  display: none; 
   align-items: center;
   justify-content: center;
 }
 
-
-  gallery > section a:first-child {
-    display: block;
-  }
-
-
-  gallery section a:not(:first-child) {
-    display: none;
-  }
+gallery > section > a.current {
+  display: flex;
+}
 
 gallery section a img {
   height: 70vh;
