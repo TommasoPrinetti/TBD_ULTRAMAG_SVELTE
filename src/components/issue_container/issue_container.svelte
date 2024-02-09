@@ -3,7 +3,7 @@
 
   import SingleIssue from '$components/issue_container/single_issue.svelte';
 
-  import Divider from '../../components/issue_container/divider.svelte';
+  import Divider from '$components/issue_container/divider.svelte';
 
   import SingleCard from './single_card.svelte';
 
@@ -12,7 +12,7 @@
 
   // webresources TRANSFORMATION
   function transformPath(pathWithAlias) {
-    return pathWithAlias.replace('$webresources', './src/lib/webresources/');
+    return pathWithAlias.replace('$webresources', 'src/lib/webresources/');
   }
 
   const transformedIssuesData = issuesData.map(issue => ({
