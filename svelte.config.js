@@ -6,7 +6,7 @@ const config = {
         adapter: adapter(),
         alias: {
             // Alias configuration as per the updated documentation
-            $webresources: '/Users/tommasoprinetti/Documents/TBD-SVELTE-FINAL/tbd_ultramag_svelte/src/lib/webresources',
+            $webresources: 'src/lib/webresources',
             $components: 'src/components',
             $routes: 'src/routes',
             $types: 'src/typefaces',
