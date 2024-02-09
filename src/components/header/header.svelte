@@ -5,6 +5,7 @@
 
   const logoHref = '/';
 
+  
   let isOpen = false; // Reactive variable to track the state of the slide menu
 
   // Function to toggle the slide menu state
