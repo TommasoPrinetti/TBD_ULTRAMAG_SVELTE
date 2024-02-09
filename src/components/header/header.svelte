@@ -12,6 +12,7 @@
     isOpen = !isOpen; // Toggle the open state
   }
 
+
 </script>
 
 {#if headerVar === 'COMMON'}
