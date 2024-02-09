@@ -1,11 +1,11 @@
 <script>
 
-  import TbdLogo from '$lib/WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp';
+  import TbdLogo from '$lib/webresources/IDENTITY_IMAGES/tbd_LOGO.webp';
   export let headerVar = 'COMMON';
 
   const logoHref = '/';
 
-  
+
   let isOpen = false; // Reactive variable to track the state of the slide menu
 
   // Function to toggle the slide menu state
