@@ -10,7 +10,7 @@
   import issuesData from "$lib/issues.json";
   console.log("issuesData:", issuesData)
 
-  // WEBRESOURCES TRANSFORMATION
+  // webresources TRANSFORMATION
   function transformPath(pathWithAlias) {
     return pathWithAlias.replace('$webresources', './src/lib/webresources/');
   }

@@ -10,7 +10,7 @@
     export let parentIssue;
 
     import BuyButton from "$components/buy_buttons.svelte";
-    import LogoImg from '$lib/WEBRESOURCES/IDENTITY_IMAGES/tbd_LOGO.webp'
+    import LogoImg from '$lib/webresources/IDENTITY_IMAGES/tbd_LOGO.webp'
 
     import ArticleGallery from "./article_gallery.svelte";
     import ArticleImg from "./article_img.svelte";
