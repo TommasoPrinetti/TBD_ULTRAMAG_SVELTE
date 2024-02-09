@@ -15,7 +15,7 @@
 
 
 </script>
-
+ 
 {#if headerVar === 'COMMON'}
 
   <header id={headerVar}>
