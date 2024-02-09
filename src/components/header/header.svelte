@@ -1,6 +1,6 @@
 <script>
 
-  import TbdLogo from '$lib/webresources/IDENTITY_IMAGES/tbd_LOGO.webp';
+  import TbdLogo from '$webresources/IDENTITY_IMAGES/tbd_LOGO.webp';
   export let headerVar = 'COMMON';
 
   const logoHref = '/';
