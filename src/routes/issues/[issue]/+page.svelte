@@ -9,6 +9,8 @@
     import Footer from '$components/footer/footer.svelte';
     import IssueArticle from '$components/issue_page/issue-article.svelte';
     import Divider from '$components/issue_container/divider.svelte';
+
+    import Ultrabutton from '$components/ULTRABUTTON/ultrabutton.svelte';
   
     // Export the props from the load function
     export let data;
@@ -40,4 +42,8 @@
   </div>
 
 <Footer />
+
+{#if data.props.issue.UltraissueNumber}
+  <Ultrabutton />
+{/if}
   

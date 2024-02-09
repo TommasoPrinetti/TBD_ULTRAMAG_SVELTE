@@ -8,7 +8,10 @@ const config = {
             // Alias configuration as per the updated documentation
             $webresources: '/Users/tommasoprinetti/Documents/TBD-SVELTE-FINAL/tbd_ultramag_svelte/src/lib/webresources',
             $components: 'src/components',
-            $routes: 'src/routes'
+            $routes: 'src/routes',
+            $types: 'src/typefaces',
+            $issues: 'src/routes/issues/',
+            $articles: 'src/routes/issues/[issue]/articles'
         }
     }
 };

@@ -2,6 +2,8 @@
     export let articleImg;
     export let articleTitle;
     export let articleText;
+    export let articleName;
+    export let issueNumber;
 </script>
 
 <article>
@@ -21,9 +23,9 @@
         </p3>
 
         <!-- svelte-ignore a11y-missing-attribute -->
-        <a class="button">
+        <a class="button" href="./{issueNumber}/articles/{articleName}">
             <p2> 
-                READ THE WHOLE ARTICLE
+                READ ALL
             </p2>
         </a>
 

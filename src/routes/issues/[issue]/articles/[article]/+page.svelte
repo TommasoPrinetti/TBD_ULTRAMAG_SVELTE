@@ -3,6 +3,7 @@
     import Header from "$components/header/header.svelte";
     import ArticleCorpus from '$components/article/article_corpus.svelte';
     import Footer from '$components/footer/footer.svelte'
+    import Ultrabutton from '../../../../../components/ULTRABUTTON/ultrabutton.svelte';
 
     export let data;
 
@@ -18,3 +19,5 @@
 <ArticleHero {...article}/>
 <ArticleCorpus {...article}/>
 <Footer />
+
+<Ultrabutton />
