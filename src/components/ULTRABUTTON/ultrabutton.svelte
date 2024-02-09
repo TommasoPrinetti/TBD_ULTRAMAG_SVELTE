@@ -9,7 +9,7 @@
     setTimeout(updateBodyClass, 1000); // 1000ms delay
   }
 
-  import logoImg from '$webresources/IDENTITY_IMAGES/tbd_LOGO.webp';
+  const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
 
   function updateBodyClass() {
     if (typeof window !== "undefined") {
@@ -45,5 +45,5 @@
 </div>
 
 <div class="ultra_transition" class:animate={isUltra}>
-  <img src={logoImg} alt="">
+  <img src={TbdLogo} alt="">
 </div>

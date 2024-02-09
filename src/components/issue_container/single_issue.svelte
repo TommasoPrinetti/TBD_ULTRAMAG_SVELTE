@@ -3,7 +3,6 @@
   export let issuePrice;
   export let issueHref = '';
   export let issueCover;
-  export let issueNumber;
   
 </script>
 

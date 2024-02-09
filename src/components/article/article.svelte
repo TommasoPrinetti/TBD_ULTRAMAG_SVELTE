@@ -14,7 +14,7 @@
     export let Autore
     export let Editor
 
-    import LogoImg from "$webresources/IDENTITY_IMAGES/tbd_LOGO.webp"
+    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
     import BuyButton from "../../components/buy_buttons.svelte"
 </script>
 
@@ -102,7 +102,7 @@
                 </div>
             </div>
             
-                <img src={LogoImg}>
+                <img src={TbdLogo}>
                     <div class="index_container">
                         <div class="index">
                             <p3>

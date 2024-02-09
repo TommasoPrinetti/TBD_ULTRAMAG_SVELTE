@@ -1,6 +1,6 @@
 <script>
-  import LastIssue from '$webresources/ISSUE_COVERS/ISSUE-4.webp'
-  import FloatingLogo from '$webresources/IDENTITY_IMAGES/ANIMATED_BUIO_LOGO.gif'
+  const LastIssue = '/ISSUE_COVERS/ISSUE-4.webp'
+  const FloatingLogo = '/IDENTITY_IMAGES/ANIMATED_BUIO_LOGO.gif'
 </script>
 
 <last_issue id="LATEST">

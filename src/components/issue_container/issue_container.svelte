@@ -1,6 +1,4 @@
 <script>
-
-
   import SingleIssue from '$components/issue_container/single_issue.svelte';
 
   import Divider from '$components/issue_container/divider.svelte';
@@ -8,7 +6,7 @@
   import SingleCard from './single_card.svelte';
 
   import issuesData from "$lib/issues.json";
-  console.log("issuesData:", issuesData)
+  // console.log("issuesData:", issuesData)
 
   // webresources TRANSFORMATION
   function transformPath(pathWithAlias) {

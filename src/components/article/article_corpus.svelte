@@ -10,7 +10,8 @@
     export let parentIssue;
 
     import BuyButton from "$components/buy_buttons.svelte";
-    import LogoImg from '$lib/webresources/IDENTITY_IMAGES/tbd_LOGO.webp'
+    
+    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
 
     import ArticleGallery from "./article_gallery.svelte";
     import ArticleImg from "./article_img.svelte";
@@ -57,7 +58,7 @@
                 </div>
             </div>
             
-                <img src={LogoImg} alt="">
+                <img src={TbdLogo} alt="">
                     <div class="index_container">
                         <div class="index">
                             <p3>

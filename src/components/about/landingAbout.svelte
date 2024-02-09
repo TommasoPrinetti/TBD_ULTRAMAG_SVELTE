@@ -1,5 +1,5 @@
 <script>
-    import logoImg from '$webresources/IDENTITY_IMAGES/tbd_LOGO.webp'
+    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
 </script>
 
 <about class="ultra_appear">
@@ -21,7 +21,7 @@
       
         <div class="about_image_container">
           <a href="TBD_ABOUT.html">
-            <img src={logoImg}>
+            <img src={TbdLogo}>
           </a>
         </div>
     </section>

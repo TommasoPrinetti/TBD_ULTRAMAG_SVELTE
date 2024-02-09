@@ -19,7 +19,7 @@
         <p2>
           TBD IS GETTING ULTRA
         </p2>
-        <img src="webresources/IDENTITY_IMAGES/tbd_LOGO.webp">
+        <img src="/IDENTITY_IMAGES/tbd_LOGO.webp">
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@
     export let callToAction = "CLICK ME TO READ";
     export let magGalleryFolder;
     export let lengthNumber = 5;
-    let currentImageIndex = 1; // Start from 1 assuming your images start with 1
+    let currentImageIndex = 1; 
 
     // Function to cycle through images
     function cycleImages() {

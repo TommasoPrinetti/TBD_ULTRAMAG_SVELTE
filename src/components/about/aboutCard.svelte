@@ -1,6 +1,5 @@
 <script>
-    //aboutCard.svelte
-
+    
     export let member
 
 </script>
