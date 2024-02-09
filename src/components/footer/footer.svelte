@@ -1,7 +1,7 @@
 <!-- FOOTER DEFINITIVO 05/01 🟢-->
 <script>
 
-    import FooterImg from "$webresources/IDENTITY_IMAGES/FOOTERTEXT.SVG"
+    import FooterImg from "$webresources/IDENTITY_IMAGES/FOOTERTEXT.svg"
 </script>
 
 <footer>
