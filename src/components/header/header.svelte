@@ -2,15 +2,15 @@
 
   const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
   export let headerVar = 'COMMON';
+  export let issueNumber
 
   const logoHref = '/';
 
 
-  let isOpen = false; // Reactive variable to track the state of the slide menu
+  let isOpen = false;
 
-  // Function to toggle the slide menu state
   function toggleMenu() {
-    isOpen = !isOpen; // Toggle the open state
+    isOpen = !isOpen;
   }
 
 
@@ -126,7 +126,9 @@
           <div class="slide_in_latest_project">
               
             <div class="latest_project_mobile_container">
-              <h3 id="TITLE_FILLING"></h3>
+              <h3>
+                {issueNumber}
+              </h3>
 
               <div class="appear_mobile"> 
                   <a class="button" href="" id="HREF_FILLING">
@@ -137,12 +139,11 @@
               </div>
 
             </div>
-                  
-              
-              <img src="" href="" id="IMG_FILLING">
+
+              <img src="/ISSUE_COVERS/ISSUE-5.webp" href="" id="IMG_FILLING">
 
               <div class="disappear_mobile">
-                  <a class="button" href="" id="HREF_FILLING">
+                  <a class="button" href="/issues/ISSUE5" id="HREF_FILLING">
                   <p3>
                       IS OUT NOW!
                   </p3>

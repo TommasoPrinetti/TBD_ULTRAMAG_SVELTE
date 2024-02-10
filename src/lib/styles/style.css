@@ -1423,9 +1423,6 @@ footer section {
 
 }
 
-
-
-
 /* TIPOGRAFIA */
 
 
@@ -2360,6 +2357,8 @@ body.ultra > div > .single_issue_ultrahover {
   
   overflow: scroll;
   transition: transform 1s ease-in-out;
+
+  z-index: 500;
 }
 
 .buying_slider.open {
@@ -2370,6 +2369,8 @@ body.ultra > div > .single_issue_ultrahover {
 
   overflow: scroll;
   transition: transform 1s ease-in-out;
+
+  z-index: 500;
 }
 
 .buying_slider img {

@@ -1,14 +1,19 @@
 
 <script>
-
+    // this is buying_slider.svelte
     export let issueCover;
     export let issueNumber;
     export let issuePrice;
+    export let isSliderOpen
+
+    function closeSlider() {
+    isSliderOpen = false;
+  }
 
 </script>
 
-<div class="buying_slider">
-    <div class="exit_slider">
+<div class="buying_slider {isSliderOpen ? 'open' : ''}">
+    <div class="exit_slider" on:click={closeSlider}>
         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
             <path d="M2 1.5L25 24.5" stroke-width="3" stroke-linecap="round"/>
             <path d="M25 1.5L2 24.5" stroke-width="3" stroke-linecap="round"/>
@@ -43,7 +48,7 @@
             if (!isNaN(quantity)) {
             quantitySelect.style.visibility = "visible";
             }
-            var orderDescription = 'TBD ISSUE #4_VOL_II_OMBRA';
+            var orderDescription = 'TBD' && {issueNumber};
             if(orderDescription === '') {
             orderDescription = 'Item';
             }
@@ -127,4 +132,4 @@
         </script>
         
     </div>
-  </div>
+</div>

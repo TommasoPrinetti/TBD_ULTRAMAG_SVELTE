@@ -8,7 +8,22 @@
     export let UltraissueHeroText
     export let UltraissueThumbnail
 
-    import BuyButtons from "../buy_buttons.svelte";
+    export let issueCover;
+    export let issuePrice;
+
+    import issuesData from "$lib/issues.json";
+    let currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
+
+    import BuyButtons from '$components/buy_buttons.svelte';
+    import BuyingSlider from '../sliders/buying_slider.svelte';
+
+    let isSliderOpen = false;
+
+  function handleSliderToggle() {
+    isSliderOpen = !isSliderOpen;
+    console.log("PREMUTO DI QUA")
+  }
+  
 </script>
 
 
@@ -28,14 +43,14 @@
             </p2>
 
             <div class="buybuttons">
-                <BuyButtons />
-                <BuyButtons />
-                <BuyButtons />
+                {#each [1, 2, 3] as _}
+                    <BuyButtons on:toggle={handleSliderToggle} />
+                {/each}
             </div>
         </div>
         
         <div class="heroimgcontainer">
-            <img class="heroimgcontainer" src={issueThumbnail} alt="">
+            <img class="heroimgcontainer" src={issueThumbnail} alt={issueNumber}>
         </div>
 
     </section>
@@ -63,3 +78,9 @@
 
     </section>
 </hero>
+
+<BuyingSlider
+  {isSliderOpen}
+  issueCover={currentIssueData?.issueCover}
+  issuePrice={currentIssueData?.issuePrice}
+  issueNumber={issueNumber} />
