@@ -10,6 +10,8 @@
     // console.log("Props", ...data.props.article);
 
     const article = data.props.article;
+
+
 </script>
 
 <Header headerVar='ARTICLES'/>

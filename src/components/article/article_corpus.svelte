@@ -8,31 +8,49 @@
     export let autore;
     export let editor;
     export let parentIssue;
+    export let issueNumber = parentIssue;
+    export let article;
 
-    import BuyButton from "$components/buy_buttons.svelte";
-    
-    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
+    import BuyButtons from "$components/buy_buttons.svelte";
+    import { onMount } from 'svelte';
+    import articlesData from '$lib/articles.json';
+    import BuyingSlider from "../sliders/buying_slider.svelte";
 
     import ArticleGallery from "./article_gallery.svelte";
     import ArticleImg from "./article_img.svelte";
     import ArticleText from "./article_text.svelte";
-
-    //Loading sidemenu siblings
-    export let article;
-
-    import { onMount } from 'svelte';
-    import articlesData from '$lib/articles.json';
-    console.log("ArticlesData:", articlesData)
+    
+    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
 
     let relatedArticles = [];
 
     onMount(() => {
-        relatedArticles = articlesData.filter(a => a.parentIssue === article.parentIssue);
+        if (article && 'parentIssue' in article) {
+            relatedArticles = articlesData.filter(a => a.parentIssue === article.parentIssue);
+        } else {
+            
+        }
     });
 
     console.log("RelatedArticles:",relatedArticles)
 
     export let articleContent = { };
+
+
+    //// SLIDER OPENING
+
+    import issuesData from "$lib/issues.json";
+
+    console.log("issuesData", issuesData);
+    let currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
+    console.log("currentIssueData", currentIssueData);
+
+    let isSliderOpen = false;
+
+    function handleSliderToggle() {
+    isSliderOpen = !isSliderOpen;
+    console.log("PREMUTO DI QUA")
+    }
 
 </script>
 
@@ -52,9 +70,9 @@
                 </div>
 
                 <div class="buybuttons">
-                    <BuyButton />
-                    <BuyButton />
-                    <BuyButton />  
+                    {#each [1, 2, 3] as _}
+                        <BuyButtons on:toggle={handleSliderToggle} />
+                    {/each} 
                 </div>
             </div>
             
@@ -117,3 +135,9 @@
         </read>
     </section>
 </article_2>
+
+<BuyingSlider
+  {isSliderOpen}
+  issueCover={currentIssueData?.issueCover}
+  issuePrice={currentIssueData?.issuePrice}
+  issueNumber={issueNumber} />
