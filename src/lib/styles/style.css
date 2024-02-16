@@ -10,9 +10,10 @@
     --spacing_zero: 0px;  
 }
 
+
 @font-face {
   font-family: 'BarlowElastic';
-  src: url('$types/Barlow-elasticc.otf') format('opentype');
+  src: url('src/Barlow-elasticc.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }

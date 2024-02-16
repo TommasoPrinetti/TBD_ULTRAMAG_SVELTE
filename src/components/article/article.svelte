@@ -15,7 +15,7 @@
     export let Editor
 
     const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
-    import BuyButton from "../../components/buy_buttons.svelte"
+    import BuyButton from "$components/buy_buttons.svelte"
 </script>
 
 <hero>
