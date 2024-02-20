@@ -21,7 +21,7 @@
     
     let sectionNames = [];
 
-    // Derived state to get unique section labels
+    //mapping tramite labels
     $: if (data && data.props && data.props.articles) {
       const labels = data.props.articles.map(article => article.sectionLabel);
       sectionNames = [...new Set(labels)];
@@ -31,6 +31,8 @@
   
   <Header/>
   <IssueHero {...data.props.issue}/>
+
+  <!-- Varianti delle varie pagine basati sul db -->
 
   {#if data.props.issue.layoutOption === 'Classic'}
     <MagGallery {...data.props.issue}/>
@@ -42,6 +44,8 @@
     <Manifesto {...data.props.issue}/>
     <CowElement {...data.props.issue}/>
   {/if}
+
+    <!-- Per ora c'è solo un caso in cui c'è una pagina con dei video -->
 
   {#if data.props.issue.issueNumber === 'ISSUE3'}
     <div class="video_gallery">
@@ -80,6 +84,8 @@
     </div>
   {/if}
 
+  <!-- CONTAINER degli articoli di ciascuna issue -->
+
   <div class="article_list_container" id="ARTICLES">
     {#each sectionNames as sectionName}
       <Divider SectionName={sectionName} />
@@ -91,7 +97,7 @@
 
 <Footer />
 
-{#if data.props.issue.UltraissueNumber}
+{#if data.props.issue.isIssueUltra === 'TRUE'}
   <Ultrabutton />
 {/if}
   
