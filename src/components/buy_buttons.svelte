@@ -5,7 +5,7 @@
   
     function handleClick() {
       dispatch('toggle'); 
-      console.log("toggle", dispatch)
+      //console.log("toggle", dispatch)
     }
 </script>
   

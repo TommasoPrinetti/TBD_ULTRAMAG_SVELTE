@@ -112,7 +112,7 @@
                 return actions.order.capture().then(function(orderData) {
                 
                 // Full available details
-                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                // console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
 
                 // Show a success message within this page, e.g.
                 const element = document.getElementById('paypal-button-container');

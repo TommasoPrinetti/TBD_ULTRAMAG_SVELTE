@@ -11,11 +11,13 @@
     import Divider from '$components/issue_container/divider.svelte';
 
     import Ultrabutton from '$components/ULTRABUTTON/ultrabutton.svelte';
+
+    import Manifesto from '$components/manifesto.svelte';
   
     // Export the props from the load function
     export let data;
-    console.log("ISSUE", data.props.issue);
-    console.log("ARTICLE", data.props.articles);
+    // console.log("ISSUE", data.props.issue);
+    // console.log("ARTICLE", data.props.articles);
     
     let sectionNames = [];
 
@@ -31,6 +33,8 @@
   <IssueHero {...data.props.issue}/>
   <MagGallery {...data.props.issue}/>
   <CowElement {...data.props.issue}/>
+
+  <Manifesto {...data.props.issue}/>
 
   <div class="article_list_container" id="ARTICLES">
     {#each sectionNames as sectionName}

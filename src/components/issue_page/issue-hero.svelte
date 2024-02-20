@@ -21,7 +21,7 @@
 
   function handleSliderToggle() {
     isSliderOpen = !isSliderOpen;
-    console.log("PREMUTO DI QUA")
+    //console.log("PREMUTO DI QUA")
   }
   
 </script>

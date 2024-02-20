@@ -16,6 +16,7 @@ export async function load({ params }) {
     const issue = issuesData.find(issue => issue.issueNumber === issueSlug);
 
     if (issue) {
+        
         // Transform paths in the issue object
         issue.issueThumbnail = transformPath(issue.issueThumbnail);
         issue.issueCover = transformPath(issue.issueCover);
@@ -32,7 +33,7 @@ export async function load({ params }) {
             };
         });
 
-        console.log("Filtered Articles:", relatedArticles)
+        // console.log("Filtered Articles:", relatedArticles)
         return {
             props: {
                 issue,

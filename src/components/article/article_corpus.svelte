@@ -32,7 +32,7 @@
         }
     });
 
-    console.log("RelatedArticles:",relatedArticles)
+    //console.log("RelatedArticles:",relatedArticles)
 
     export let articleContent = { };
 
@@ -41,9 +41,9 @@
 
     import issuesData from "$lib/issues.json";
 
-    console.log("issuesData", issuesData);
+    //console.log("issuesData", issuesData);
     let currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
-    console.log("currentIssueData", currentIssueData);
+    //console.log("currentIssueData", currentIssueData);
 
     let isSliderOpen = false;
 
