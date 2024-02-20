@@ -16,7 +16,7 @@ export let fileDownloadButton
         <p2> 
             {manifestoText}
         </p2>
-        {#if fileDownloadButton === 'TRUE'}
+        {#if fileDownloadButton === true}
             <a class="button" href={downloadPath} download={manifestoTitle}>
                 <p3>{downloadText}</p3>
             </a>

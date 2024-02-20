@@ -11,10 +11,12 @@
 
     const article = data.props.article;
 
+    export let headerVar='ARTICLES';
+
 
 </script>
 
-<Header headerVar='ARTICLES'/>
+<Header {headerVar}/>
 
 <ArticleHero {...article}/>
 <ArticleCorpus {...article}/>

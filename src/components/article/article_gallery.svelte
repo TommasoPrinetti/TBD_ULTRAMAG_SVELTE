@@ -1,8 +1,8 @@
 <script>
     //Article_gallery
     export let galleryFolderPath;
-    export let lengthNumber = 5;
-    let currentImageIndex = 1; // Start from 1 assuming your images start with 1
+    export let lengthNumber = 4;
+    let currentImageIndex = 1;
 
     // Function to cycle through images
     function cycleImages() {

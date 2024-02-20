@@ -12,7 +12,7 @@
 
 <Header />
 <LandHero />
-<LatestIssue/>
+<LatestIssue />
 <IssueContainer />
 <About />
 <Footer />

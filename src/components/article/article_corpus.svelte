@@ -11,9 +11,10 @@
     export let article;
 
     export let relatedArticles = [];
-    export let rowsDidascalie = [];
-    export let rowsBibliografia = [];
     export let articleContent = {};
+
+    export let rowsDidascalie = didascalie.split('§').filter(Boolean);
+    export let rowsBibliografia = bibliografie.split('§').filter(Boolean);
 
     import BuyButtons from "$components/buy_buttons.svelte";
     import { onMount } from 'svelte';
@@ -52,6 +53,10 @@
     isSliderOpen = !isSliderOpen;
     // console.log("PREMUTO DI QUA")
     }
+
+    // Separate the cell of didasccalie
+
+    
 
 </script>
 
@@ -104,10 +109,10 @@
                 {#each Object.keys(articleContent) as key (key)}
                     {#if key.startsWith('p') && articleContent[key]}
                         <ArticleText paragraph={articleContent[key]} />
-                    {:else if key.startsWith('img') && articleContent[key]}
-                        <ArticleImg imagePath={articleContent[key]} />
-                    {:else if key.startsWith('gallery') && articleContent[key]}
-                        <ArticleGallery galleryFolderPath={articleContent[key]}/>
+                        {:else if key.startsWith('img') && articleContent[key]}
+                            <ArticleImg imagePath={articleContent[key]} />
+                        {:else if key.startsWith('gallery') && articleContent[key]}
+                            <ArticleGallery galleryFolderPath={articleContent[key]}/>
                     {/if}
                 {/each}
                 
@@ -115,23 +120,23 @@
 
             <d2>
                 {#if showDidascalie}
-                  <span style="font-weight: 800;">Didascalie:</span>
-                  <br>
-                  {#each rowsDidascalie as didascalia, index}
-                    <p>[{index + 1}] {didascalia}</p>
-                  {/each}
+                    <span style="font-weight: 800;">Didascalie:</span>
+                    <br>
+                    {#each rowsDidascalie as didascalia, index}
+                        <p>[{index + 1}] {didascalia}</p>
+                    {/each}
                 {/if}
-              </d2>
-              
-              <d2>
+            </d2>
+            
+            <d2>
                 {#if showBibliografia}
-                  <span style="font-weight: 800;">Bibliografia:</span>
-                  <br>
-                  {#each rowsBibliografia as bibliografia}
-                    <p>● {bibliografia}</p>
-                  {/each}
+                    <span style="font-weight: 800;">Bibliografia:</span>
+                    <br>
+                    {#each rowsBibliografia as bibliografia}
+                        <p>● {bibliografia}</p>
+                    {/each}
                 {/if}
-              </d2>
+            </d2>
 
         </read>
     </section>

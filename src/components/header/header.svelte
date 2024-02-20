@@ -4,8 +4,9 @@
   const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
   export let headerVar = 'COMMON';
 
-  export let issueNumber;
-  export let issueHref = '';
+  let issueNumber = '';
+  let issueHref = '';
+  let issueCover = '';
 
   const logoHref = '/';
 
@@ -21,13 +22,18 @@
 
   import issuesData from "$lib/issues.json";
 
+  console.log("DATA", issuesData)
+
   function setLatestIssueData() {
-    const latestIssue = issuesData.find(issue => issue.isLatestIssue === 'TRUE');
+    const latestIssue = issuesData.find(issue => issue.isLatestIssue === true);
     if (latestIssue) {
       issueHref = latestIssue.issueHref;
       issueNumber = latestIssue.issueNumber;
+      issueCover = latestIssue.issueCover;
     }
-  }
+    console.log('latestIssue', latestIssue)
+    console.log('Latest', issueCover);
+}
 
   onMount(() => {
     setLatestIssueData();
@@ -37,7 +43,7 @@
   let repeatText;
   $: repeatCount = 100;
   $: if (issueNumber) {
-    const baseText = `© TBD ULTRAMAGAZINE - ${issueNumber} CALL FOR NARRATIVES -`;
+    const baseText = ` © TBD ULTRAMAGAZINE - ${issueNumber} CALL FOR NARRATIVES - `;
     repeatText = baseText.repeat(repeatCount);
   }
 
@@ -108,7 +114,7 @@
   {:else if headerVar === 'ARTICLES'}
 
     <header id={headerVar}>
-      <a class="header_top" href="../../">
+      <a class="header_top" href={issueHref}>
         <text>
           <p3>  
             {@html repeatText}
@@ -118,8 +124,8 @@
       
       <div class="header_lower">
 
-          <a style="height: 100%; flex-shrink: 0" href={logoHref}>
-              <img style="height: 100%;" src={TbdLogo} alt="">
+          <a style="height: 100%; flex-shrink: 0" on:click={() => goto(logoHref)}>
+            <img style="height: 100%;" src={TbdLogo} alt="TBDLogoImage">
           </a>
 
           <div class="header_burger_container">
@@ -133,7 +139,7 @@
 
               <!-- svelte-ignore a11y-missing-attribute -->
               <a class="headeranchors" style="align-items: center; vertical-align: middle;">
-                <div class="burger-icon">
+                <div class="burger-icon" on:click={toggleMenu}>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
@@ -145,65 +151,64 @@
 
   {:else if headerVar === 'ISSUES'}
 
-  <header id={headerVar}>
-    <a class="header_top" href={issueHref}>
-      <div class="banner">
-        <p3> 
-          {@html repeatText}
-        </p3> 
-      </div>
-    </a>
-    
-    <div class="header_lower">
-        <div class="header_buttons_container">
-            <!-- svelte-ignore a11y-missing-attribute -->
-            <a class="header_anchor" data-target="#ISSUE">
-              <p2> 
-                  ISSUE
-              </p2>
-            </a>
-
-            <!-- svelte-ignore a11y-missing-attribute -->
-            <a class="header_anchor" data-target="#ABSTRACT">
-              <p2> 
-                  ABSTRACT
-              </p2>
-            </a>
-
-            <!-- svelte-ignore a11y-missing-attribute -->
-            <a class="header_anchor" data-target="#ARTICLES">
-              <p2> 
-                  ARTICLES
-              </p2>
-            </a>
+    <header id={headerVar}>
+      <a class="header_top" href={issueHref}>
+        <div class="banner">
+          <p3> 
+            {@html repeatText}
+          </p3> 
         </div>
+      </a>
+      
+      <div class="header_lower">
+          <div class="header_buttons_container">
+              <!-- svelte-ignore a11y-missing-attribute -->
+              <a class="header_anchor" data-target="#ISSUE">
+                <p2> 
+                    ISSUE
+                </p2>
+              </a>
 
-        <a style="height: 100%; flex-shrink: 0" on:click={() => goto(logoHref)}>
-            <img style="height: 100%;" src={TbdLogo} alt="TBDLogoImage">
-        </a>
+              <!-- svelte-ignore a11y-missing-attribute -->
+              <a class="header_anchor" data-target="#ABSTRACT">
+                <p2> 
+                    ABSTRACT
+                </p2>
+              </a>
 
-        <div class="header_burger_container">
+              <!-- svelte-ignore a11y-missing-attribute -->
+              <a class="header_anchor" data-target="#ARTICLES">
+                <p2> 
+                    ARTICLES
+                </p2>
+              </a>
+          </div>
 
-            <div class="slider">
-              <div class="black_slider"></div>
-              <div class="white_slider"></div>
-              <p3 class="IT">IT</p3>
-              <p3 class="EN">EN</p3>
-            </div>
+          <a style="height: 100%; flex-shrink: 0" on:click={() => goto(logoHref)}>
+              <img style="height: 100%;" src={TbdLogo} alt="TBDLogoImage">
+          </a>
 
-            <!-- svelte-ignore a11y-missing-attribute -->
-            <a class="headeranchors" style="align-items: center; vertical-align: middle;">
-              <div class="burger-icon" on:click={toggleMenu}>
-                  <div class="burger-line"></div>
-                  <div class="burger-line"></div>
-                  <div class="burger-line"></div>
+          <div class="header_burger_container">
+
+              <div class="slider">
+                <div class="black_slider"></div>
+                <div class="white_slider"></div>
+                <p3 class="IT">IT</p3>
+                <p3 class="EN">EN</p3>
               </div>
-            </a>
-        </div>
-    </div>
-</header>
-  
 
+              <!-- svelte-ignore a11y-missing-attribute -->
+              <a class="headeranchors" style="align-items: center; vertical-align: middle;">
+                <div class="burger-icon" on:click={toggleMenu}>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+              </a>
+          </div>
+      </div>
+    </header>
+  
 {/if}
 
 
@@ -231,7 +236,7 @@
 
             </div>
 
-              <img src="/ISSUE_COVERS/ISSUE-5.webp" href={issueHref}>
+              <img src={issueCover} href={issueHref} alt="">
 
               <div class="disappear_mobile">
                   <a class="button" href="/issues/ISSUE5">
@@ -260,27 +265,27 @@
                       </a>
 
                       <div>
-                          <a href="ISSUE_1.HTML">
+                          <a href="../../../issues/ISSUE1">
                               <p1> → 1ST Issue </p1>
                           </a>
 
-                          <a href="ISSUE_2.HTML">
+                          <a href="../../../issues/ISSUE2">
                               <p1> → 2ND Issue </p1>
                           </a>
                           
-                          <a href="ISSUE_3.HTML">
+                          <a href="../../../issues/ISSUE_3">
                               <p1> → 3RD Issue </p1>
                           </a>
 
-                          <a href="ISSUE_4_VOL1.HTML">
+                          <a href="../../../issues/ISSUE4_VOL_I">
                             <p1> → 4RD Issue_Vol I </p1>
                           </a>
 
-                          <a href="ISSUE_4_VOL2.HTML">
+                          <a href="../../../issues/ISSUE4_VOL_II">
                             <p1> → 4RD Issue_Vol II </p1>
                           </a>
 
-                          <a href="ISSUE_4_VOL3.HTML">
+                          <a href="../../../issues/ISSUE4_VOL_III">
                             <p1> → 4RD Issue_Vol III</p1>
                           </a>
 
@@ -300,11 +305,11 @@
                       </a>
 
                       <div>
-                          <a href="TBD_X_POST.HTML">
+                          <a href="../../../issues/XPOST">
                               <p1> → X Post </p1>
                           </a>
 
-                          <a href="TBD_BLASTINGTHEORY.HTML">
+                          <a href="../../../issues/BLASTINGTHEORY">
                               <p1> → Blasting Theory </p1>
                           </a>
                       </div>
@@ -317,22 +322,22 @@
                         </p1>
                       
 
-                      <a class="arrow_container_slider" href="index.html#SPECIAL-PROJECTS">
+                      <a class="arrow_container_slider">
                         <p2>
                           →
                         </p2>
                       </a>
 
                       <div>
-                          <a href="TBD_FOREHEADVULVA.HTML">
+                          <a href="../../../issues/FOREHEADVULVA">
                               <p1> → Forehead vulva </p1>
                           </a>
 
-                          <a href="LOOKATMEVOL1.HTML">
+                          <a href="../../../issues/LOOKATME_VOL_I">
                               <p1> → Look at me Vol.I </p1>
                           </a>
                           
-                          <a href="LOOKATMEVOL2.HTML">
+                          <a href="../../../issues/LOOKATME_VOL_II">
                               <p1> → Look at me Vol.II </p1>
                           </a>
                       </div>

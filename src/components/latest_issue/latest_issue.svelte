@@ -1,6 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-
   import issuesData from "$lib/issues.json";
 
   // Initialize exported variables
@@ -12,13 +11,15 @@
 
   // Function to find and set the latest issue data
   function setLatestIssueData() {
-    const latestIssue = issuesData.find(issue => issue.isLatestIssue === 'TRUE');
+    const latestIssue = issuesData.find(issue => issue.isLatestIssue === true);
     if (latestIssue) {
       issueHref = latestIssue.issueHref;
       issueTitle = latestIssue.issueTitle;
       issueCover = latestIssue.issueCover;
       issueHeroText = latestIssue.issueHeroText;
+      latestFloatingLogoPath = latestIssue.latestFloatingLogoPath;
     }
+    console.log('issueCover', issueCover )
   }
 
   onMount(() => {
@@ -28,7 +29,6 @@
 </script>
 
 <last_issue id="LATEST">
-      
     <h2 id="HEROTEXT_FILLING">
       Issue {issueTitle} Out now.
     </h2>

@@ -99,7 +99,7 @@
 
 <Footer />
 
-{#if data.props.issue.isIssueUltra === 'TRUE'}
+{#if data.props.issue.isIssueUltra === true}
   <Ultrabutton />
 {/if}
   
