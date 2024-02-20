@@ -31,10 +31,54 @@
   
   <Header/>
   <IssueHero {...data.props.issue}/>
-  <MagGallery {...data.props.issue}/>
-  <CowElement {...data.props.issue}/>
 
-  <Manifesto {...data.props.issue}/>
+  {#if data.props.issue.layoutOption === 'Classic'}
+    <MagGallery {...data.props.issue}/>
+    <CowElement {...data.props.issue}/>
+  {:else if data.props.issue.layoutOption === 'Manifesto'}
+    <Manifesto {...data.props.issue}/>
+  {:else if data.props.issue.layoutOption === 'Ibrido'}
+    <MagGallery {...data.props.issue}/>
+    <Manifesto {...data.props.issue}/>
+    <CowElement {...data.props.issue}/>
+  {/if}
+
+  {#if data.props.issue.issueNumber === 'ISSUE3'}
+    <div class="video_gallery">
+      <section>
+          <div class="single_video" id="video_#1">
+              <div style="padding:100% 0 0 0;position:relative;">
+                  <iframe src="https://player.vimeo.com/video/637629288?h=66b3ae91f8" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                  </iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+          <div class="single_video" id="video_#2">
+              <div style="padding:100% 0 0 0;position:relative;">
+                  <iframe src="https://player.vimeo.com/video/637612946?h=13fe136ba9" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                  </iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+      </section>
+      <section>
+          <div class="single_video" id="video_#1">
+              <div style="padding:100% 0 0 0;position:relative;">
+                  <iframe src="https://player.vimeo.com/video/637618840?h=94b5d22c38" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                  </iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+          <div class="single_video" id="video_#2">
+              <div style="padding:100% 0 0 0;position:relative;">
+                  <iframe src="https://player.vimeo.com/video/637623042?h=365c31a28b" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                  </iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+      </section>
+    </div>
+  {/if}
 
   <div class="article_list_container" id="ARTICLES">
     {#each sectionNames as sectionName}

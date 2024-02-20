@@ -13,6 +13,7 @@
     isOpen = !isOpen;
   }
 
+  import { goto } from '$app/navigation';
 
 </script>
  
@@ -51,7 +52,7 @@
               </a>
           </div>
 
-          <a style="height: 100%; flex-shrink: 0" href={logoHref}>
+          <a style="height: 100%; flex-shrink: 0" on:click={() => goto(logoHref)}>
               <img style="height: 100%;" src={TbdLogo} alt="TBDLogoImage">
           </a>
 
