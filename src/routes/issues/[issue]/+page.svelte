@@ -1,6 +1,6 @@
 <script>
   // this is [issues]/page.svelte
-    // Import the components you need
+    
     import CowElement from '$components/issue_page/cow-element.svelte';
     import IssueHero from '$components/issue_page/issue-hero.svelte';
     import MagGallery from '$components/issue_page/mag-gallery.svelte';
@@ -16,7 +16,7 @@
   
     // Export the props from the load function
     export let data;
-    // console.log("ISSUE", data.props.issue);
+    console.log("ISSUE", data.props.articles.parentIssue);
     // console.log("ARTICLE", data.props.articles);
     
     let sectionNames = [];
@@ -26,11 +26,13 @@
       const labels = data.props.articles.map(article => article.sectionLabel);
       sectionNames = [...new Set(labels)];
     }
+
+    let headerVar = 'ISSUES';
     
   </script>
   
-  <Header/>
-  <IssueHero {...data.props.issue}/>
+  <Header {headerVar}/>
+  <IssueHero {...data.props.issue} id="ISSUE"/>
 
   <!-- Varianti delle varie pagine basati sul db -->
 
@@ -38,10 +40,10 @@
     <MagGallery {...data.props.issue}/>
     <CowElement {...data.props.issue}/>
   {:else if data.props.issue.layoutOption === 'Manifesto'}
-    <Manifesto {...data.props.issue}/>
+    <Manifesto {...data.props.issue} id="ABSTRACT"/>
   {:else if data.props.issue.layoutOption === 'Ibrido'}
     <MagGallery {...data.props.issue}/>
-    <Manifesto {...data.props.issue}/>
+    <Manifesto {...data.props.issue} id="ABSTRACT"/>
     <CowElement {...data.props.issue}/>
   {/if}
 

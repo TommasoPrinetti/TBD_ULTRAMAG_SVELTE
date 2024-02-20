@@ -3,7 +3,7 @@
     export let articleTitle;
     export let articleText;
     export let articleName;
-    export let issueNumber;
+    export let parentIssue;
 </script>
 
 <article>
@@ -23,7 +23,7 @@
         </p3>
 
         <!-- svelte-ignore a11y-missing-attribute -->
-        <a class="button" href="./{issueNumber}/articles/{articleName}">
+        <a class="button" href="./{parentIssue}/articles/{articleName}">
             <p2> 
                 READ ALL
             </p2>

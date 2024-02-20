@@ -182,7 +182,7 @@ header {
   color: var(--black-blue);
 }
 
-.header_top text {
+.header_top .banner {
   display: inline-flex;
   animation: scroll 600s linear; /* Adjust duration as needed */
   align-items: center;
@@ -191,12 +191,15 @@ header {
 }
 
 /* TEXT ON TOP ANIMATED */
+
 @keyframes scroll {
-  100% {
-    transform: translateX(100%); 
-  }
+  
   0% {
     transform: translateX(-100%); 
+  }
+
+  100% {
+    transform: translateX(100%); 
   }
 }
 

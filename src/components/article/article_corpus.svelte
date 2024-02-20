@@ -3,13 +3,17 @@
     export let articleTitle;
     export let showDidascalie;
     export let showBibliografia;
-    export let rowsBibliografia;
-    export let rowsDidascalie;
+
     export let autore;
     export let editor;
     export let parentIssue;
     export let issueNumber = parentIssue;
     export let article;
+
+    export let relatedArticles = [];
+    export let rowsDidascalie = [];
+    export let rowsBibliografia = [];
+    export let articleContent = {};
 
     import BuyButtons from "$components/buy_buttons.svelte";
     import { onMount } from 'svelte';
@@ -22,8 +26,6 @@
     
     const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
 
-    let relatedArticles = [];
-
     onMount(() => {
         if (article && 'parentIssue' in article) {
             relatedArticles = articlesData.filter(a => a.parentIssue === article.parentIssue);
@@ -34,7 +36,6 @@
 
     //console.log("RelatedArticles:",relatedArticles)
 
-    export let articleContent = { };
 
 
     //// SLIDER OPENING
@@ -99,13 +100,13 @@
                 <h2>
                     {articleTitle}
                 </h2>
-                
+
                 {#each Object.keys(articleContent) as key (key)}
-                    {#if key.startsWith('p')}
+                    {#if key.startsWith('p') && articleContent[key]}
                         <ArticleText paragraph={articleContent[key]} />
-                    {:else if key.startsWith('img')}
+                    {:else if key.startsWith('img') && articleContent[key]}
                         <ArticleImg imagePath={articleContent[key]} />
-                    {:else if key.startsWith('gallery')}
+                    {:else if key.startsWith('gallery') && articleContent[key]}
                         <ArticleGallery galleryFolderPath={articleContent[key]}/>
                     {/if}
                 {/each}
@@ -140,4 +141,5 @@
   {isSliderOpen}
   issueCover={currentIssueData?.issueCover}
   issuePrice={currentIssueData?.issuePrice}
-  issueNumber={issueNumber} />
+  issueNumber={issueNumber}
+/>
