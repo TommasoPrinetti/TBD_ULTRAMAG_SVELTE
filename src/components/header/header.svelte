@@ -22,8 +22,6 @@
 
   import issuesData from "$lib/issues.json";
 
-  console.log("DATA", issuesData)
-
   function setLatestIssueData() {
     const latestIssue = issuesData.find(issue => issue.isLatestIssue === true);
     if (latestIssue) {

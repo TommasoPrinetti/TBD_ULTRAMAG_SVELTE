@@ -13,8 +13,8 @@
     export let relatedArticles = [];
     export let articleContent = {};
 
-    export let rowsDidascalie = didascalie.split('§').filter(Boolean);
-    export let rowsBibliografia = bibliografie.split('§').filter(Boolean);
+    export let rowsDidascalie = [ ];
+    export let rowsBibliografia = [ ];
 
     import BuyButtons from "$components/buy_buttons.svelte";
     import { onMount } from 'svelte';
@@ -36,8 +36,6 @@
     });
 
     //console.log("RelatedArticles:",relatedArticles)
-
-
 
     //// SLIDER OPENING
 

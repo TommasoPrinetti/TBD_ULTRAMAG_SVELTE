@@ -52,27 +52,17 @@
       "/ARTICLES/ISSUE1/IMMERSIVITY/IMMERSIVE_XP/GALLERY1"
    ],
    "showDidascalie": true,
-   "didascalie": "Le ultime spiagge di unicità o sono state inquinate o le hanno trasformate in parco giochi: il linguaggio, l’uso di strumenti, il comportamento sociale, gli eventi mentali non stabiliscono più in modo convincente la separazione tra umano e animale. E parecchi non sentono più il bisogno di questa separazione […]. Il cyborg entra nel mito proprio quando si trasgredisce il confine tra umano e animale. Lungi dal segnalare una drastica separazione delle persone dalle altre creature viventi, il cyborg indica, in modo inquietante e piacevole, un saldo accoppiamento. In questo ciclo di scambio matrimoniale, la bestialità ha un nuovo status” (Haraway 1995)",
-   "rowsDidascalie": [
+   "didascalie": "*Le ultime spiagge di unicità o sono state inquinate o le hanno trasformate in parco giochi: il linguaggio, l’uso di strumenti, il comportamento sociale, gli eventi mentali non stabiliscono più in modo convincente la separazione tra umano e animale. E parecchi non sentono più il bisogno di questa separazione […]. Il cyborg entra nel mito proprio quando si trasgredisce il confine tra umano e animale. Lungi dal segnalare una drastica separazione delle persone dalle altre creature viventi, il cyborg indica, in modo inquietante e piacevole, un saldo accoppiamento. In questo ciclo di scambio matrimoniale, la bestialità ha un nuovo status” (Haraway 1995)\n\n*Per ulteriori approfondimenti sul concetto della Affect Theory in filosofia, cfr., ad es., Jonathan Flatley, Affective Mapping: Melancholia and the Politics of Modernism, Harvard University Press, Cambridge, 2008; e Melissa Gregg e Gregory J. Seigworth (a cura di), The Affect Theory Reader, Duke University Press, Durham, 2010.",
+   "showBibliografia": true,
+   "bibliografie": "*Philip Armstrong and Laurence Simmons, Bestiary: An Introduction, in L. Simmons e P. Armstrong (a cura di), Knowing Animals, Brill, Leiden, 2007, pp. 1-24.        \n*Rosi Braidotti, Il post-umano. La vita oltre l’individuo, oltre la specie, oltre la morte, trad. it. di A. Balzano, DeriveApprodi, Roma, 2014, pp. 73-75.        \n*Jacques Derrida, L’animale che dunque sono, Ed Jaca Book, Milano, 2006, p. 47.      \n*Donna Haraway, Manifesto cyborg. Donne, tecnologie e biopolitiche del corpo, trad. it. di L. Borghi, Feltrinelli, Milano, 1995, p. 43. Cfr., inoltre, Ibidem, p. 62.        \n*Pramod K. Nayar, Posthumanism, Polity Press, Cambridge, 2014, p. 79.        \n*Carlo Salzani, Dal postumano al postanimale. Il postumanesimo e l’animal turn, in “Liberazioni” n. 37, giugno 2019, pp. 4-18.       \n*Kari Weil, A Report on the Animal Turn, in “Differences: A Journal of Feminist Cultural Studies”, 2010, vol. 21, n. 2, p. 12.",
+   "rowsBibliografia": [
       null,
-      "Per ulteriori approfondimenti sul concetto della Affect Theory in filosofia, cfr., ad es., Jonathan Flatley, Affective Mapping: Melancholia and the Politics of Modernism, Harvard University Press, Cambridge, 2008; e Melissa Gregg e Gregory J. Seigworth (a cura di), The Affect Theory Reader, Duke University Press, Durham, 2010.",
       "",
       "",
       "",
       "",
       "",
       ""
-   ],
-   "showBibliografia": true,
-   "bibliografie": "Philip Armstrong and Laurence Simmons, Bestiary: An Introduction, in L. Simmons e P. Armstrong (a cura di), Knowing Animals, Brill, Leiden, 2007, pp. 1-24.",
-   "rowsBibliografia": [
-      null,
-      "Rosi Braidotti, Il post-umano. La vita oltre l’individuo, oltre la specie, oltre la morte, trad. it. di A. Balzano, DeriveApprodi, Roma, 2014, pp. 73-75.",
-      "Jacques Derrida, L’animale che dunque sono, Ed Jaca Book, Milano, 2006, p. 47.",
-      "Donna Haraway, Manifesto cyborg. Donne, tecnologie e biopolitiche del corpo, trad. it. di L. Borghi, Feltrinelli, Milano, 1995, p. 43. Cfr., inoltre, Ibidem, p. 62.",
-      "Pramod K. Nayar, Posthumanism, Polity Press, Cambridge, 2014, p. 79.",
-      "Carlo Salzani, Dal postumano al postanimale. Il postumanesimo e l’animal turn, in “Liberazioni” n. 37, giugno 2019, pp. 4-18.",
-      "Kari Weil, A Report on the Animal Turn, in “Differences: A Journal of Feminist Cultural Studies”, 2010, vol. 21, n. 2, p. 12."
    ]
 },
  {
@@ -128,17 +118,7 @@
       ""
    ],
    "showDidascalie": true,
-   "didascalie": "Un processo, quello di personificazione della natura e delle entità che la vivono, condiviso e diffuso in quasi tutte le culture.",
-   "rowsDidascalie": [
-      null,
-      "Il termine, centrale nella riflessione bio-centrica di Roberto Marchesini, include ogni ente ‘biologico’, estendendo il campo del naturale e quindi riavvicinandolo all’umano.",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
+   "didascalie": "*Un processo, quello di personificazione della natura e delle entità che la vivono, condiviso e diffuso in quasi tutte le culture.\n\n*Il termine, centrale nella riflessione bio-centrica di Roberto Marchesini, include ogni ente ‘biologico’, estendendo il campo del naturale e quindi riavvicinandolo all’umano.",
    "showBibliografia": true,
    "bibliografie": "Gernot Böhme, Atmosphäre. Essays zur neuen Ästhetik, Frankfurt/M., Suhrkamp, 1995, 2003, trad. it. cit. in S. Tedesco, ‘Ästhetische Arbeit’: l’estetica di Gernot Böhme e l’attualità della retorica, in R. Messori (a cura di), Dire l’esperienza estetica, Palermo, Centro Internazionale Studi di Estetica.",
    "rowsBibliografia": [
@@ -205,16 +185,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "Didascalia 1",
-   "rowsDidascalie": [
-      null,
-      "Didascalia 2",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "Bibliografia 1",
    "rowsBibliografia": [
@@ -281,16 +251,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -357,16 +317,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -433,16 +383,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -509,16 +449,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -584,17 +514,7 @@
       ""
    ],
    "showDidascalie": true,
-   "didascalie": " The reason Zoom calls drain your energy, 22 aprile 2020.",
-   "rowsDidascalie": [
-      null,
-      "Vi facciamo vedere noi (chi siamo), 10 aprile 2020.",
-      "Coronavirus, la verità è che per noi cambierà l’intera esistenza, 2 aprile 2020.",
-      "Art Workers Italia, 1 maggio 2020",
-      "",
-      "",
-      "",
-      ""
-   ],
+   "didascalie": "*The reason Zoom calls drain your energy, 22 aprile 2020.\n\n*Vi facciamo vedere noi (chi siamo), 10 aprile 2020. \n*Coronavirus, la verità è che per noi cambierà l’intera esistenza, 2 aprile 2020.        \n*Art Workers Italia, 1 maggio 2020",
    "showBibliografia": true,
    "bibliografie": "Carbone, M 2016, Filosofia-schermi. Dal cinema alla rivoluzione digitale, Raffaello Cortina, Milano.",
    "rowsBibliografia": [
@@ -661,16 +581,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -737,16 +647,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -813,16 +713,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -888,17 +778,7 @@
       ""
    ],
    "showDidascalie": true,
-   "didascalie": "Ansa 2020, Per l'app Zoom boom di download, a +1300%, 27 marzo.",
-   "rowsDidascalie": [
-      null,
-      "Immagini scaricabili gratuitamente sul sito di Studio Ghibli e dal sito di Harper Bazaar.",
-      "Sito ufficiale di Zoom - sezione 'Touch My Appearance'",
-      "Come lasciato intendere nei paragrafi precedenti, questa tesi è empirica ed è comprovata dall'attività quotidiana in videoconferenza e dai feed dei siti web.\n",
-      "This feature works best with a green screen and uniform lighting, to allow Zoom to detect the difference between you and your background. You can also upload your own images or videos as a virtual background. There are no size restrictions when adding your own virtual backgrounds, but we recommend cropping the image to match the aspect ratio of your camera before uploading it'. TdA dal sito ufficiale di Zoom",
-      "La locuzione shelf-life viene utilizzata da Mark Blythe e Paul Cairns nella pubblicazione Tenori-on Stage: YouTube as performance space reperibile sul sito (cfr. bibliografia).",
-      "Parreno, P 2013, in The Exhibition as Act of Creation sul sito di Palais de Tokyo.",
-      "Per il concetto di 'campo di forza' associato alle teorie mediali si veda: Bechelloni, G 1974, Informazione e potere, Officina, Roma."
-   ],
+   "didascalie": "Immagini scaricabili gratuitamente sul sito di Studio Ghibli e dal sito di Harper Bazaar.        \nSito ufficiale di Zoom - sezione 'Touch My Appearance'        \n\"Come lasciato intendere nei paragrafi precedenti, questa tesi è empirica ed è comprovata dall'attività quotidiana in videoconferenza e dai feed dei siti web.\n\"This feature works best with a green screen and uniform lighting, to allow Zoom to detect the difference between you and your background. You can also upload your own images or videos as a virtual background. There are no size restrictions when adding your own virtual backgrounds, but we recommend cropping the image to match the aspect ratio of your camera before uploading it'. TdA dal sito ufficiale di Zoom       \nLa locuzione shelf-life viene utilizzata da Mark Blythe e Paul Cairns nella pubblicazione Tenori-on Stage: YouTube as performance space reperibile sul sito (cfr. bibliografia).        \nParreno, P 2013, in The Exhibition as Act of Creation sul sito di Palais de Tokyo.        \nPer il concetto di 'campo di forza' associato alle teorie mediali si veda: Bechelloni, G 1974, Informazione e potere, Officina, Roma.",
    "showBibliografia": true,
    "bibliografie": "Sorlin, P 2002, Persona. Del ritratto in pittura, trad. S Guindani, Tre Lune Edizioni, Mantova.",
    "rowsBibliografia": [
@@ -965,16 +845,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -1041,16 +911,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -1116,17 +976,7 @@
       ""
    ],
    "showDidascalie": true,
-   "didascalie": "Neologismo: termine composto da psycho + lulzy; definizione di lulzy da wikitionary.",
-   "rowsDidascalie": [
-      null,
-      "Definizione di doxing_da wikipedia",
-      "Definizione di DoS da wikipedia.",
-      "Abbreviazione di operations",
-      " '4chan summary' PDF anonimo da Are.na.",
-      "Definizioni di edgy da Urban Dictionary",
-      "Definizione di clout da Urban Dictionary\n",
-      ""
-   ],
+   "didascalie": "Neologismo: termine composto da psycho + lulzy; definizione di lulzy da wikitionary.\n\nDefinizione di doxing_da wikipedia        \nDefinizione di DoS da wikipedia.        \nAbbreviazione di operations         \n'4chan summary' PDF anonimo da Are.na.        \nDefinizioni di edgy da Urban Dictionary        \n\"Definizione di clout da Urban Dictionary\"",
    "showBibliografia": true,
    "bibliografie": "Onfray, M 2020, Teoria della dittatura, Ponte Alle Grazie, Milano",
    "rowsBibliografia": [
@@ -1193,16 +1043,6 @@
    ],
    "showDidascalie": false,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "§Anden-Papadopoulus, K 2013, Citizen camera-witnessing: Embodied political dissent in the age of ‘mediated mass self-communication’, in “new media & society” 2014, Vol. 16(5), pp. 753–769.\n\n§ Angelucci, D 2009, Estetica e cinema, Il Mulino, Bologna.\n\n§Arcagni, S 2018, L’occhio della macchina, Einaudi, Torino.\n\n§Flusser, V 2004, La cultura dei media, Mondadori, Milano.\n\n§Fox, B 2004, Rethinking the Amateur: Acts of media production in the digital age, in Spectator 24:1, Spring, pp. 5-16.\n\n§Geroimenko, V 2018, Augmented Reality Art. From an Emerging Technology to a Novel Creative Medium. Second Edition, Springer.\n\n§Guerri, M, Parisi F 2013, Filosofia della fotografia, Raffaello Cortina Editore, Milano.\n\n§Montani, P 2014, Tecnologie della sensibilità, estetica e immaginazione interattiva, Raffaello Cortina Editore, Milano.\n\n§Poole, D 1997, Vision, Race and Modernity: A Visual Economy of the Andean Image W, Princeton University Press, Princeton.\n\n§Somaini, A, Pinotti, A 2016, Cultura visuale. Immagini Sguardi Media Dispositivi, Einaudi, Torino.\n\n§Stiegler, B 2015, Platone digitale, Mimesis, Milano-Udine.\n\n§Wellner, G 2013, No Longer a Phone: The Cellphone as an Enabler of Augmented Reality, in Transfers 3 (2), pp. 70-88",
    "rowsBibliografia": [
@@ -1269,16 +1109,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -1345,16 +1175,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "[1] Wallace, L. 2020, Some video art to enjoy at home while under coronavirus isolation. While museums and galleries are shut, take the time to dive into the rich online world of new media works, in “The Art Newspaper”, 19 marzo [2] Bakare, L. 2020, ‘It’s great if you’re bored with Netflix’: video art flourishes in lockdown. From dogs’ plums to death metal shrieks, video artworks are finding a new audience hungry for culture that is accessible, original and bizarre, in “The Guardian”, 4 maggio [3] Julia Stoschek Collection – Julia Stoschek presents her media art collection online, in “e-flux”, 18 maggio 2020 [4] Balsom, E. 2020, A “small utopia”? Artists’ film and video online, in “Art-agenda”, 8 giugno [5] Nei primi anni 2000, poco prima che Steyerl pubblicasse il suo rivoluzionario saggio, Harun Farocki aveva iniziato una ricerca che l’ha condotto a coniare il termine “immagine operativa” in riferimento a quelle immagini capaci di influire e influenzare la realtà, una prova del fatto che quello che si era inaugurato era un nuovo regime visivo. [6] Si ritiene necessario in questo punto ricordare che le immagini, come le descrive Marin, in quanto presenza iconica, sono costitutivamente la presenza di un’assenza, l’assenza visibile, una rap-presentazione. [7] Immagini nel campo espanso: L’an-iconologia secondo Andrea Pinotti, in “Kabul Magazine”, 3 luglio 2020 [8] Steyerl, H. 2009, In Defense of the Poor Image, in “e-flux journal #10”, novembre [9] Ehmann, A., Guerra, C., 2020, online exhibition guide, Galerie Thaddaeus Ropac",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "Fontcuberta, La furia delle immagini: note sulla postfotografia, Giulio Einaudi Editori, Torino 2018",
    "rowsBibliografia": [
@@ -1421,16 +1241,6 @@
    ],
    "showDidascalie": false,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "Farocki, H 2004, “Phantom Images”, Public, n.29, pp. 12-24.\n\n● Lee, R 2019, “Operative Image: Automation and Autonomy”, APRJA, vol.8, n.1, pp. 194-202.\n\n● Parreno, P 2016, It’s a half-mechanic, half-organic machine, YouTube, 18 october, Tate, visto il 26 ottobre.\n\n● Palmesino, J, Rönnskog, A 2020, “Ep 11 TA”, The Temple Show, podcast, giugno, visto il 26 ottobre\n\n● Rouvroy, A, “The end(s) of critique: data behaviourism vs. dueprocess”, in Privacy, Due Process and the Computational Turn. Philosophers of Law Meet Philosophers of Technology, Hildebrandt, M, De Vries, E, Routledge, Londra, 2012.\n\n● Majaca, A, Parisi, L 2016, “The Incomputable and Instrumental Possibility”, E-flux Journal, novembre 2016, n.77, visto il 26 ottobre\n\n● Arcagni, S 2018, L’occhio della Macchina, Einaudi, Milano.",
    "rowsBibliografia": [
@@ -1497,16 +1307,6 @@
    ],
    "showDidascalie": false,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "Foucault M 1966, Utopie. Eterotopie, a cura di Moscati Antonella, Cronopio, Napoli 2020.\n\n● Koolhaas R 2006, Junkspace, Quodlibet, Macerata.\n\n● Lek L, Real Worlds, in “e-flux”, 13 ottobre 2019\n\n● Meyrowitz J 1995, Oltre il senso del luogo. L’impatto dei media elettronici sul comportamento sociale, Baskerville, Bologna.\n\n● Mitchell W.J.T. 2009, Pictorial turn. Saggi di cultura visuale, Cortina Raffaello Editore, 2017.\n\n● Rashid H, Learning from the Virtual, in “e-flux”, 25 luglio 2017.\n\n● Vasta G, Fazel R 2016, Albsolutely nothing. Storie e sparizioni nei deserti americani, Quodlibet – Humboldt Books, Macerata.\n\n● Xiaofan AL 2016, The Abject Heterotopia: Le Città Invisibili and “Junkspace”, Forum for Modern Language Studies, Oxford.\n\n● Sito di Lawrence Lek\n\n● Sito di Asymptote Architecture",
    "rowsBibliografia": [
@@ -1573,16 +1373,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "[1] The Technocene.\n\n[1] Con il termine gore o splatter si intende un sotto-genere del cinema horror che si contraddistingue per contenuti altamente cruenti, alle volte a sfondo erotico e pornografico.\n\n[2] Sito Internet di social news, intrattenimento, e forum.\n\n[3] L’organizzazione per i diritti umani Human Rights First ha rilevato che nel 2000 sono state mostrate 42 scene di tortura in prima serata nelle reti televisive statunitense, mentre nel 2003 sono aumentate a 228.\n\n[4] Il termine snuff o snuff movie (dall’inglese “spegnere lentamente”) si riferisce a film amatoriali in cui le torture mostrate sono realmente effettuate. I film citati mettono in scena torture finte.\n\n[5] Il Grand Guignol è stato un teatro inaugurato nel 1897 a Parigi specializzato in spettacoli macabri e violenti. Oggi con questo termine, e il suo aggettivo “granguignolesco”, si intende un genere teatrale o di altre rappresentazioni visive in cui si rappresentano scene realistiche di ogni forma di delitti e orrori..\n\n[6] Archivio della pagina originale di Bad Gas:\n\nAlcune immagini presenti su KUTV\n\nNe sono un esempio il “Centre for Death and Society” della University of Bath in Inghilterra: e la rivista accademica inglese “Death Studies” sponsorizza da “Association for Death Education and Counseling – The Thanatology Association”",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "Amaducci, A 2007, Verrà la morte (e avrà i tuoi occhi). Gli ‘snuff’ in Internet. La valle dell’Eden, n. 18, gennaio-giugno.\n\n● Baudrillard, J 1980-1990, Cool memories. Diari 1980-1990, SugarCo, Milano 1991.\n\n● Braidotti, R 2007, Biomacht und necro-Politik. Uberlegungen zu einer Ethik der Nachhaltigkeit, in “Springerin, Hefte fur Gegenwartskunst”, XIII, 2, Fruhjahr, pp. 18-23.\n\n● La Rocca, F 2009, Immagini e tortura, in Farci M, Pezzano S (a cura di), Blue lit stage: realtà e rappresentazione mediatica della tortura, Mimesis, Milano.\n\n● Edelstein, D 2006, Now Playing at Your Local Multiplex: Torture Porn. New York Magazine, 28 gennaio.\n\n● Estremo, V 2018, La mia morte degli altri, in “Kabul magazine”, 30 marzo.\n\n● Foucault, M 1975, Sorvegliare e punire. Nascita della prigione, Einaudi, Milano 2014.\n\n● Kristeva, J 1980, Poteri dell’orrore. Saggio sull’abiezione, Spirali Edizioni, Milano 1981.\n\n● Rose, G 2001, Visual Methodologies, Sage, London.",
    "rowsBibliografia": [
@@ -1649,16 +1439,6 @@
    ],
    "showDidascalie": true,
    "didascalie": "[1] L’associazione del termine “specchio” al concetto di monumento si può trovare in Geoff Dyer: “Monuments after all, are also mirrors” (Dyer 2017).\n[2] In merito si vedano: Flores D’Arcais, A, “Usa, la richiesta della Casa Bianca: “Anche Trump tra i volti del Monte Rushmore”, La Repubblica, 9 agosto 2020 [https://www.repubblica.it/esteri/2020/08/09/news/usa_il_sogno_di_trump_anche_il_suo_volto_tra_i_presidenti_scolpiti_nel_mount_rushmore-264275558/]; CNN, NYT: WH reached out about adding Trump to Mount Rushmore, CNN, 8 settembre 2020 [https://edition.cnn.com/videos/politics/2020/08/09/new-york-times-trump-mount-rushmore-nr-vpx.cnn].\n\n[3] Bisogna specificare che alcuni dei monumenti riportati in apertura dell’articolo sono stati eretti su proprietà privata, e quindi voluti da privati, anch’essi singoli individui.\n\n[4] Termine tratto da L’Insostenibile leggerezza dell’essere  in cui Milan Kundera afferma che “il disaccordo con la merda è metafisico” e “da ciò deriva che l’ideale estetico dell’accordo categorico con l’essere è un mondo dove la merda è negata e dove tutti si comportano come se non esistesse. Questo ideale estetico si chiama Kitsch […] Il Kitsch è la negazione assoluta della merda, in senso tanto letterale quanto figurato: il Kitsch elimina dal proprio campo visivo tutto ciò che nell’esistenza umana è essenzialmente inaccettabile (Kundera 1984 [2018], p. 268).",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": true,
    "bibliografie": "§Ansa, “Chiara Ferragni è Madonna del presepe, polemiche a Pontedera”, Ansa, 13 novembre 2020\n\n§Belpoliti, M, Marrone G (a cura di), 2020, Kitsch, Quodlibet, Macerata.\n\n§Bottani, S, Carmagnola, F, Cantucci, S, “Kitsch kitsch kitsch, hurrah!”, Doppiozero, 17 settembre 2020\n\n§Botz-Bornstein, T 2019, The New Aesthetics of Deculturation: Neoliberalism, Fundamentalism and Kitsch, Bloomsbury Publishing PLC, Londra.\n\n§Broch, H, 1975, Il Kitsch, L Forte (a cura di), Abscondita, San Giuliano Milanese, 2018.\n\n§Calvino, I, “Due obiezioni a Kundera”, La Repubblica, Milano, 31 maggio 1985.\n\n§CNN, “NYT: WH reached out about adding Trump to Mount Rushmore”, in CNN, 8 settembre 2020\n\n§Dyer, G, “The photographer who saw America’s monuments hiding in plain sight”, The New York Times, 11 ottobre 2017\n\n● Dorfles, G 1968, Kitsch. Antologia del cattivo gusto, Mazzotta Editore, Milano, 1976\n\n\n\n● Eco, U 2015, Discorso al termine del conferimento della Laurea Honoris Causa in Comunicazione e Culture dei Media presso l’Università degli Studi di Torino, YouTube\n\n● Farocki, H 2008, “Harun Farocki. On materiality”, intervistato da L M Stahl e A Waszynski, cine-files\n\n● Flores D’Arcais, A, “Usa, la richiesta della Casa Bianca: “Anche Trump tra i volti del Monte Rushmore”, La Repubblica, 9 agosto 2020\n\n● Friedlander, L 1976, The American Monument, The Eakins Press Foundation, New York.\n\n● Greenberg, C 1939, “Avantgarde & Kitsch”, Partosan Review, New York, autunno.\n\n● Labranca, T 2002, Neoproletariato. La sconfitta del popolo e il trionfo dell’eleghanzia, Castelvecchi, Roma.\n\n● Kundera, M 1984, L’insostenibile leggerezza dell’essere, Adelphi, Milano, 2018.\n\n● Mori, L 2015, Filosofia del cittadino. Per una cittadinanza digitale e planetaria, Bulgarini Editore, Firenze.\n\n● Steyerl, H, 2009, “In defence of the Poor Image”, e-flux, #10, novembre.\n\n● Venturi, R, Scott Brown, D e Izenour, S 1972, Imparare da Las Vegas. Il simbolismo dimenticato della forma architettonica, M Orazi (a cura di), Quodlibet, Macerata, 2010.",
    "rowsBibliografia": [
@@ -1725,16 +1505,6 @@
    ],
    "showDidascalie": null,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": null,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -1801,16 +1571,6 @@
    ],
    "showDidascalie": null,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": null,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -1877,16 +1637,6 @@
    ],
    "showDidascalie": null,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": null,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -1953,16 +1703,6 @@
    ],
    "showDidascalie": null,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": null,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -2029,16 +1769,6 @@
    ],
    "showDidascalie": null,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": null,
    "bibliografie": "",
    "rowsBibliografia": [
@@ -2105,16 +1835,6 @@
    ],
    "showDidascalie": null,
    "didascalie": "",
-   "rowsDidascalie": [
-      null,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-   ],
    "showBibliografia": null,
    "bibliografie": "",
    "rowsBibliografia": [
