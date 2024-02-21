@@ -11,7 +11,7 @@
 
     export let headerVar='ARTICLES';
 
-    console.log("article", article)
+    //console.log("article", article)
 
 </script>
 

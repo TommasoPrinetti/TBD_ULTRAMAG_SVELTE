@@ -16,7 +16,7 @@
   
     // Export the props from the load function
     export let data;
-    console.log("ISSUE", data.props.articles.parentIssue);
+    //console.log("ISSUE", data.props.articles.parentIssue);
     // console.log("ARTICLE", data.props.articles);
     
     let sectionNames = [];

@@ -29,8 +29,8 @@
       issueNumber = latestIssue.issueNumber;
       issueCover = latestIssue.issueCover;
     }
-    console.log('latestIssue', latestIssue)
-    console.log('Latest', issueCover);
+    //console.log('latestIssue', latestIssue)
+    //console.log('Latest', issueCover);
 }
 
   onMount(() => {

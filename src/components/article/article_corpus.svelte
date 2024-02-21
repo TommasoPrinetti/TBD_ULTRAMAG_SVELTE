@@ -7,16 +7,22 @@
     export let editor;
     export let parentIssue;
     export let issueNumber;
+    export let bibliografie;
+    export let didascalie;
     
     export let articleContent = {};
     let relatedArticles = [];
     let rowsDidascalie = [];
-    let rowsBibliografia = [];
+    let rowsBibliografie = [];
     let currentIssueData = {};
 
-    import BuyButtons from "$components/buy_buttons.svelte";
+    
     import { onMount } from 'svelte';
+
     import articlesData from '$lib/articles.json';
+    import issuesData from '$lib/issues.json';
+
+    import BuyButtons from "$components/buy_buttons.svelte";
     import BuyingSlider from "../sliders/buying_slider.svelte";
     import ArticleGallery from "./article_gallery.svelte";
     import ArticleImg from "./article_img.svelte";
@@ -28,8 +34,17 @@
     onMount(() => {
         relatedArticles = articlesData.filter(a => a.parentIssue === parentIssue && a.articleName !== articleTitle); 
         currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
+        if (didascalie) {
+        rowsDidascalie = didascalie.split('*').filter(Boolean);
+        }
         
+        if (bibliografie) {
+        rowsBibliografie = bibliografie.split('*').filter(Boolean);
+        }
     });
+
+    console.log("ROWS",rowsBibliografie)
+    console.log("Didascalie", didascalie)
 
     function handleSliderToggle() {
         isSliderOpen = !isSliderOpen;
@@ -109,7 +124,7 @@
                 {#if showBibliografia}
                     <span style="font-weight: 800;">Bibliografia:</span>
                     <br>
-                    {#each rowsBibliografia as bibliografia}
+                    {#each rowsBibliografie as bibliografia}
                         <p>● {bibliografia}</p>
                     {/each}
                 {/if}
