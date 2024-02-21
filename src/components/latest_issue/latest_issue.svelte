@@ -1,6 +1,10 @@
 <script>
   import { onMount } from 'svelte';
   import issuesData from "$lib/issues.json";
+  const latestIssue = issuesData.find(issue => issue.isLatestIssue === true)
+
+  import BuyButtons from '../buy_buttons.svelte';
+  import BuyingSlider from '../sliders/buying_slider.svelte';
 
   // Initialize exported variables
   export let issueHref = '';
@@ -8,6 +12,8 @@
   export let issueCover = '';
   export let issueHeroText = '';
   export let latestFloatingLogoPath = '';
+
+  let isSliderOpen = false;
 
   // Function to find and set the latest issue data
   function setLatestIssueData() {
@@ -26,6 +32,10 @@
     setLatestIssueData();
   });
 
+  function handleSliderToggle() {
+    isSliderOpen = !isSliderOpen;
+  }
+
 </script>
 
 <last_issue id="LATEST">
@@ -42,9 +52,11 @@
         <a class="button" style="z-index: 2;" href={issueHref}>
           <p2>READ MORE</p2>
         </a>
-        <a class="buybutton" id="BUY_ACTIVE" style="z-index: 2;">
-          <p2>BUY NOW</p2>
-        </a>
+        <div class="buybuttons" style="transform: rotate(0%);">
+          {#each [1] as _}
+              <BuyButtons on:toggle={handleSliderToggle} />
+          {/each}
+        </div>
       </div>
 
       <p2>
@@ -53,3 +65,10 @@
     </div>
   
 </last_issue>
+
+<BuyingSlider
+  {isSliderOpen}
+  issueCover={latestIssue?.issueCover}
+  issuePrice={latestIssue?.issuePrice}
+  issueNumber={latestIssue?.issueNumber}
+/>

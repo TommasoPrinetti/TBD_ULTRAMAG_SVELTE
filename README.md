@@ -1,23 +1,16 @@
 # TBD ULTRAMAGAZINE SVELTE EDITION
 
-Svelte version of the previous repo
+This is the SVELTEKIT version of the old prototype, revolving around a JSON db with easy-access via excel.
 
 ## Description
 
-Provide a more detailed introduction to the project including its motivation, features, and potentially the technologies used. This section can also include screenshots or examples to help illustrate how the project works.
-
-## Installation
-
-Instructions on how to get a development environment running.
+TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pubblica volumi tematici e collabora con artist* per la realizzazione di eventi a essi collegati. Il percorso critico di ogni numero si sviluppa a partire da fatti d’attualità definiti zeitgeisting, notizie o icone virali che rivelano lo spirito culturale del tempo. Ogni fatto è sintomo e/o coadiuvante di tematiche più ampie, trattate sotto forma di saggi scritti e contenuti visivi. A partire da un focus specifico sulla contemporaneità, TBD apre quindi finestre di dialogo e un’interrogazione continua sull’arte e sull’estetica. Ogni pubblicazione si accompagna alla realizzazione di una o più opere commissionate per l’occasione, che vengono intese quale parte integrante della riflessione. L’intento è quello di mettere in discussione il rapporto tra artist*, critic* e curator*, e soprattutto tra arte e teoria, nell’ottica di definire una pratica che solleciti uno scambio reciproco di idee e apra molteplici possibilità interpretative, non gerarchiche e non esclusive.
 
 ## Todo List
 
 - [ ] Fixare bibliografia / didascalia
 - [ ] Fixare ultra-switch
 - [ ] Fixare le gallery che non funzionano fatte così
-
-## Additional Tasks
-
-- [ ] Another task that needs to be done
-- [ ] Yet another pending task
+- [x] Fixare paypal buying mechanism
+- [ ] Fixare newsletter
 

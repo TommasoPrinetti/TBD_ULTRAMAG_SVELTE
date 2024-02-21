@@ -38,7 +38,7 @@
                 <!-- svelte-ignore a11y-missing-attribute -->
                 <a class="button" >
                     <p2>
-                        #ISSUE_1
+                        #{parentIssue}
                     </p2>
                 </a>
             </div>
