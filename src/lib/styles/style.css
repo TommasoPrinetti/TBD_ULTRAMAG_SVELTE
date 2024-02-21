@@ -2743,7 +2743,7 @@ gallery section a img {
 }
 
 .ultra_transition.animate {
-  animation: slideInOut 2s forwards;
+  animation: slideInOut 2s both;
 }
 
 /* Extra small devices (phones, 600px and down) */

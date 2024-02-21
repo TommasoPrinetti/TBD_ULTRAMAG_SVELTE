@@ -5,7 +5,6 @@
 
   function toggleUltraMode() {
     isUltra = !isUltra;
-    // Delay the update of the body class
     setTimeout(updateBodyClass, 1000); // 1000ms delay
   }
 
@@ -24,9 +23,9 @@
   }
 
   onMount(() => {
-    // Consider if you want the initial class set immediately or after a delay
     updateBodyClass();
   });
+
 </script>
 
 
@@ -34,8 +33,12 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <a class="ULTRABUTTON" on:click={toggleUltraMode}>
   <div class="bg_solid"></div>
-  <div class="left_text"><p3>DEFAULT</p3></div>
-  <div class="right_text"><p3>ULTRA</p3></div>
+  <div class="left_text">
+    <p3>DEFAULT</p3>
+  </div>
+  <div class="right_text">
+    <p3>ULTRA</p3>
+  </div>
 </a>
 
 <div class="ultrawhiteblob">

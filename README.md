@@ -8,7 +8,7 @@ TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pub
 
 ## Todo List
 
-- [ ] Fixare bibliografia / didascalia
+- [x] Fixare bibliografia / didascalia
 - [ ] Fixare ultra-switch
 - [ ] Fixare le gallery che non funzionano fatte così
 - [x] Fixare paypal buying mechanism

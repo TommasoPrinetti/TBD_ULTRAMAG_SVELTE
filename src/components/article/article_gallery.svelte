@@ -1,13 +1,15 @@
 <script>
     //Article_gallery
+    import { onMount } from 'svelte';
     export let galleryFolderPath;
-    export let lengthNumber = 4;
+    export let lengthNumber = 0;
     let currentImageIndex = 1;
 
     // Function to cycle through images
     function cycleImages() {
         currentImageIndex = (currentImageIndex % lengthNumber) + 1;
     }
+    
 </script>
 
 <gallery>
