@@ -7,12 +7,11 @@
 
     export let data;
 
-    // console.log("Props", ...data.props.article);
-
     const article = data.props.article;
 
     export let headerVar='ARTICLES';
 
+    console.log("article", article)
 
 </script>
 

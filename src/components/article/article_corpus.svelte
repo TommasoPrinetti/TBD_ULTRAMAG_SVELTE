@@ -1,60 +1,39 @@
 <script>
-
+    // Directly export the individual properties expected from the article object
     export let articleTitle;
     export let showDidascalie;
     export let showBibliografia;
-
     export let autore;
     export let editor;
     export let parentIssue;
-    export let issueNumber = parentIssue;
-    export let article;
-
-    export let relatedArticles = [];
+    export let issueNumber;
+    
     export let articleContent = {};
-
-    export let rowsDidascalie = [ ];
-    export let rowsBibliografia = [ ];
+    let relatedArticles = [];
+    let rowsDidascalie = [];
+    let rowsBibliografia = [];
+    let currentIssueData = {};
 
     import BuyButtons from "$components/buy_buttons.svelte";
     import { onMount } from 'svelte';
     import articlesData from '$lib/articles.json';
     import BuyingSlider from "../sliders/buying_slider.svelte";
-
     import ArticleGallery from "./article_gallery.svelte";
     import ArticleImg from "./article_img.svelte";
     import ArticleText from "./article_text.svelte";
-    
     const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
-
-    onMount(() => {
-        if (article && 'parentIssue' in article) {
-            relatedArticles = articlesData.filter(a => a.parentIssue === article.parentIssue);
-        } else {
-            
-        }
-    });
-
-    //console.log("RelatedArticles:",relatedArticles)
-
-    //// SLIDER OPENING
-
-    import issuesData from "$lib/issues.json";
-
-    //console.log("issuesData", issuesData);
-    let currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
-    //console.log("currentIssueData", currentIssueData);
-
     let isSliderOpen = false;
 
-    function handleSliderToggle() {
-    isSliderOpen = !isSliderOpen;
-    // console.log("PREMUTO DI QUA")
-    }
-
-    // Separate the cell of didasccalie
-
     
+    onMount(() => {
+        relatedArticles = articlesData.filter(a => a.parentIssue === parentIssue && a.articleName !== articleTitle); 
+        currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
+        
+    });
+
+    function handleSliderToggle() {
+        isSliderOpen = !isSliderOpen;
+    }
 
 </script>
 

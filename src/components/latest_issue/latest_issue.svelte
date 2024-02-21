@@ -25,7 +25,6 @@
       issueHeroText = latestIssue.issueHeroText;
       latestFloatingLogoPath = latestIssue.latestFloatingLogoPath;
     }
-    console.log('issueCover', issueCover )
   }
 
   onMount(() => {

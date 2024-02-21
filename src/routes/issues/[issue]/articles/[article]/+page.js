@@ -8,9 +8,9 @@ import { error } from '@sveltejs/kit';
 
 
 export function load({ params }) {
+    
     const article = articlesData.find(a => a.articleName === params.article);
 
-    // console.log("Page.js", article)
     // Define the transformPath function here
     function transformPath(pathWithAlias) {
         return pathWithAlias.replace('$webresources', '/src/lib/webresources/');
