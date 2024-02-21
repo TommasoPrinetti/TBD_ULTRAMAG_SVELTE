@@ -19,6 +19,12 @@
     
     import { onMount } from 'svelte';
 
+    // NAVIGATIONAL
+    import { goto } from '$app/navigation';
+    function navigateToArticle(relatedArticle) {
+        goto(`../../../issues/${relatedArticle.parentIssue}/articles/${relatedArticle.articleName}`);
+    }
+
     import articlesData from '$lib/articles.json';
     import issuesData from '$lib/issues.json';
 
@@ -57,11 +63,15 @@
         <div class="side_menu">
             <div class="index_container">
                 <div class="index">
-                    {#each relatedArticles as relatedArticle}
-                        <a href={`/issues/${relatedArticle.parentIssue}/articles/${relatedArticle.articleName}`}>
-                            <p3>{relatedArticle.articleTitle}</p3>
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    {#each relatedArticles as relatedArticle, index}
+                        <!-- svelte-ignore a11y-click-events-have-key-events -->
+                        <!-- svelte-ignore a11y-no-static-element-interactions -->
+                        <!-- svelte-ignore a11y-missing-attribute -->
+                        <a on:click={() => navigateToArticle(relatedArticle)} style="cursor: pointer;">
+                            <p3>#{0}{index+1}: {relatedArticle.articleTitle}</p3>
                         </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 1">
                             <path d="M0 0.555664H330"/>
                         </svg>
                     {/each}
