@@ -8,17 +8,15 @@
         const script = document.createElement('script');
         script.src = "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js";
         script.onload = () => {
-            // Initialize the form validation here, if necessary
         };
         document.body.appendChild(script);
     }
 
-    // Dynamically load the Mailchimp script after the component has mounted
-    // to ensure it runs in the client-side context
     import { onMount } from 'svelte';
     onMount(() => {
         loadMailchimpScript();
     });
+
 </script>
 
 <footer>

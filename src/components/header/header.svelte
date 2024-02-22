@@ -29,8 +29,7 @@
       issueNumber = latestIssue.issueNumber;
       issueCover = latestIssue.issueCover;
     }
-    //console.log('latestIssue', latestIssue)
-    //console.log('Latest', issueCover);
+
 }
 
   onMount(() => {
@@ -52,7 +51,7 @@
 {#if headerVar === 'COMMON'}
 
   <header id={headerVar}>
-      <a class="header_top" href={issueHref}>
+      <a class="header_top" href='../../../issues/{issueNumber}'>
         <div class="banner">
           <p3> 
             {@html repeatText}
@@ -112,7 +111,7 @@
   {:else if headerVar === 'ARTICLES'}
 
     <header id={headerVar}>
-      <a class="header_top" href={issueHref}>
+      <a class="header_top" href='../../../issues/{issueNumber}'>
         <text>
           <p3>  
             {@html repeatText}
@@ -150,7 +149,7 @@
   {:else if headerVar === 'ISSUES'}
 
     <header id={headerVar}>
-      <a class="header_top" href={issueHref}>
+      <a class="header_top" href='../../../issues/{issueNumber}'>
         <div class="banner">
           <p3> 
             {@html repeatText}
@@ -237,7 +236,7 @@
               <img src={issueCover} href={issueHref} alt="">
 
               <div class="disappear_mobile">
-                  <a class="button" href="/issues/ISSUE5">
+                  <a class="button" href="../../../issues/{issueNumber}">
                   <p3>
                       IS OUT NOW!
                   </p3>

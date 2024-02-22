@@ -41,6 +41,9 @@ body.default {
 
   max-width: 1512px;
   overflow-x: hidden;
+
+  cursor: default;
+
 }
 
 /* Ultra page */
@@ -56,7 +59,11 @@ body.ultra {
 
   max-width: 1512px;
 
-  --primary-font: 'BarlowElastic';
+  --primary-font: 'Whirlybats';
+
+  cursor: url(/cursor.png), auto;
+
+  animation: whirlybatsAnimation 3s infinite;
 }
 
 html {
@@ -352,6 +359,8 @@ body.ultra > div > hero > section > .herotextcontainer > p2 {
   -webkit-line-clamp:unset; /* Number of lines you want */
   overflow: hidden;
   text-overflow: ellipsis;
+
+  animation: whirlybatsAnimation 3s infinite;
 }
 
 body.ultra > div > .ultra_appear {
@@ -1539,10 +1548,22 @@ d2 a {
 /*TIPOGRAFIA ULTRA */
 
 @font-face {
-  font-family: 'BarlowElastic';
-  src: url('/FONTS/Barlow-elasticc.otf') format('opentype');
+  font-family: 'Whirlybats';
+  src: url('/FONTS/whirlybats.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+@keyframes whirlybatsAnimation {
+  0% {
+    font-variation-settings: 'anim' 100;
+  }
+  50% {
+    font-variation-settings: 'anim' 150;
+  }
+  100% {
+    font-variation-settings: 'anim' 200;
+  }
 }
 
 
@@ -2909,3 +2930,6 @@ body.ultra > div > .ULTRABUTTON > .bg_solid {
     height: auto;
   }
 }
+
+/* CURSOR PROPERTIES */
+
