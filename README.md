@@ -14,4 +14,6 @@ TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pub
 - [x] Fixare paypal buying mechanism
 - [x] Fixare newsletter
 - [x] Fixare relatedArticles
+- [ ] Disegnare 404 page
+
 
