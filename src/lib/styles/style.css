@@ -1332,6 +1332,8 @@ footer section {
   grid-column: span 6;
   overflow: hidden;
   padding: 0px;
+
+  font-family: Helvetica;
 }
 
 .newsletter_container > p1 {
