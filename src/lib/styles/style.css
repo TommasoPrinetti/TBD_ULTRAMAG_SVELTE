@@ -61,7 +61,7 @@ body.ultra {
 
   --primary-font: 'Whirlybats';
 
-  cursor: url(/cursor.png), auto;
+  cursor: url(/cursor.png), no-drop;
 
   animation: whirlybatsAnimation 3s infinite;
 }
@@ -363,8 +363,14 @@ body.ultra > div > hero > section > .herotextcontainer > p2 {
   animation: whirlybatsAnimation 3s infinite;
 }
 
-body.ultra > div > .ultra_appear {
-  
+/* descendant selectors to optimize font in ultramode */
+
+body.ultra .ultra_appear,
+body.ultra .ultra_appear div p2,
+body.ultra .ultra_appear section div h1,
+body.ultra .ultra_appear section div h3,
+body.ultra .ultra_appear section div p2 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body.default > div > .ultra_appear {
@@ -1745,10 +1751,10 @@ divider h3 {
   transition: opacity 1s ease-in-out;
 }
 
-body.ultra > div > .single_issue_ultrahover {
+body.ultra > div > div > section > a > .single_issue_ultrahover {
   display: block;
 
-  opacity: 70%;
+  opacity: 100%;
   transition: opacity 1s ease-in-out;
   
   mix-blend-mode: normal;
@@ -2768,6 +2774,50 @@ gallery section a img {
 .ultra_transition.animate {
   animation: slideInOut 2s both;
 }
+
+.default_transition {
+  position: fixed;
+  width: 105vw;
+  height: 100vh;
+  top: 0;
+  transform: translateX(+120%);
+
+  background-color: var(--black-blue);
+  opacity: 1;
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--spacing_l);
+
+  transition: background-color 0.4s ease-in-out;
+}
+
+.default_transition > img {
+  width: 30%;
+}
+
+.default_transition.animate {
+  animation: transitionExit 2s both;
+}
+
+@keyframes transitionExit {
+  0% {
+    transform: translateX(+100%);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+}
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 480px) {

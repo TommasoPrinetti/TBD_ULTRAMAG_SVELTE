@@ -35,7 +35,7 @@
 
 
 {#each Array.from(issuesByCategory.entries()) as [category, issues]}
-  <div class="issues_container">
+  <div class="issues_container" id="ISSUES">
     <Divider bind:SectionName={category} />
     <section>
       {#each issues as issue (issue.issueNumber)}

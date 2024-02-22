@@ -20,5 +20,3 @@
 <ArticleHero {...article}/>
 <ArticleCorpus {...article}/>
 <Footer />
-
-<Ultrabutton />

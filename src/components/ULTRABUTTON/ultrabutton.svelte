@@ -2,23 +2,30 @@
   //ULTRABUTTON.SVELTE
   import { onMount } from 'svelte';
   let isUltra = false;
+  let isFirstLoad = true;
 
   function toggleUltraMode() {
     isUltra = !isUltra;
-    setTimeout(updateBodyClass, 1000); // 1000ms delay
+    if (!isFirstLoad) {
+      setTimeout(updateBodyClass, 1000);
+    } else {
+      updateBodyClass();
+    }
   }
 
   const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
 
   function updateBodyClass() {
     if (typeof window !== "undefined") {
+      const bodyClassList = document.body.classList;
       if (isUltra) {
-        document.body.classList.add('ultra');
-        document.body.classList.remove('default');
+        bodyClassList.add('ultra');
+        bodyClassList.remove('default');
       } else {
-        document.body.classList.add('default');
-        document.body.classList.remove('ultra');
+        bodyClassList.add('default');
+        bodyClassList.remove('ultra');
       }
+      isFirstLoad = false;
     }
   }
 
@@ -36,6 +43,7 @@
   <div class="left_text">
     <p3>DEFAULT</p3>
   </div>
+
   <div class="right_text">
     <p3>ULTRA</p3>
   </div>
@@ -48,5 +56,9 @@
 </div>
 
 <div class="ultra_transition" class:animate={isUltra}>
+  <img src={TbdLogo} alt="">
+</div>
+
+<div class="default_transition" class:animate={!isUltra}>
   <img src={TbdLogo} alt="">
 </div>

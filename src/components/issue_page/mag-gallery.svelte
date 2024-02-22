@@ -11,7 +11,7 @@
  </script>
 
 
- <gallery>
+ <gallery class="default_appear">
     <h2>{callToAction}</h2>
     <section>
         {#each Array.from({ length: lengthNumber }, (_, i) => i + 1) as imageIndex}

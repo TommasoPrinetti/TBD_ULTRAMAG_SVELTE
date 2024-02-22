@@ -62,21 +62,21 @@
       <div class="header_lower">
           <div class="header_buttons_container">
               <!-- svelte-ignore a11y-missing-attribute -->
-              <a class="header_anchor" data-target="#LATEST">
+              <a class="header_anchor" href="#LATEST">
                 <p2> 
                     LATEST
                 </p2>
               </a>
 
               <!-- svelte-ignore a11y-missing-attribute -->
-              <a class="header_anchor" data-target="#ISSUES">
+              <a class="header_anchor" href="#ISSUES">
                 <p2> 
                     ISSUES
                 </p2>
               </a>
 
               <!-- svelte-ignore a11y-missing-attribute -->
-              <a class="header_anchor" data-target="#ABOUT">
+              <a class="header_anchor" href="#ABOUT">
                 <p2> 
                     ABOUT
                 </p2>
@@ -160,21 +160,21 @@
       <div class="header_lower">
           <div class="header_buttons_container">
               <!-- svelte-ignore a11y-missing-attribute -->
-              <a class="header_anchor" data-target="#ISSUE">
+              <a class="header_anchor" href="#ISSUE">
                 <p2> 
                     ISSUE
                 </p2>
               </a>
 
               <!-- svelte-ignore a11y-missing-attribute -->
-              <a class="header_anchor" data-target="#ABSTRACT">
+              <a class="header_anchor" href="#ABSTRACT">
                 <p2> 
                     ABSTRACT
                 </p2>
               </a>
 
               <!-- svelte-ignore a11y-missing-attribute -->
-              <a class="header_anchor" data-target="#ARTICLES">
+              <a class="header_anchor" href="#ARTICLES">
                 <p2> 
                     ARTICLES
                 </p2>
