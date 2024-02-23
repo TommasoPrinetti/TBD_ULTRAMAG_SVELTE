@@ -105,10 +105,10 @@
                 {#each Object.keys(articleContent) as key (key)}
                     {#if key.startsWith('p') && articleContent[key]}
                         <ArticleText paragraph={articleContent[key]} />
-                        {:else if key.startsWith('img') && articleContent[key]}
-                            <ArticleImg imagePath={articleContent[key]} />
-                        {:else if key.startsWith('gallery') && articleContent[key]}
-                            <ArticleGallery galleryFolderPath={articleContent[key]}/>
+                    {:else if key.startsWith('img') && articleContent[key]}
+                        <ArticleImg imagePath={articleContent[key]} />
+                    {:else if key.startsWith('gallery') && articleContent[key]}
+                        <ArticleGallery galleryFolderPath={articleContent[key]}/>
                     {/if}
                 {/each}
                 

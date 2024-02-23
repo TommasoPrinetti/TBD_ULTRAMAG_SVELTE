@@ -9,7 +9,7 @@ TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pub
 ## Todo List
 
 - [x] Fixare bibliografia / didascalia
-- [ ] Fixare ultra-switch aggiungendo anche un ritorno
+- [x] Fixare ultra-switch aggiungendo anche un ritorno
 - [ ] Fixare le gallery che non funzionano fatte così
 - [x] Fixare paypal buying mechanism
 - [x] Fixare newsletter
@@ -17,5 +17,7 @@ TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pub
 - [ ] Disegnare 404 page
 - [x] Aggiungere copertura ULTRA per le issue
 - [x] Fixare HREF di sezione about
-- [ ] Sidemenu HREF requires CTRL+R (needs fix)
+- [x] Sidemenu HREF requires CTRL+R (needs fix)
+- [ ] Fixare transition that keeps rolling
+- [ ] Fixare formattazione testo (importare dal db la formattazione \n)
 
