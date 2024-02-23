@@ -41,6 +41,21 @@
     }
 </script>
 
+<svelte:head>
+    <title>{article.articleTitle}</title>
+  <meta name="description" content={article.articleText} />
+
+  <meta property="og:site_name" content="TBD ULTRAMAGAZINE" />
+  <meta property="og:locale" content="it" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={article.articleTitle} />
+  <meta property="og:description" content={article.articleText} />
+  <meta property="og:image" content={`${article.articleImg}`} />
+  <meta property="og:image:alt" content={article.articleTitle} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+</svelte:head>
+
 <Header {headerVar}/>
 
 <ArticleHero {...article}/>
