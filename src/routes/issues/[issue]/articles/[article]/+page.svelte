@@ -6,8 +6,9 @@
 
     /** @type {import('./$types').PageData} */
     export let data;
+    export let article;
 
-    const article = data.props.article;
+    $: article = data.props.article;
 
     export let headerVar='ARTICLES';
 
