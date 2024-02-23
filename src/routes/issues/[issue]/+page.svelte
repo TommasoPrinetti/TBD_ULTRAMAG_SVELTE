@@ -30,6 +30,26 @@
     let headerVar = 'ISSUES';
     
   </script>
+
+<svelte:head>
+  <title>{data.props.issue.issueTitle}</title>
+  <meta name="description" content={data.props.issue.issueHeroText} />
+
+  <meta property="og:site_name" content="TBD ULTRAMAGAZINE" />
+
+  <meta property="og:locale" content="it" />
+
+  <meta property="og:type" content="issue" />
+
+  <meta property="og:title" content={data.props.issue.issueTitle} />
+  <meta property="og:description" content={data.props.issue.issueHeroText} />
+  <meta property="og:image" content={data.props.issue.issueThumbnail} />
+
+  <meta property="og:image:alt" content={data.props.issue.issueTitle} />
+
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+</svelte:head>
   
   <Header {headerVar}/>
   <IssueHero {...data.props.issue} id="ISSUE"/>
