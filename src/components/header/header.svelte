@@ -8,6 +8,8 @@
   let issueHref = '';
   let issueCover = '';
 
+  let aboutRoute = '../../../about'
+
   const logoHref = '/';
 
   let isOpen = false;
@@ -344,7 +346,7 @@
               </div>
               
               <div class="slide_in_card_horizontal">
-                  <a href="TBD_ABOUT.html">
+                  <a href={aboutRoute}>
                       <h3>
                           ABOUT: COSA è TBD?
                       </h3>

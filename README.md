@@ -16,6 +16,6 @@ TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pub
 - [x] Fixare relatedArticles
 - [ ] Disegnare 404 page
 - [x] Aggiungere copertura ULTRA per le issue
-- [ ] Fixare HREF di sezione about
+- [x] Fixare HREF di sezione about
 - [ ] Sidemenu HREF requires CTRL+R (needs fix)
 

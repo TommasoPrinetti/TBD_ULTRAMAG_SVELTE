@@ -1,7 +1,7 @@
 <script>
     const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
     const ultraAboutImg = '/IDENTITY_IMAGES/ABOUT_ultra.png'
-    const aboutRoute = '$routes/about'
+    const aboutRoute = '/about'
 </script>
 
 <about class="default_appear">
