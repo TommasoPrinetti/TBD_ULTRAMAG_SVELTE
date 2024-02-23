@@ -114,11 +114,11 @@
 
     <header id={headerVar}>
       <a class="header_top" href='../../../issues/{issueNumber}'>
-        <text>
-          <p3>  
+        <div class="banner">
+          <p3> 
             {@html repeatText}
           </p3> 
-        </text>
+        </div>
       </a>
       
       <div class="header_lower">
