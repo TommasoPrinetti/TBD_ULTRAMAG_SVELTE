@@ -1,7 +1,7 @@
 <script>
     const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
-    const ultraAboutImg = '/IDENTITY_IMAGES/ABOUT_ultra.png'
-    const aboutRoute = '/about'
+    const ultraAboutImg = '/IDENTITY_IMAGES/ABOUT_ultra.png';
+    const aboutRoute = '/about';
 </script>
 
 <about class="default_appear">
@@ -23,7 +23,7 @@
       
         <div class="about_image_container">
           <a href={aboutRoute}>
-            <img src={TbdLogo}>
+            <img src={TbdLogo} alt="">
           </a>
         </div>
     </section>
@@ -48,7 +48,7 @@
     
     <div class="about_image_container">
       <a href={aboutRoute}>
-        <img src={ultraAboutImg}>
+        <img src={ultraAboutImg} alt="">
       </a>
     </div>
 

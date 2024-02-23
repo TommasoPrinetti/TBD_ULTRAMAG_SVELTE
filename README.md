@@ -25,4 +25,5 @@ TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pub
 - [ ] Inglese? 🇬🇧
 - [x] Disegnare 404 page
 - [x] Fixare ultra-status reset on article-page
+- [x] Update go.to burger slider/about
 

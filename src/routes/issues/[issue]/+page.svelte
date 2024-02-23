@@ -28,7 +28,7 @@
       const labels = data.props.articles.map(article => article.sectionLabel);
       sectionNames = [...new Set(labels)];
     }
-    
+
   </script>
 
 <svelte:head>
@@ -121,5 +121,7 @@
 
 {#if data.props.issue.isIssueUltra === true}
   <Ultrabutton />
+
+
 {/if}
   

@@ -8,8 +8,6 @@
   let issueHref = '';
   let issueCover = '';
 
-  let aboutRoute = '../../../about'
-
   const logoHref = '/';
 
   let isOpen = false;
@@ -21,7 +19,6 @@
   // Questo serve a settare lo striscione in alto sull'ultima ISSUE automaticamente
 
   import { goto } from '$app/navigation';
-
   import issuesData from "$lib/issues.json";
 
   function setLatestIssueData() {
@@ -31,7 +28,6 @@
       issueNumber = latestIssue.issueNumber;
       issueCover = latestIssue.issueCover;
     }
-
 }
 
   onMount(() => {
@@ -349,7 +345,7 @@
               </div>
               
               <div class="slide_in_card_horizontal">
-                  <a href={aboutRoute}>
+                  <a on:click={() => { goto('../../../about'); toggleMenu(); }}>
                       <h3>
                           ABOUT: COSA è TBD?
                       </h3>
@@ -357,10 +353,13 @@
               </div>
 
               <div class="slide_in_card_horizontal">
-                <a href="https://www.instagram.com/tbd.ultramagazine/?next=%2Fmkhtrrjby%2Ffeed%2F&hl=it">
-                    <h3>
-                        INSTAGRAM
-                    </h3>
+                <a href="https://www.instagram.com/tbd.ultramagazine/?next=%2Fmkhtrrjby%2Ffeed%2F&hl=it" 
+                  target="_blank" 
+                  on:click={toggleMenu}
+                  rel="noopener noreferrer">
+                  <h3>
+                    INSTAGRAM
+                  </h3>
                 </a>
             </div>
               
