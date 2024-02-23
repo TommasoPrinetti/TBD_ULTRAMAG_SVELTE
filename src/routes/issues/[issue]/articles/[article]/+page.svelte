@@ -18,5 +18,5 @@
 <Header {headerVar}/>
 
 <ArticleHero {...article}/>
-<ArticleCorpus {...article}/>
+<ArticleCorpus key={article.articleTitle} {article} />
 <Footer />

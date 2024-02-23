@@ -1,70 +1,54 @@
 <script>
-    //THIS IS ARTICLE_CORPUS.SVELTE
-     /** @type {import('./$types').PageData} */
-    // exports
-    export let articleTitle;
-    export let showDidascalie;
-    export let showBibliografia;
-    export let autore;
-    export let editor;
-    export let parentIssue;
-    export let issueNumber;
-    export let bibliografie;
-    export let didascalie;
-    export let articleContent = {};
-    export let data;
-
-    // constants
-    let relatedArticles = [];
-    let rowsDidascalie = [];
-    let rowsBibliografie = [];
-    let currentIssueData = {};
-    let isSliderOpen = false;
-    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
-
-    // imports
-    import articlesData from '$lib/articles.json';
-    import issuesData from '$lib/issues.json';
+    // article_corpus.svelte
+    import { onMount } from 'svelte';
+    import { goto } from '$app/navigation';
+    
+    import articlesData from '$lib/articles.json'; // For related articles
+    import issuesData from '$lib/issues.json'; // For current issue data
     import BuyButtons from "$components/buy_buttons.svelte";
     import BuyingSlider from "../sliders/buying_slider.svelte";
     import ArticleGallery from "./article_gallery.svelte";
     import ArticleImg from "./article_img.svelte";
     import ArticleText from "./article_text.svelte";
-    import { onMount } from 'svelte';
-    import { goto } from '$app/navigation';
-   
-	
 
-    // FUNCTIONS
+    // Accept the entire article object as a prop
+    export let article;
+
+    // Derived properties for easier access
+    let { articleTitle, showDidascalie, showBibliografia, autore, editor, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article;
+
+    $: if (article) {
+    ({ articleTitle, showDidascalie, showBibliografia, autore, editor, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article);
+    }
+
+    let relatedArticles = [];
+    let rowsDidascalie = [];
+    let rowsBibliografie = [];
+    let currentIssueData = {};
+    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
+    let isSliderOpen = false;
 
     onMount(() => {
         relatedArticles = articlesData.filter(a => a.parentIssue === parentIssue && a.articleName !== articleTitle); 
         currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
+        
         if (didascalie) {
-        rowsDidascalie = didascalie.split('*').filter(Boolean);
+            rowsDidascalie = didascalie.split('*').filter(Boolean);
         }
         
         if (bibliografie) {
-        rowsBibliografie = bibliografie.split('*').filter(Boolean);
+            rowsBibliografie = bibliografie.split('*').filter(Boolean);
         }
     });
 
     function navigateToArticle(relatedArticle) {
         const url = `../../../issues/${relatedArticle.parentIssue}/articles/${relatedArticle.articleName}`;
-        
-        
         goto(url);
     }
-
 
     function handleSliderToggle() {
         isSliderOpen = !isSliderOpen;
     }
-
-    //console.log("ROWS",rowsBibliografie)
-    //console.log("Didascalie", didascalie)
-
-    
 
 </script>
 
