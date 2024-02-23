@@ -1,5 +1,7 @@
 <script>
-    // Directly export the individual properties expected from the article object
+    //THIS IS ARTICLE_CORPUS.SVELTE
+     /** @type {import('./$types').PageData} */
+    // exports
     export let articleTitle;
     export let showDidascalie;
     export let showBibliografia;
@@ -9,34 +11,32 @@
     export let issueNumber;
     export let bibliografie;
     export let didascalie;
-    
     export let articleContent = {};
+    export let data;
+
+    // constants
     let relatedArticles = [];
     let rowsDidascalie = [];
     let rowsBibliografie = [];
     let currentIssueData = {};
+    let isSliderOpen = false;
+    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
 
-    
-    import { onMount } from 'svelte';
-
-    // NAVIGATIONAL
-    import { goto } from '$app/navigation';
-    function navigateToArticle(relatedArticle) {
-        goto(`../../../issues/${relatedArticle.parentIssue}/articles/${relatedArticle.articleName}`);
-    }
-
+    // imports
     import articlesData from '$lib/articles.json';
     import issuesData from '$lib/issues.json';
-
     import BuyButtons from "$components/buy_buttons.svelte";
     import BuyingSlider from "../sliders/buying_slider.svelte";
     import ArticleGallery from "./article_gallery.svelte";
     import ArticleImg from "./article_img.svelte";
     import ArticleText from "./article_text.svelte";
-    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
-    let isSliderOpen = false;
+    import { onMount } from 'svelte';
+    import { goto } from '$app/navigation';
+   
+	
 
-    
+    // FUNCTIONS
+
     onMount(() => {
         relatedArticles = articlesData.filter(a => a.parentIssue === parentIssue && a.articleName !== articleTitle); 
         currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
@@ -49,12 +49,22 @@
         }
     });
 
-    console.log("ROWS",rowsBibliografie)
-    console.log("Didascalie", didascalie)
+    function navigateToArticle(relatedArticle) {
+        const url = `../../../issues/${relatedArticle.parentIssue}/articles/${relatedArticle.articleName}`;
+        
+        
+        goto(url);
+    }
+
 
     function handleSliderToggle() {
         isSliderOpen = !isSliderOpen;
     }
+
+    //console.log("ROWS",rowsBibliografie)
+    //console.log("Didascalie", didascalie)
+
+    
 
 </script>
 
