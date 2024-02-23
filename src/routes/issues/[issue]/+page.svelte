@@ -13,6 +13,8 @@
     import Ultrabutton from '$components/ULTRABUTTON/ultrabutton.svelte';
 
     import Manifesto from '$components/manifesto.svelte';
+
+    let headerVar = 'ISSUES';
   
     // Export the props from the load function
     export let data;
@@ -26,8 +28,6 @@
       const labels = data.props.articles.map(article => article.sectionLabel);
       sectionNames = [...new Set(labels)];
     }
-
-    let headerVar = 'ISSUES';
     
   </script>
 

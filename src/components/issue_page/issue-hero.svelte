@@ -17,9 +17,9 @@
 
     let isSliderOpen = false;
 
-  function handleSliderToggle() {
-    isSliderOpen = !isSliderOpen;
-  }
+    function handleSliderToggle() {
+        isSliderOpen = !isSliderOpen;
+    }
   
 </script>
 

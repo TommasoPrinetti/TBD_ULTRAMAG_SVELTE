@@ -2,14 +2,17 @@
   //ULTRABUTTON.SVELTE
   import { onMount } from 'svelte';
   let isUltra = false;
-  let isFirstLoad = true;
+  let isDefault = false;
 
   function toggleUltraMode() {
     isUltra = !isUltra;
-    if (!isFirstLoad) {
+
+    if (isUltra) {
       setTimeout(updateBodyClass, 1000);
+      isDefault = false;
     } else {
-      updateBodyClass();
+      setTimeout(updateBodyClass, 1000);
+      isDefault = true;
     }
   }
 
@@ -25,7 +28,6 @@
         bodyClassList.add('default');
         bodyClassList.remove('ultra');
       }
-      isFirstLoad = false;
     }
   }
 
@@ -59,6 +61,6 @@
   <img src={TbdLogo} alt="">
 </div>
 
-<div class="default_transition" class:animate={!isUltra}>
+<div class="default_transition" class:animate={isDefault}>
   <img src={TbdLogo} alt="">
 </div>

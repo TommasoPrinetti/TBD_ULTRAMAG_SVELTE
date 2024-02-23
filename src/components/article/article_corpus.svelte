@@ -6,10 +6,16 @@
     import articlesData from '$lib/articles.json'; // For related articles
     import issuesData from '$lib/issues.json'; // For current issue data
     import BuyButtons from "$components/buy_buttons.svelte";
-    import BuyingSlider from "../sliders/buying_slider.svelte";
+    import BuyingSlider from "$components/sliders/buying_slider.svelte";
     import ArticleGallery from "./article_gallery.svelte";
     import ArticleImg from "./article_img.svelte";
-    import ArticleText from "./article_text.svelte";
+
+    let relatedArticles = [];
+    let rowsDidascalie = [];
+    let rowsBibliografie = [];
+    let currentIssueData = {};
+    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
+    let isSliderOpen = true;
 
     // Accept the entire article object as a prop
     export let article;
@@ -20,13 +26,6 @@
     $: if (article) {
     ({ articleTitle, showDidascalie, showBibliografia, autore, editor, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article);
     }
-
-    let relatedArticles = [];
-    let rowsDidascalie = [];
-    let rowsBibliografie = [];
-    let currentIssueData = {};
-    const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
-    let isSliderOpen = false;
 
     onMount(() => {
         relatedArticles = articlesData.filter(a => a.parentIssue === parentIssue && a.articleName !== articleTitle); 
@@ -39,6 +38,8 @@
         if (bibliografie) {
             rowsBibliografie = bibliografie.split('*').filter(Boolean);
         }
+
+        handleSliderToggle();
     });
 
     function navigateToArticle(relatedArticle) {
@@ -48,6 +49,7 @@
 
     function handleSliderToggle() {
         isSliderOpen = !isSliderOpen;
+        console.log("PREMUTO", isSliderOpen)
     }
 
 </script>
@@ -143,9 +145,11 @@
     </section>
 </article_2>
 
-<BuyingSlider
-  {isSliderOpen}
-  issueCover={currentIssueData?.issueCover}
-  issuePrice={currentIssueData?.issuePrice}
-  issueNumber={issueNumber}
-/>
+{#key isSliderOpen === true}
+    <BuyingSlider
+    {isSliderOpen}
+    issueCover={currentIssueData?.issueCover}
+    issuePrice={currentIssueData?.issuePrice}
+    issueNumber={issueNumber}
+    />
+{/key}

@@ -5,6 +5,7 @@
  export let parentIssue
  export let articleText
 
+
 </script>
 
 <hero>
