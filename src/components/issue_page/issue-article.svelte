@@ -4,6 +4,10 @@
     export let articleText;
     export let articleName;
     export let parentIssue;
+
+    import { goto } from '$app/navigation';
+    import { onMount } from 'svelte';
+
 </script>
 
 <article>
@@ -23,12 +27,13 @@
         </p3>
 
         <!-- svelte-ignore a11y-missing-attribute -->
-        <a class="button" href="./{parentIssue}/articles/{articleName}">
+        <a class="button" on:click={() => { goto(`./${parentIssue}/articles/${articleName}`); }} style="cursor: pointer;">
             <p2> 
                 READ ALL
             </p2>
         </a>
-
+        
+        
         </div>
     </section>
 </article>

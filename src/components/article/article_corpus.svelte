@@ -104,10 +104,15 @@
 
                 {#each Object.keys(articleContent) as key (key)}
                     {#if key.startsWith('p') && articleContent[key]}
-                        <ArticleText paragraph={articleContent[key]} />
+                        <!-- Render each line of the paragraph separately with <p> tags -->
+                        {#each articleContent[key].split('\n') as line}
+                            <p2>{line}</p2>
+                        {/each}
                     {:else if key.startsWith('img') && articleContent[key]}
+                        <!-- Render an image -->
                         <ArticleImg imagePath={articleContent[key]} />
                     {:else if key.startsWith('gallery') && articleContent[key]}
+                        <!-- Render a gallery -->
                         <ArticleGallery galleryFolderPath={articleContent[key]}/>
                     {/if}
                 {/each}

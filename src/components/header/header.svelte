@@ -257,34 +257,37 @@
                           ISSUES:
                       </p1>
 
-                      <a class="arrow_container_slider" href="index.html#ISSUES">
+                      <a class="arrow_container_slider">
                         <p2>
                           →
                         </p2>
                       </a>
 
+                      <!-- svelte-ignore a11y-no-static-element-interactions -->
                       <div>
-                          <a href="../../../issues/ISSUE1">
+                          <!-- svelte-ignore a11y-click-events-have-key-events -->
+                          <!-- svelte-ignore a11y-missing-attribute -->
+                          <a on:click={() => { goto(`/issues/ISSUE1`); toggleMenu(); }} style="cursor: pointer;">
                               <p1> → 1ST Issue </p1>
                           </a>
 
-                          <a href="../../../issues/ISSUE2">
+                          <a on:click={() => { goto(`/issues/ISSUE2`); toggleMenu(); }} style="cursor: pointer;">
                               <p1> → 2ND Issue </p1>
                           </a>
                           
-                          <a href="../../../issues/ISSUE_3">
+                          <a on:click={() => { goto(`/issues/ISSUE3`); toggleMenu(); }} style="cursor: pointer;">
                               <p1> → 3RD Issue </p1>
                           </a>
 
-                          <a href="../../../issues/ISSUE4_VOL_I">
+                          <a on:click={() => { goto(`/issues/ISSUE4_VOL_I`); toggleMenu(); }} style="cursor: pointer;">
                             <p1> → 4RD Issue_Vol I </p1>
                           </a>
 
-                          <a href="../../../issues/ISSUE4_VOL_II">
+                          <a on:click={() => { goto(`/issues/ISSUE4_VOL_II`); toggleMenu(); }} style="cursor: pointer;">
                             <p1> → 4RD Issue_Vol II </p1>
                           </a>
 
-                          <a href="../../../issues/ISSUE4_VOL_III">
+                          <a on:click={() => { goto(`/issues/ISSUE4_VOL_III`); toggleMenu(); }} style="cursor: pointer;">
                             <p1> → 4RD Issue_Vol III</p1>
                           </a>
 
@@ -297,18 +300,18 @@
                           PUBLICATIONS:
                       </p1>
 
-                      <a class="arrow_container_slider" href="index.html#PUBLICATIONS">
+                      <a class="arrow_container_slider">
                         <p2>
                           →
                         </p2>
                       </a>
 
                       <div>
-                          <a href="../../../issues/XPOST">
+                          <a on:click={() => { goto(`/issues/XPOST`); toggleMenu(); }} style="cursor: pointer;">
                               <p1> → X Post </p1>
                           </a>
 
-                          <a href="../../../issues/BLASTINGTHEORY">
+                          <a on:click={() => { goto(`/issues/BLASTINGTHEORY`); toggleMenu(); }} style="cursor: pointer;">
                               <p1> → Blasting Theory </p1>
                           </a>
                       </div>
@@ -328,15 +331,15 @@
                       </a>
 
                       <div>
-                          <a href="../../../issues/FOREHEADVULVA">
+                          <a on:click={() => { goto(`/issues/FOREHEADVULVA`); toggleMenu(); }}>
                               <p1> → Forehead vulva </p1>
                           </a>
 
-                          <a href="../../../issues/LOOKATME_VOL_I">
+                          <a on:click={() => { goto(`/issues/LOOKATME_VOL_I`); toggleMenu(); }}>
                               <p1> → Look at me Vol.I </p1>
                           </a>
                           
-                          <a href="../../../issues/LOOKATME_VOL_II">
+                          <a on:click={() => { goto(`/issues/LOOKATME_VOL_II`); toggleMenu(); }}>
                               <p1> → Look at me Vol.II </p1>
                           </a>
                       </div>

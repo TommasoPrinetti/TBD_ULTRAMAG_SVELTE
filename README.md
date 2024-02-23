@@ -10,14 +10,15 @@ TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pub
 
 - [x] Fixare bibliografia / didascalia
 - [x] Fixare ultra-switch aggiungendo anche un ritorno
-- [ ] Fixare le gallery che non funzionano fatte così
 - [x] Fixare paypal buying mechanism
 - [x] Fixare newsletter
 - [x] Fixare relatedArticles
-- [ ] Disegnare 404 page
 - [x] Aggiungere copertura ULTRA per le issue
 - [x] Fixare HREF di sezione about
 - [x] Sidemenu HREF requires CTRL+R (needs fix)
+- [x] Fixare formattazione testo (importare dal db la formattazione \n)
+- [ ] Fixare le gallery che non funzionano fatte così
 - [ ] Fixare transition that keeps rolling
-- [ ] Fixare formattazione testo (importare dal db la formattazione \n)
+- [x] Disegnare 404 page
+- [x] Fixare ultra-status reset on article-page
 

@@ -61,7 +61,7 @@ body.ultra {
 
   --primary-font: 'Whirlybats';
 
-  cursor: url(/cursor.png), no-drop;
+  cursor: default, no-drop;
 
   animation: whirlybatsAnimation 3s infinite;
 }
@@ -2981,5 +2981,16 @@ body.ultra > div > .ULTRABUTTON > .bg_solid {
   }
 }
 
-/* CURSOR PROPERTIES */
+/* errors */
 
+.notfound {
+
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 80vh;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  overflow: hidden;
+}
