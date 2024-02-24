@@ -1,11 +1,12 @@
 <script>
+  // single_issue.svelte
   export let issueTitle = '';
   export let issuePrice = '';
   export let issueHref = '';
   export let issueCover = '';
 
-  export let ultraHoverImg;
-  
+  export let ultraHoverImg = '';
+  let isLatestIssue = '';
 </script>
 
 <a class="single_issue" href={issueHref}>

@@ -8,6 +8,7 @@
     export let UltraissueHeroText;
     export let UltraissueThumbnail;
     export let issuePrice = '';
+    export let issueHeroId = '';
 
     import issuesData from "$lib/issues.json";
     let currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
@@ -24,7 +25,7 @@
 </script>
 
 
-<hero id="ISSUE" class="default_appear">
+<hero id={issueHeroId} class="default_appear">
     <section id="READ THE WHOLE ARTICLE">           
         <div class="herotextcontainer"> 
             <h1>

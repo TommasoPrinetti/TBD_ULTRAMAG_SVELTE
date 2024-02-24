@@ -4,6 +4,8 @@
     import Header from "../../components/header/header.svelte";
     import Footer from "../../components/footer/footer.svelte";
 
+    let headerVar='ARTICLES';
+
    let members = [
     {
         id: 1,
@@ -23,7 +25,7 @@
 ]
 </script>
 
-    <Header />
+    <Header  {headerVar}/>
     
     <manifesto id="MANIFESTO">
         <section>

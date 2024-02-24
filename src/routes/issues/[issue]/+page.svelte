@@ -14,6 +14,8 @@
 
     import Manifesto from '$components/manifesto.svelte';
 
+    let issueHeroId = 'ISSUE';
+
     let headerVar = 'ISSUES';
   
     // Export the props from the load function
@@ -52,20 +54,55 @@
 </svelte:head>
   
   <Header {headerVar}/>
-  <IssueHero {...data.props.issue} id="ISSUE"/>
+
+  <IssueHero 
+  issueNumber={data.props.issue.issueNumber}
+  issueTitle={data.props.issue.issueTitle}
+  issueHeroText={data.props.issue.issueHeroText}
+  issueThumbnail={data.props.issue.issueThumbnail}
+  UltraissueTitle={data.props.issue.UltraissueTitle}
+  UltraissueHeroText={data.props.issue.UltraissueHeroText}
+  UltraissueThumbnail={data.props.issue.UltraissueThumbnail}
+  issuePrice={data.props.issue.issuePrice || ''}
+  {issueHeroId}/>
+
+
+
 
   <!-- Varianti delle varie pagine basati sul db -->
 
   {#if data.props.issue.layoutOption === 'Classic'}
-    <MagGallery {...data.props.issue}/>
-    <CowElement {...data.props.issue}/>
+    <MagGallery
+    magGalleryFolder = {data.props.issue.magGalleryFolder}
+    lengthNumber= {data.props.issue.lengthNumber}/>
+    <CowElement 
+    CowElementText = {data.props.issue.CowElementText}
+    CowElementImg = {data.props.issue.CowElementImg}
+    CowImgDidascalia = {data.props.issue.CowImgDidascalia}
+    UltraCowElementText = {data.props.issue.UltraCowElementText}
+    UltraCowElementTitle = {data.props.issue.UltraCowElementTitle}
+    UltraGalleryFolder = {data.props.issue.UltraGalleryFolder}
+    />
+
   {:else if data.props.issue.layoutOption === 'Manifesto'}
     <Manifesto {...data.props.issue} id="ABSTRACT"/>
+
   {:else if data.props.issue.layoutOption === 'Ibrido'}
-    <MagGallery {...data.props.issue}/>
+    <MagGallery
+    magGalleryFolder = {data.props.issue.magGalleryFolder}
+    lengthNumber= {data.props.issue.lengthNumber}/>
     <Manifesto {...data.props.issue} id="ABSTRACT"/>
-    <CowElement {...data.props.issue}/>
+    <CowElement 
+    CowElementText = {data.props.issue.CowElementText}
+    CowElementImg = {data.props.issue.CowElementImg}
+    CowImgDidascalia = {data.props.issue.CowImgDidascalia}
+    UltraCowElementText = {data.props.issue.UltraCowElementText}
+    UltraCowElementTitle = {data.props.issue.UltraCowElementTitle}
+    UltraGalleryFolder = {data.props.issue.UltraGalleryFolder}
+    />
   {/if}
+
+  
 
     <!-- Per ora c'è solo un caso in cui c'è una pagina con dei video -->
 
@@ -112,11 +149,16 @@
     {#each sectionNames as sectionName}
       <Divider SectionName={sectionName} />
       {#each data.props.articles.filter(article => article.sectionLabel === sectionName) as articleContent}
-        <IssueArticle {...articleContent} />
+        <IssueArticle
+        articleTitle = {articleContent.articleTitle}
+        articleText = {articleContent.articleText}
+        articleName = {articleContent.articleName}
+        parentIssue = {articleContent.parentIssue}
+        articleImg = {articleContent.articleImg}
+         />
       {/each}
     {/each} 
   </div>
-
 <Footer />
 
 {#if data.props.issue.isIssueUltra === true}

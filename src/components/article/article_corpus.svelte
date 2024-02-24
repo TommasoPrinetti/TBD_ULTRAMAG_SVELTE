@@ -49,7 +49,7 @@
 
     function handleSliderToggle() {
         isSliderOpen = !isSliderOpen;
-        console.log("PREMUTO", isSliderOpen)
+        // console.log("PREMUTO", isSliderOpen)
     }
 
 </script>

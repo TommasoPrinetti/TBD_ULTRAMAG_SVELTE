@@ -1,4 +1,5 @@
 <script>
+  // issue_container.svelte
   import SingleIssue from '$components/issue_container/single_issue.svelte';
 
   import Divider from '$components/issue_container/divider.svelte';
@@ -6,6 +7,9 @@
   import SingleCard from './single_card.svelte';
 
   import issuesData from "$lib/issues.json";
+
+  let issueNumber = '';
+
   // console.log("issuesData:", issuesData)
 
   // webresources TRANSFORMATION
@@ -33,18 +37,25 @@
  
 </script>
 
-
 {#each Array.from(issuesByCategory.entries()) as [category, issues]}
   <div class="issues_container" id="ISSUES">
     <Divider bind:SectionName={category} />
     <section>
       {#each issues as issue (issue.issueNumber)}
-        {#if category === 'issues'}
-          <SingleIssue {...issue}/>
-        {:else if category === 'publications'}
-          <SingleIssue {...issue}/>
+        {#if category === 'issues' || category === 'publications'}
+          <SingleIssue 
+            issueTitle={issue.issueTitle} 
+            issuePrice={issue.issuePrice}
+            issueHref={issue.issueHref}
+            issueCover={issue.issueCover}
+            ultraHoverImg={issue.ultraHoverImg || ''} />
         {:else if category === 'special projects'}
-          <SingleCard {...issue} />
+          <SingleCard 
+            issueTitle={issue.issueTitle} 
+            issueHeroText={issue.issueHeroText}
+            issueHref={issue.issueHref}
+            issueCover={issue.issueCover}
+            />
         {/if}
       {/each}
     </section>
