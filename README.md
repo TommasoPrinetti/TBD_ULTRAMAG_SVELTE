@@ -17,7 +17,7 @@ TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pub
 - [x] Fixare HREF di sezione about
 - [x] Sidemenu HREF requires CTRL+R (needs fix)
 - [x] Fixare formattazione testo (importare dal db la formattazione \n)
-- [ ] Fixare le gallery che non funzionano fatte così
+- [x] Fixare le gallery che non funzionano fatte così
 - [x] Fixare transition that keeps rolling
 - [ ] Fixare BUY_NOW button not working in articles
 - [x] Fixare pulsante ultra span 16''
