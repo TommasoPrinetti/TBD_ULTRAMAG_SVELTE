@@ -2,10 +2,10 @@
 <script>
     import { onMount } from 'svelte';
   
-    export let issueCover;
-    export let issueNumber;
-    export let issuePrice;
-    export let isSliderOpen;
+    export let issueCover = '';
+    export let issueNumber = '';
+    export let issuePrice = '';
+    export let isSliderOpen = '';
     export let spedTracciata = 7;
     export let globalCost = (issuePrice + spedTracciata);
   

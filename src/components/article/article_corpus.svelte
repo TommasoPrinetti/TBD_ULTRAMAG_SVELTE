@@ -3,8 +3,9 @@
     import { onMount } from 'svelte';
     import { goto } from '$app/navigation';
     
-    import articlesData from '$lib/articles.json'; // For related articles
-    import issuesData from '$lib/issues.json'; // For current issue data
+    import articlesData from '$lib/articles.json';
+    import issuesData from '$lib/issues.json';
+
     import BuyButtons from "$components/buy_buttons.svelte";
     import BuyingSlider from "$components/sliders/buying_slider.svelte";
     import ArticleGallery from "./article_gallery.svelte";
@@ -14,12 +15,12 @@
     let rowsDidascalie = [];
     let rowsBibliografie = [];
     let currentIssueData = {};
+    let isSliderOpen = false;
     const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
-    let isSliderOpen = true;
 
     // Accept the entire article object as a prop
     export let article;
-
+    
     // Derived properties for easier access
     let { articleTitle, showDidascalie, showBibliografia, autore, editor, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article;
 
@@ -27,9 +28,12 @@
     ({ articleTitle, showDidascalie, showBibliografia, autore, editor, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article);
     }
 
+
     onMount(() => {
         relatedArticles = articlesData.filter(a => a.parentIssue === parentIssue && a.articleName !== articleTitle); 
-        currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
+        currentIssueData = issuesData.find(issue => String(issue.issueNumber) === String(article.parentIssue));
+
+        isSliderOpen = false;
         
         if (didascalie) {
             rowsDidascalie = didascalie.split('*').filter(Boolean);
@@ -38,9 +42,9 @@
         if (bibliografie) {
             rowsBibliografie = bibliografie.split('*').filter(Boolean);
         }
-
-        handleSliderToggle();
     });
+
+    console.log("Looking for issueNumber:", currentIssueData);
 
     function navigateToArticle(relatedArticle) {
         const url = `../../../issues/${relatedArticle.parentIssue}/articles/${relatedArticle.articleName}`;
@@ -145,11 +149,9 @@
     </section>
 </article_2>
 
-{#key isSliderOpen === true}
-    <BuyingSlider
-    {isSliderOpen}
-    issueCover={currentIssueData?.issueCover}
-    issuePrice={currentIssueData?.issuePrice}
-    issueNumber={issueNumber}
-    />
-{/key}
+
+<BuyingSlider
+{isSliderOpen}
+issueCover={currentIssueData.issueCover}
+issuePrice={currentIssueData.issuePrice}
+{issueNumber} />

@@ -19,7 +19,7 @@ TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pub
 - [x] Fixare formattazione testo (importare dal db la formattazione \n)
 - [x] Fixare le gallery che non funzionano fatte così
 - [x] Fixare transition that keeps rolling
-- [ ] Fixare BUY_NOW button not working in articles
+- [x] Fixare BUY_NOW button not working in articles // Era un problema di logica dell'espressione find
 - [x] Fixare pulsante ultra span 16''
 - [x] Fixare testo banner bianco in mod. ultra
 - [ ] Inglese? 🇬🇧

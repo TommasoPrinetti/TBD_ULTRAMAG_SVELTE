@@ -31,14 +31,18 @@
     });
 </script>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <gallery>
     <section>
         {#each Array.from({ length: lengthNumber }, (_, i) => i + 1) as imageIndex}
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
             <a id={`image${imageIndex}`} class:current={currentImageIndex === imageIndex} on:click={cycleImages}>
                 <img src={`${galleryFolderPath}/GALLERY_${imageIndex}.webp`} alt={`GALLERY_${imageIndex}`}>
             </a>
         {/each}
     </section>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="switch_container" on:click={cycleImages}>
         <p1>NEXT →</p1>
     </div>
