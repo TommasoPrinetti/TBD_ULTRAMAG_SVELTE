@@ -37,7 +37,7 @@
 
 </script>
 
-<last_issue id="#LATEST">
+<last_issue id="LATEST">
     <h2 id="HEROTEXT_FILLING">
       Issue {issueTitle} Out now.
     </h2>
