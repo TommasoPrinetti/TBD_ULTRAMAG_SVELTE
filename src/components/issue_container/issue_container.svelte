@@ -48,7 +48,8 @@
             issuePrice={issue.issuePrice}
             issueHref={issue.issueHref}
             issueCover={issue.issueCover}
-            ultraHoverImg={issue.ultraHoverImg || ''} />
+            ultraHoverImg={issue.ultraHoverImg || ''} 
+            />
         {:else if category === 'special projects'}
           <SingleCard 
             issueTitle={issue.issueTitle} 

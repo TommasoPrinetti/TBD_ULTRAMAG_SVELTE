@@ -743,8 +743,13 @@ article_2 section {
   stroke: var(--white-blue);
 }
 
+.index > a {
+  width: 90%;
+}
+
   .index p3 {
     text-transform: uppercase;
+    width: 90%;
   }
 
   .index p3:hover {
@@ -793,6 +798,11 @@ read img {
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 480px) {
 
+  .index_container {
+    margin-bottom: var(--spacing_s);
+    height: auto;
+  }
+
   article_2 section { 
     
     grid-template-columns: repeat(2, 1fr); 
@@ -817,6 +827,8 @@ read img {
   .side_menu {
     display: flex;
     padding-bottom: 0;
+    justify-content: flex-start;
+    height: fit-content;
   }
 
   .side_menu img {
@@ -828,6 +840,7 @@ read img {
     display: flex;
     flex-direction: column;
     gap: var(--spacing_m);
+    overflow-x: hidden;
   }
 
   read img {
@@ -1399,8 +1412,18 @@ footer section {
 
 }
 
+.s-scHqDo4uKJDU {
+  color: var(--white-white);
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 480px) {
+
+  .newsletter_container {
+    overflow: hidden;
+    padding: var(--spacing_s);
+    width: 100%;
+  }  
 
   footer {
 
@@ -2156,6 +2179,15 @@ body.ultra > div > div > section > a > .single_issue_ultrahover {
       height: fit-content;
   }
 
+  .slide_in_card_vertical div {
+    display: none;
+  }
+
+  .slide_in_card_vertical p1 {
+    width: 100%;
+  }
+
+
       .arrow_container_slider {
           display: block;
           width: 100%;
@@ -2169,10 +2201,7 @@ body.ultra > div > div > section > a > .single_issue_ultrahover {
         height: 100%; 
     }
 
-  .slide_in_card_vertical div {
-      display: none;
-  }
-
+  
   .slide_in_card_horizontal {
       display: flex;
       flex: 1;
@@ -3011,4 +3040,11 @@ body.ultra > div > .ULTRABUTTON > .bg_solid {
   align-self: center;
   justify-content: center;
   overflow: hidden;
+}
+
+/* robe */
+
+.title_container {
+
+  width: 100%;
 }

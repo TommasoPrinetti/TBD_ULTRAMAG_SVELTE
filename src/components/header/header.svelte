@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { goto } from '$app/navigation';
 
   const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
   export let headerVar = 'COMMON';
@@ -17,8 +18,6 @@
   }
 
   // Questo serve a settare lo striscione in alto sull'ultima ISSUE automaticamente
-
-  import { goto } from '$app/navigation';
   import issuesData from "$lib/issues.json";
 
   function setLatestIssueData() {
@@ -248,10 +247,14 @@
               
               <div class="slide_in_threecard">
 
+                  <!-- svelte-ignore a11y-missing-attribute -->
                   <div class="slide_in_card_vertical">
-                      <p1>
+                      <a class="title_container" on:click={() => {goto('/#ISSUES'); toggleMenu(); }}>
+                        <p1>
                           ISSUES:
-                      </p1>
+                        </p1>
+                      </a>
+                    
 
                       <a class="arrow_container_slider">
                         <p2>
@@ -289,13 +292,16 @@
 
                       </div>
 
-                  </div>
+                    </div>
 
                   <div class="slide_in_card_vertical">
+                    <a class="title_container" on:click={() => { goto('/#ISSUES'); toggleMenu(); }}>
                       <p1>
-                          PUBLICATIONS:
+                        PUBLICATIONS:
                       </p1>
+                    </a>
 
+                      <!-- svelte-ignore a11y-missing-attribute -->
                       <a class="arrow_container_slider">
                         <p2>
                           →
@@ -303,7 +309,8 @@
                       </a>
 
                       <div>
-                          <a on:click={() => { goto(`/issues/XPOST`); toggleMenu(); }} style="cursor: pointer;">
+                          <a on:click={() => { goto(`/issues/XPOST`); toggleMenu(); }}
+                            style="cursor: pointer;" >
                               <p1> → X Post </p1>
                           </a>
 
@@ -315,10 +322,11 @@
 
                   <div class="slide_in_card_vertical">
                       
-                        <p1>
-                          SPECIAL PROJECTS:
-                        </p1>
-                      
+                    <a class="title_container" on:click={() => { goto('/#ISSUES'); toggleMenu(); }}>
+                      <p1>
+                        SPECIAL PROJECTS:
+                      </p1>
+                    </a>
 
                       <a class="arrow_container_slider">
                         <p2>

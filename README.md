@@ -26,4 +26,6 @@ TBD, acronimo di “To Be Defined”, è un progetto editoriale che dal 2019 pub
 - [x] Disegnare 404 page
 - [x] Fixare ultra-status reset on article-page
 - [x] Update go.to burger slider/about
+- [ ] I Buybutton vanno una volta ogni due
+- [ ] In alcuni articoli mobile se ci sono parole troppo eccessivamente lunge (tipo link) la colonna smatta
 

@@ -49,7 +49,7 @@
                             <input type="text" name="b_2088942308759df62fadb3c02_8b4532ecd0" tabindex="-1" value="">
                         </div>
                         <div class="clear">
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="color: white;">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="color: var(--white-blue);">
                         </div>
                     </div>
                 </form>

@@ -11,6 +11,7 @@
   
     function closeSlider() {
       isSliderOpen = false;
+      // console.log("Slider is closed:",isSliderOpen )
     }
   
     // The PayPal SDK script should be loaded asynchronously when the component mounts
@@ -100,12 +101,18 @@
 
 {#if issuePrice}
     <div class="buying_slider {isSliderOpen ? 'open' : ''}">
-        <div class="exit_slider" on:click={closeSlider}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
-                <path d="M2 1.5L25 24.5" stroke-width="3" stroke-linecap="round"/>
-                <path d="M25 1.5L2 24.5" stroke-width="3" stroke-linecap="round"/>
-            </svg>
-        </div>
+      <!-- svelte-ignore a11y-no-static-element-interactions -->
+      <!-- svelte-ignore a11y-missing-attribute -->
+      {#key issuePrice}
+      <!-- svelte-ignore a11y-click-events-have-key-events -->
+      <a class="exit_slider" on:click={closeSlider} on:touchend={closeSlider}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+            <path d="M2 1.5L25 24.5" stroke-width="3" stroke-linecap="round"/>
+            <path d="M25 1.5L2 24.5" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </a>
+      {/key}
+        
 
         <img src={issueCover} alt={issueNumber}>
 

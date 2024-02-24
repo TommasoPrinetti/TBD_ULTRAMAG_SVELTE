@@ -56,6 +56,11 @@
         // console.log("PREMUTO", isSliderOpen)
     }
 
+    function closeSlider() {
+      isSliderOpen = false;
+      console.log("Slider is closed:",isSliderOpen )
+    }
+
 </script>
 
 <article_2>
