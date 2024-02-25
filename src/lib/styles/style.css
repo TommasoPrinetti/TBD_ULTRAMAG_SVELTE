@@ -63,7 +63,7 @@ body.ultra {
 
   text-transform: uppercase;
 
-  cursor: url('/CURSOR/cursor.cur'), default;
+  cursor: url('/CURSOR/cursor.png'), default;
 }
 
 body.ultra h2{
