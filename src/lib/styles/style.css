@@ -59,11 +59,15 @@ body.ultra {
 
   max-width: 1512px;
 
-  --primary-font: 'Whirlybats';
+  --primary-font: 'Teranoptia', Helvetica;
+
+  text-transform: uppercase;
 
   cursor: default, no-drop;
+}
 
-  animation: whirlybatsAnimation 3s infinite;
+body.ultra h2{
+  --primary-font: 'Ketchup', Helvetica;
 }
 
 html {
@@ -129,7 +133,7 @@ html {
     justify-content: end;
     gap: var(--spacing_s);
     align-items: center;
-  }
+  } 
 
   /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 480px) {
@@ -361,6 +365,18 @@ body.ultra > div > hero > section > .herotextcontainer > p2 {
   text-overflow: ellipsis;
 
   animation: whirlybatsAnimation 3s infinite;
+}
+
+body.ultra > div > header > div > div > a > p2 {
+  font-family: Helvetica;
+}
+
+body.ultra > div > header > div > div > div > p3 {
+  font-family: Helvetica;
+}
+
+body.ultra > div > .ULTRABUTTON > div > p3 {
+  font-family: Helvetica;
 }
 
 /* descendant selectors to optimize font in ultramode */
@@ -1582,6 +1598,20 @@ d2 a {
 @font-face {
   font-family: 'Whirlybats';
   src: url('/FONTS/whirlybats.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Teranoptia';
+  src: url('/FONTS/Teranoptia-Furiae.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ketchup';
+  src: url('/FONTS/KetchupAddict-Regular_BSiim.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
