@@ -51,11 +51,14 @@
         <a class="button" style="z-index: 2;" href={issueHref}>
           <p2>READ MORE</p2>
         </a>
-        <div class="buybuttons" style="transform: rotate(0%);">
+        <!--
+          <div class="buybuttons" style="transform: rotate(0%);">
           {#each [1] as _}
               <BuyButtons on:toggle={handleSliderToggle} />
           {/each}
         </div>
+      -->
+        
       </div>
 
       <p2>

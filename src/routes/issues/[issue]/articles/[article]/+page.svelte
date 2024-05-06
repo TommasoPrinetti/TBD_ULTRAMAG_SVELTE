@@ -17,8 +17,6 @@
 
     //console.log("article", article)
 
-    
-
     let isUltra = false;
     let isFirstLoad = true;
 

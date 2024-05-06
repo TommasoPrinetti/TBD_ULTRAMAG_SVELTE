@@ -25,6 +25,8 @@
 ]
 </script>
 
+
+
     <Header  {headerVar}/>
     
     <manifesto id="MANIFESTO">
@@ -39,9 +41,11 @@
         </section>
     </manifesto>
 
-    {#each members as member (member.id)}
+    <!--
+        {#each members as member (member.id)}
         <AboutCard {member}/>
-    {/each}
+        {/each}
+    -->
 
     <Footer />
    
