@@ -6,7 +6,7 @@
 
   import SingleCard from './single_card.svelte';
 
-  import issuesData from "$lib/issues.json";
+  import issuesData from "$lib/issues_new.json";
 
   let issueNumber = '';
 
@@ -14,7 +14,11 @@
 
   // webresources TRANSFORMATION
   function transformPath(pathWithAlias) {
-    return pathWithAlias.replace('$webresources', 'src/lib/webresources/');
+    if (pathWithAlias) {
+      return pathWithAlias.replace('$webresources', 'src/lib/webresources/');
+    } else {
+      return ''; // Return a default value or handle it accordingly
+    }
   }
 
   const transformedIssuesData = issuesData.map(issue => ({
@@ -48,9 +52,9 @@
             issuePrice={issue.issuePrice}
             issueHref={issue.issueHref}
             issueCover={issue.issueCover}
-            ultraHoverImg={issue.ultraHoverImg || ''} 
+            ultraHoverImg={issue.ultraHoverImg || ''}   
             />
-        {:else if category === 'special projects'}
+        {:else if category === 'special projects' && issue.issueCover}
           <SingleCard 
             issueTitle={issue.issueTitle} 
             issueHeroText={issue.issueHeroText}

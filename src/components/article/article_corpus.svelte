@@ -3,8 +3,8 @@
     import { onMount } from 'svelte';
     import { goto } from '$app/navigation';
     
-    import articlesData from '$lib/articles.json';
-    import issuesData from '$lib/issues.json';
+    import articlesData from '$lib/articles_new.json';
+    import issuesData from '$lib/issues_new.json';
 
     import BuyButtons from "$components/buy_buttons.svelte";
     import BuyingSlider from "$components/sliders/buying_slider.svelte";
@@ -22,10 +22,10 @@
     export let article;
     
     // Derived properties for easier access
-    let { articleTitle, showDidascalie, showBibliografia, autore, editor, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article;
+    let {articleTitle, showDidascalie, showBibliografia, autore, note_autore, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article;
 
     $: if (article) {
-    ({ articleTitle, showDidascalie, showBibliografia, autore, editor, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article);
+    ({ articleTitle, showDidascalie, showBibliografia, autore, note_autore, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article);
     }
 
 
@@ -93,15 +93,15 @@
                     <div class="index_container">
                         <div class="index">
                             <p3>
-                                Parte di: <span> <d2 style="font-style: italic;">TBD {parentIssue} </d2></span>
+                                <!-- Parte di: --> <span> <d2 style="font-style: italic;">TBD {parentIssue} </d2></span>
                             </p3>
 
                             <p3>
-                                Scritto da: <span> <d2 style="font-style: italic;">{autore}</d2></span>
+                                <!-- Scritto da: --> <span> <d2 style="font-style: italic;">{autore}</d2></span>
                             </p3>
 
                             <p3>
-                                Editing di: <span> <d2 style="font-style: italic;">{editor} </d2></span>
+                                <!-- Editing di: --> <span> <d2 style="font-style: italic;">{note_autore} </d2></span>
                             </p3>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                     {#if key.startsWith('p') && articleContent[key]}
                         <!-- Render each line of the paragraph separately with <p> tags -->
                         {#each articleContent[key].split('\n') as line}
-                            <p2>{line}</p2>
+                            <p2>{@html line}</p2>
                         {/each}
                     {:else if key.startsWith('img') && articleContent[key]}
                         <!-- Render an image -->

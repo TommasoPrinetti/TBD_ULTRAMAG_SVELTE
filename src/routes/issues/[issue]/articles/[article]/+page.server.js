@@ -1,6 +1,6 @@
 // src/routes/[article]/+page.server.js
 import { error } from '@sveltejs/kit';
-import articlesData from '$lib/articles.json'; // Assuming the file is accessible server-side
+import articlesData from '$lib/articles_new.json'; // Assuming the file is accessible server-side
 
 /** @type {import('@sveltejs/kit').PageServerLoad} */
 export async function load({ params }) {

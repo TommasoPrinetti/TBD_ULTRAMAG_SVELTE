@@ -1,13 +1,17 @@
 // Import the issues data from the JSON file
-import issuesData from "$lib/issues.json";
-import articlesData from "$lib/articles.json";
+import issuesData from "$lib/issues_new.json";
+import articlesData from "$lib/articles_new.json";
 
 import { error } from '@sveltejs/kit';
 
 // Define the transformPath function
 function transformPath(pathWithAlias) {
-    return pathWithAlias.replace('$webresources', '/src/lib/webresources/');
-}
+    if (pathWithAlias) {
+      return pathWithAlias.replace('$webresources', 'src/lib/webresources/');
+    } else {
+      return ''; // Return a default value or handle it accordingly
+    }
+  }
 
 export async function load({ params }) {
     // Get the issue value from the params object

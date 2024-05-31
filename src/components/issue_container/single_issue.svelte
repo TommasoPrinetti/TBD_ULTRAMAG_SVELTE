@@ -24,7 +24,13 @@
       TBD #{issueTitle}
     </p3>
 
-    <p3>
-      {issuePrice}€
-    </p3>
+      <p3>
+        {#if issuePrice}
+          {issuePrice}€
+        {:else}
+          <i>Preorder soon!</i>
+        {/if}
+        
+      </p3>
+
 </a>

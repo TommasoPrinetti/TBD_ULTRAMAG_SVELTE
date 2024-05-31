@@ -18,7 +18,7 @@
   }
 
   // Questo serve a settare lo striscione in alto sull'ultima ISSUE automaticamente
-  import issuesData from "$lib/issues.json";
+  import issuesData from "$lib/issues_new.json";
 
   function setLatestIssueData() {
     const latestIssue = issuesData.find(issue => issue.isLatestIssue === true);
@@ -355,7 +355,7 @@
               <div class="slide_in_card_horizontal">
                   <a on:click={() => { goto('../../../about'); toggleMenu(); }}>
                       <h3>
-                          ABOUT: COSA è TBD?
+                          ABOUT
                       </h3>
                   </a>
               </div>

@@ -6,7 +6,7 @@
     inject({ mode: dev ? 'development' : 'production' });
 
 
-    import articlesData from '$lib/articles.json';
+    import articlesData from '$lib/articles_new.json';
 
     export const load = () => {
         return {

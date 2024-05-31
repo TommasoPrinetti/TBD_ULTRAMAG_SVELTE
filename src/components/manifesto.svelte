@@ -1,4 +1,5 @@
 <script>
+//Manifesto.svelte
 
 export let manifestoTitle
 export let manifestoText
@@ -13,8 +14,8 @@ export let fileDownloadButton
         <h2>
             {manifestoTitle}
         </h2>
-        <p2> 
-            {manifestoText}
+        <p2>
+            {@html manifestoText}
         </p2>
         {#if fileDownloadButton === true}
             <a class="button" href={downloadPath} download={manifestoTitle}>

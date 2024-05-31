@@ -12,7 +12,7 @@
     export let RowsBibliografia = [];
 
     export let Autore
-    export let Editor
+    export let note_autore
 
     const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
     import BuyButton from "$components/buy_buttons.svelte"
@@ -114,7 +114,7 @@
                             </p3>
 
                             <p3>
-                                Editing di: <span> <d2 style="font-style: italic;">{Editor} </d2></span>
+                                Editing di: <span> <d2 style="font-style: italic;">{note_autore} </d2></span>
                             </p3>
                         </div>
                     </div>

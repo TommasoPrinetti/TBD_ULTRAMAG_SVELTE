@@ -1,4 +1,4 @@
-
+@import url('scrollbars.css');
 
 :root {
     
@@ -11,10 +11,6 @@
 
     --primary-font: Helvetica;
 }
-
-
-
-
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .example::-webkit-scrollbar {
@@ -1128,13 +1124,6 @@ about section {
   height: auto;
   grid-column: span 10;
   
-}
-
-.about_image_container:hover {
-  display: block;
-  position: relative;
-  transform: translate(-20% );
-  grid-column: span 10;
 }
 
 .about_image_container > a {

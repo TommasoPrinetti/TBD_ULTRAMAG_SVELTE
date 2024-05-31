@@ -10,7 +10,7 @@
     export let issuePrice = '';
     export let issueHeroId = '';
 
-    import issuesData from "$lib/issues.json";
+    import issuesData from "$lib/issues_new.json";
     let currentIssueData = issuesData.find(issue => issue.issueNumber === issueNumber);
 
     import BuyButtons from '$components/buy_buttons.svelte';

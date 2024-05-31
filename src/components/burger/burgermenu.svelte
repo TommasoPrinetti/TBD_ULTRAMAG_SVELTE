@@ -63,15 +63,15 @@
                             </a>
 
                             <a href="ISSUE_4_VOL1.HTML">
-                              <p1> → 4RD Issue_Vol I </p1>
+                              <p1> → 4TH Issue_Vol I </p1>
                             </a>
 
                             <a href="ISSUE_4_VOL2.HTML">
-                              <p1> → 4RD Issue_Vol II </p1>
+                              <p1> → 4TH Issue_Vol II </p1>
                             </a>
 
                             <a href="ISSUE_4_VOL3.HTML">
-                              <p1> → 4RD Issue_Vol III</p1>
+                              <p1> → 4TH Issue_Vol III</p1>
                             </a>
 
                         </div>
@@ -134,7 +134,7 @@
                 <div class="slide_in_card_horizontal">
                     <a href="TBD_ABOUT.html">
                         <h3>
-                            ABOUT: COSA è TBD?
+                            ABOUT
                         </h3>
                     </a>
                 </div>

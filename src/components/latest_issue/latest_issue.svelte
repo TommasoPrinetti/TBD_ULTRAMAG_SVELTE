@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import issuesData from "$lib/issues.json";
+  import issuesData from "$lib/issues_new.json";
   const latestIssue = issuesData.find(issue => issue.isLatestIssue === true)
 
   import BuyButtons from '../buy_buttons.svelte';
