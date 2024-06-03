@@ -37,8 +37,7 @@ body.default {
 
   max-width: 1512px;
   overflow-x: hidden;
-
-  cursor: default;
+  cursor: auto;
 
 }
 
@@ -59,7 +58,20 @@ body.ultra {
 
   text-transform: uppercase;
 
-  cursor: url('/CURSOR/cursor.png'), default;
+  cursor: url('/CURSOR/definitive.cur'), default;
+}
+
+body.default .button {
+  cursor: pointer;
+}
+
+body.ultra a,
+body.ultra button,
+body.ultra input[type="button"],
+body.ultra .button,
+body.ultra input[type="submit"],
+body.ultra input[type="reset"] {
+  cursor: url('/CURSOR/definitive_pointer.cur'), default;
 }
 
 body.ultra h2{

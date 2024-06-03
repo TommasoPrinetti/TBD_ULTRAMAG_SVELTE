@@ -26,7 +26,7 @@
         </p3>
 
         <!-- svelte-ignore a11y-missing-attribute -->
-        <a class="button" on:click={() => { goto(`./${parentIssue}/articles/${articleName}`); }} style="cursor: pointer;">
+        <a class="button" on:click={() => { goto(`./${parentIssue}/articles/${articleName}`); }}>
             <p2> 
                 READ ALL
             </p2>
