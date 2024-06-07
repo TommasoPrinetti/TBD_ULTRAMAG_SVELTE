@@ -2,7 +2,7 @@ import ExcelJS from 'exceljs';
 import fs from 'fs/promises';
 
 // Define the worksheet name to convert
-const worksheetNameToConvert = 'articles_new';
+const worksheetNameToConvert = 'issues_new';
 
 // Define input and output paths and filenames
 const inputFilePath = 'src/scripts/xslx/TBD_DB.xlsx';

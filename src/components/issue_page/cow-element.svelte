@@ -22,7 +22,7 @@
     <!-- IMG -->
     <div class="imgcontainer">
         <img style="width: 100%;" src={CowElementImg} alt="">
-        <d1>{CowImgDidascalia}</d1>
+        <d1>{@html CowImgDidascalia}</d1>
     </div>
 </section>
 
@@ -33,7 +33,7 @@
             <strong>{UltraCowElementTitle}</strong>
             <br>
             <br>
-            {UltraCowElementText}
+            {@html UltraCowElementText}
         </p2>
     </div>
 

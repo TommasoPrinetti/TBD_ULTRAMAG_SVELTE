@@ -74,6 +74,15 @@ body.ultra input[type="reset"] {
   cursor: url('/CURSOR/definitive_pointer.cur'), default;
 }
 
+body.default a,
+body.default button,
+body.default input[type="button"],
+body.default .button,
+body.default input[type="submit"],
+body.default input[type="reset"] {
+  cursor: pointer;
+}
+
 body.ultra h2{
   --primary-font: 'Ketchup', Helvetica;
 }

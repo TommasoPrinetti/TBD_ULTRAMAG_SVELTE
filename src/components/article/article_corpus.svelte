@@ -1,6 +1,6 @@
 <script>
     // article_corpus.svelte
-    import { onMount } from 'svelte';
+    import { onMount, tick } from 'svelte';
     import { goto } from '$app/navigation';
     
     import articlesData from '$lib/articles_new.json';
@@ -11,14 +11,16 @@
     import ArticleGallery from "./article_gallery.svelte";
     import ArticleImg from "./article_img.svelte";
 
-    let relatedArticles = [];
-    let rowsDidascalie = [];
-    let rowsBibliografie = [];
-    let currentIssueData = {};
-    let isSliderOpen = false;
+    $: relatedArticles = [];
+    $: rowsDidascalie = [];
+    $: rowsBibliografie = [];
+    $: currentIssueData = {};
+    $: isSliderOpen = false;
+
+    $: reloadStatus = false;
+
     const TbdLogo = '/IDENTITY_IMAGES/tbd_LOGO.webp';
 
-    // Accept the entire article object as a prop
     export let article;
     
     // Derived properties for easier access
@@ -30,11 +32,11 @@
 
 
     onMount(() => {
+        
         relatedArticles = articlesData.filter(a => a.parentIssue === parentIssue && a.articleName !== articleTitle); 
         currentIssueData = issuesData.find(issue => String(issue.issueNumber) === String(article.parentIssue));
 
         isSliderOpen = false;
-        
         if (didascalie) {
             rowsDidascalie = didascalie.split('*').filter(Boolean);
         }
@@ -42,13 +44,25 @@
         if (bibliografie) {
             rowsBibliografie = bibliografie.split('*').filter(Boolean);
         }
+        tick();
     });
 
-    console.log("Looking for issueNumber:", currentIssueData);
+    // console.log("Looking for issueNumber:", currentIssueData);
 
     function navigateToArticle(relatedArticle) {
         const url = `../../../issues/${relatedArticle.parentIssue}/articles/${relatedArticle.articleName}`;
-        goto(url);
+
+        const opts = {
+            replaceState: true,
+            noScroll: true,
+            keepFocus: true,
+            invalidateAll: true,
+        }
+
+        goto(url, opts);
+
+        reloadStatus = !reloadStatus
+
     }
 
     function handleSliderToggle() {
@@ -65,47 +79,47 @@
 
 <article_2>
     <section>
-        <div class="side_menu">
-            <div class="index_container">
-                <div class="index">
-                    <!-- svelte-ignore a11y-no-static-element-interactions -->
-                    {#each relatedArticles as relatedArticle, index}
-                        <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <div class="side_menu">
+                <div class="index_container">
+                    <div class="index">
                         <!-- svelte-ignore a11y-no-static-element-interactions -->
-                        <!-- svelte-ignore a11y-missing-attribute -->
-                        <a on:click={() => navigateToArticle(relatedArticle)} style="cursor: pointer;">
-                            <p3>#{0}{index+1}: {relatedArticle.articleTitle}</p3>
-                        </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 1">
-                            <path d="M0 0.555664H330"/>
-                        </svg>
-                    {/each}
-                </div>
-
-                <div class="buybuttons">
-                    {#each [1, 2, 3] as _}
-                        <BuyButtons on:toggle={handleSliderToggle} />
-                    {/each} 
-                </div>
-            </div>
-            
-                <img src={TbdLogo} alt="">
-                    <div class="index_container">
-                        <div class="index">
-                            <p3>
-                                <!-- Parte di: --> <span> <d2 style="font-style: italic;">TBD {parentIssue} </d2></span>
-                            </p3>
-
-                            <p3>
-                                <!-- Scritto da: --> <span> <d2 style="font-style: italic;">{autore}</d2></span>
-                            </p3>
-
-                            <p3>
-                                <!-- Editing di: --> <span> <d2 style="font-style: italic;">{note_autore} </d2></span>
-                            </p3>
-                        </div>
+                        {#each relatedArticles as relatedArticle, index}
+                            <!-- svelte-ignore a11y-click-events-have-key-events -->
+                            <!-- svelte-ignore a11y-no-static-element-interactions -->
+                            <!-- svelte-ignore a11y-missing-attribute -->
+                            <a data-sveltekit-preload-data on:click={() => navigateToArticle(relatedArticle)} style="cursor: pointer;" data-sveltekit-reload>
+                                <p3>#{0}{index+1}: {@html relatedArticle.articleTitle}</p3>
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 1">
+                                <path d="M0 0.555664H330"/>
+                            </svg>
+                        {/each}
                     </div>
-        </div>
+
+                    <div class="buybuttons">
+                        {#each [1, 2, 3] as _}
+                            <BuyButtons on:toggle={handleSliderToggle} />
+                        {/each} 
+                    </div>
+                </div>
+                
+                    <img src={TbdLogo} alt="">
+                        <div class="index_container">
+                            <div class="index">
+                                <p3>
+                                    <!-- Parte di: --> <span> <d2 style="font-style: italic;">TBD {parentIssue} </d2></span>
+                                </p3>
+
+                                <p3>
+                                    <!-- Scritto da: --> <span> <d2 style="font-style: italic;">{autore}</d2></span>
+                                </p3>
+
+                                <p3>
+                                    <!-- Editing di: --> <span> <d2 style="font-style: italic;">{note_autore} </d2></span>
+                                </p3>
+                            </div>
+                        </div>
+            </div>
 
         <read>
             <div style="display: flex; flex-direction: column; gap: var(--spacing_s);">
@@ -129,26 +143,28 @@
                 {/each}
                 
             </div>
-
-            <d2>
-                {#if showDidascalie}
-                    <span style="font-weight: 800;">Didascalie:</span>
-                    <br>
-                    {#each rowsDidascalie as didascalia, index}
-                        <p>[{index + 1}] {didascalia}</p>
-                    {/each}
-                {/if}
-            </d2>
             
-            <d2>
-                {#if showBibliografia}
-                    <span style="font-weight: 800;">Bibliografia:</span>
-                    <br>
-                    {#each rowsBibliografie as bibliografia}
-                        <p>● {bibliografia}</p>
-                    {/each}
-                {/if}
-            </d2>
+                <d2 >
+                    {#if showDidascalie}
+                        <span style="font-weight: 800;">Didascalie:</span>
+                        <br>
+                        {#each rowsDidascalie as didascalia, index}
+                            <p>[{index + 1}] {@html didascalia}</p>
+                        {/each}
+                    {/if}
+                </d2>
+                
+                <d2>
+                    {#if showBibliografia}
+                        <span style="font-weight: 800;">Bibliografia:</span>
+                        <br>
+                        {#each rowsBibliografie as bibliografia}
+                            <p>● {@html bibliografia}</p>
+                        {/each}
+                    {/if}
+                </d2>
+
+            
 
         </read>
     </section>

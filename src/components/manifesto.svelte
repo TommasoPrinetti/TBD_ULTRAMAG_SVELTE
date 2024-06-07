@@ -1,11 +1,11 @@
 <script>
 //Manifesto.svelte
 
-export let manifestoTitle
-export let manifestoText
-export let downloadPath
-export let downloadText
-export let fileDownloadButton
+    export let manifestoTitle
+    export let manifestoText
+    export let downloadPath
+    export let downloadText
+    export let fileDownloadButton
 
 </script>
 

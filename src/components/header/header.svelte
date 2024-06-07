@@ -80,7 +80,7 @@
               </a>
           </div>
 
-          <a style="height: 100%; flex-shrink: 0" on:click={() => goto(logoHref)}>
+          <a style="height: 100%; flex-shrink: 0" on:click={() => goto(logoHref)} data-sveltekit-reload>
               <img style="height: 100%;" src={TbdLogo} alt="TBDLogoImage">
           </a>
 
@@ -266,27 +266,27 @@
                       <div>
                           <!-- svelte-ignore a11y-click-events-have-key-events -->
                           <!-- svelte-ignore a11y-missing-attribute -->
-                          <a on:click={() => { goto(`/issues/ISSUE1`); toggleMenu(); }} style="cursor: pointer;">
+                          <a on:click={() => { goto(`/issues/ISSUE1`); toggleMenu(); }} style="cursor: pointer;" data-sveltekit-reload>
                               <p1> → 1ST Issue </p1>
                           </a>
 
-                          <a on:click={() => { goto(`/issues/ISSUE2`); toggleMenu(); }} style="cursor: pointer;">
+                          <a on:click={() => { goto(`/issues/ISSUE2`); toggleMenu(); }} style="cursor: pointer;" data-sveltekit-reload>
                               <p1> → 2ND Issue </p1>
                           </a>
                           
-                          <a on:click={() => { goto(`/issues/ISSUE3`); toggleMenu(); }} style="cursor: pointer;">
+                          <a on:click={() => { goto(`/issues/ISSUE3`); toggleMenu(); }} style="cursor: pointer;" data-sveltekit-reload>
                               <p1> → 3RD Issue </p1>
                           </a>
 
-                          <a on:click={() => { goto(`/issues/ISSUE4_VOL_I`); toggleMenu(); }} style="cursor: pointer;">
+                          <a on:click={() => { goto(`/issues/ISSUE4_VOL_I`); toggleMenu(); }} style="cursor: pointer;" data-sveltekit-reload>
                             <p1> → 4RD Issue_Vol I </p1>
                           </a>
 
-                          <a on:click={() => { goto(`/issues/ISSUE4_VOL_II`); toggleMenu(); }} style="cursor: pointer;">
+                          <a on:click={() => { goto(`/issues/ISSUE4_VOL_II`); toggleMenu(); }} style="cursor: pointer;" data-sveltekit-reload>
                             <p1> → 4RD Issue_Vol II </p1>
                           </a>
 
-                          <a on:click={() => { goto(`/issues/ISSUE4_VOL_III`); toggleMenu(); }} style="cursor: pointer;">
+                          <a on:click={() => { goto(`/issues/ISSUE4_VOL_III`); toggleMenu(); }} style="cursor: pointer;" data-sveltekit-reload>
                             <p1> → 4RD Issue_Vol III</p1>
                           </a>
 
@@ -310,11 +310,11 @@
 
                       <div>
                           <a on:click={() => { goto(`/issues/XPOST`); toggleMenu(); }}
-                            style="cursor: pointer;" >
+                            style="cursor: pointer;" data-sveltekit-reload >
                               <p1> → X Post </p1>
                           </a>
 
-                          <a on:click={() => { goto(`/issues/BLASTINGTHEORY`); toggleMenu(); }} style="cursor: pointer;">
+                          <a on:click={() => { goto(`/issues/BLASTINGTHEORY`); toggleMenu(); }} style="cursor: pointer;" data-sveltekit-reload>
                               <p1> → Blasting Theory </p1>
                           </a>
                       </div>
@@ -322,7 +322,7 @@
 
                   <div class="slide_in_card_vertical">
                       
-                    <a class="title_container" on:click={() => { goto('/#ISSUES'); toggleMenu(); }}>
+                    <a class="title_container" on:click={() => { goto('/#ISSUES'); toggleMenu(); }} data-sveltekit-reload>
                       <p1>
                         SPECIAL PROJECTS:
                       </p1>
@@ -335,15 +335,15 @@
                       </a>
 
                       <div>
-                          <a on:click={() => { goto(`/issues/FOREHEADVULVA`); toggleMenu(); }}>
+                          <a on:click={() => { goto(`/issues/FOREHEADVULVA`); toggleMenu(); }} data-sveltekit-reload>
                               <p1> → Forehead vulva </p1>
                           </a>
 
-                          <a on:click={() => { goto(`/issues/LOOKATME_VOL_I`); toggleMenu(); }}>
+                          <a on:click={() => { goto(`/issues/LOOKATME_VOL_I`); toggleMenu(); }} data-sveltekit-reload>
                               <p1> → Look at me Vol.I </p1>
                           </a>
                           
-                          <a on:click={() => { goto(`/issues/LOOKATME_VOL_II`); toggleMenu(); }}>
+                          <a on:click={() => { goto(`/issues/LOOKATME_VOL_II`); toggleMenu(); }} data-sveltekit-reload>
                               <p1> → Look at me Vol.II </p1>
                           </a>
                       </div>
@@ -353,7 +353,7 @@
               </div>
               
               <div class="slide_in_card_horizontal">
-                  <a on:click={() => { goto('../../../about'); toggleMenu(); }}>
+                  <a on:click={() => { goto('../../../about'); toggleMenu(); }} data-sveltekit-reload>
                       <h3>
                           ABOUT
                       </h3>

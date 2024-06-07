@@ -138,7 +138,7 @@
                 {/if}
                 <br>
                 {#each RowsDidascalie as didascalia}
-                    <p>{didascalia}</p>
+                    <p>{@html didascalia}</p>
                 {/each}
             </d2>
             
@@ -148,7 +148,7 @@
                 {/if}
                 <br>
                 {#each RowsBibliografia as bibliografia}
-                    <p>{bibliografia}</p>
+                    <p>{@html bibliografia}</p>
                 {/each}
             </d2>
 
