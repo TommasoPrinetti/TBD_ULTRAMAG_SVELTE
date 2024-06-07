@@ -1,6 +1,6 @@
 <script>
     // article_corpus.svelte
-    import { onMount, tick } from 'svelte';
+    import { tick } from 'svelte';
     import { goto } from '$app/navigation';
     
     import articlesData from '$lib/articles_new.json';
@@ -30,13 +30,12 @@
     ({ articleTitle, showDidascalie, showBibliografia, autore, note_autore, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article);
     }
 
+    $: if (article) {
+        ({ articleTitle, showDidascalie, showBibliografia, autore, note_autore, parentIssue, issueNumber, bibliografie, didascalie, articleContent } = article);
 
-    onMount(() => {
-        
         relatedArticles = articlesData.filter(a => a.parentIssue === parentIssue && a.articleName !== articleTitle); 
         currentIssueData = issuesData.find(issue => String(issue.issueNumber) === String(article.parentIssue));
 
-        isSliderOpen = false;
         if (didascalie) {
             rowsDidascalie = didascalie.split('*').filter(Boolean);
         }
@@ -44,8 +43,7 @@
         if (bibliografie) {
             rowsBibliografie = bibliografie.split('*').filter(Boolean);
         }
-        tick();
-    });
+    }
 
     // console.log("Looking for issueNumber:", currentIssueData);
 
@@ -54,7 +52,7 @@
 
         const opts = {
             replaceState: true,
-            noScroll: true,
+            noScroll: false,
             keepFocus: true,
             invalidateAll: true,
         }
@@ -62,7 +60,7 @@
         goto(url, opts);
 
         reloadStatus = !reloadStatus
-
+        tick();
     }
 
     function handleSliderToggle() {
@@ -121,7 +119,7 @@
                         </div>
             </div>
 
-        <read>
+        <read id="READ">
             <div style="display: flex; flex-direction: column; gap: var(--spacing_s);">
                 <h2>
                     {articleTitle}

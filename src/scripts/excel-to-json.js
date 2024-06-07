@@ -2,7 +2,7 @@ import ExcelJS from 'exceljs';
 import fs from 'fs/promises';
 
 // Define the worksheet name to convert
-const worksheetNameToConvert = 'issues_new';
+const worksheetNameToConvert = 'articles_new';
 
 // Define input and output paths and filenames
 const inputFilePath = 'src/scripts/xslx/TBD_DB.xlsx';
@@ -18,7 +18,7 @@ const convertRichTextToHTML = (richText) => {
       if (part.font.underline) text = `<u>${text}</u>`;
     }
     return text;
-  }).join('').replace(/\n/g, '<br>'); // Replace newlines with <br><br>
+  }).join('').replace(/\n/g, '<br>');
 };
 
 // Load the Excel file

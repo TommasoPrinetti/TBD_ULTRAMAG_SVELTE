@@ -18,11 +18,11 @@
         <div class="article_text_container">
         
         <h2>
-            {articleTitle}
+            {@html articleTitle}
         </h2>
 
         <p3>
-            {articleText}
+            {@html articleText}
         </p3>
 
         <!-- svelte-ignore a11y-missing-attribute -->
