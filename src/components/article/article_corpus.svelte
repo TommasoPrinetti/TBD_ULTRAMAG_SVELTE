@@ -142,9 +142,10 @@
                 
             </div>
             
-                <d2 >
+                <d2>
                     {#if showDidascalie}
                         <span style="font-weight: 800;">Didascalie:</span>
+                        <br>
                         <br>
                         {#each rowsDidascalie as didascalia, index}
                             <p>[{index + 1}] {@html didascalia}</p>
@@ -155,6 +156,7 @@
                 <d2>
                     {#if showBibliografia}
                         <span style="font-weight: 800;">Bibliografia:</span>
+                        <br>
                         <br>
                         {#each rowsBibliografie as bibliografia}
                             <p>● {@html bibliografia}</p>
@@ -174,3 +176,12 @@
 issueCover={currentIssueData.issueCover}
 issuePrice={currentIssueData.issuePrice}
 {issueNumber} />
+
+
+<style>
+    d2 > p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+</style>
