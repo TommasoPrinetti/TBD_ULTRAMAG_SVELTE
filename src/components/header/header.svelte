@@ -37,7 +37,7 @@
   let repeatText;
   $: repeatCount = 100;
   $: if (issueNumber) {
-    const baseText = ` © TBD ULTRAMAGAZINE - ${issueNumber} CALL FOR NARRATIVES - `;
+    const baseText = ` © TBD ULTRAMAGAZINE - 30 YEARS ART BASEL - LISTE ART FAIR BASEL - 16-22 JUNE 2025 - MESSE BASEL - HALL 1.1 - `;
     repeatText = baseText.repeat(repeatCount);
   }
 
@@ -48,7 +48,10 @@
 {#if headerVar === 'COMMON'}
 
   <header id={headerVar}>
-      <a class="header_top" href='../../../issues/{issueNumber}'>
+      <a class="header_top"
+      href='https://www.liste.ch/en/home.html'
+      target="_blank"
+      rel="noopener noreferrer">
         <div class="banner">
           <p3> 
             {@html repeatText}
